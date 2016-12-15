@@ -1,0 +1,11 @@
+{
+  "name": "gsgusev.ru",
+  "version": "1.0.0",
+  "description": "website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://vadymkaninskyi@bitbucket.org/vadymkaninskyi/gsgusev.ru.git"
+  },
+  "author": "Vadym Kaninskyi",
+  "license": "MIT"
+}
