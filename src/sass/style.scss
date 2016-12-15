@@ -1,1 +1,25 @@
 @import 'header';
+
+//
+// NOTE!
+// Make sure your component supports screens:
+//
+// - 320px width;
+// - 480px width;
+// - 768px width;
+// - 960px width;
+// - 1200px width;
+//
+// Get UI Kit:
+// Mini	    up to 479px         Phones portrait
+// Small    480px to 767px	    Phones landscape
+// Medium   768px to 959px	    Tablets portrait
+// Large	960px to 1199px	    Desktops & tablets landscape
+// Xlarge	1200px and larger	Large Desktops
+//
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
