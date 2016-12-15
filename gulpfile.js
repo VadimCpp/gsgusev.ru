@@ -33,7 +33,8 @@ gulp.task('sass', ['clean-sass'], function () {
 
 gulp.task('watch', function() {
   gulp.watch(paths.index, ['index']);
+  gulp.watch(paths.sass, ['sass']);
 });
 
 
-gulp.task('default', ['watch', 'index', 'sass']);
+gulp.task('default', ['index', 'sass', 'watch']);
