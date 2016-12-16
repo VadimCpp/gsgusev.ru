@@ -1,19 +1,36 @@
 
+$medium-start: 768px;
+
 header.gs-header {
 
+  /* layout */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 30px;
-  font-family: 'Lobster', cursive;
-
-  height: 60px;
-
+  /* theme */
   background-color: #00a54f;
 
-  > label {
-    padding: 0 10px;
-    color: #fff;
+  /* size */
+  height: 60px;
+  @media screen and (min-width: $medium-start) {
+    height: 80px;
   }
+
+  > label {
+
+    /* layout */
+    padding: 0 10px;
+
+    /* theme */
+    color: #fff;
+    text-shadow: 2px 2px 2px green;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    @media screen and (min-width: $medium-start) {
+      font-size: 40px;
+    }
+
+  }
+
 }
