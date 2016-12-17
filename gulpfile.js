@@ -4,7 +4,8 @@ var sass = require('gulp-sass');
 
 var paths = {
   index: ['src/index.html'],
-  sass: ['src/sass/**/*.scss']
+  sass: ['src/sass/**/*.scss'],
+  robot: ['src/robots.txt']
 };
 
 
@@ -31,10 +32,22 @@ gulp.task('sass', ['clean-sass'], function () {
 });
 
 
-gulp.task('watch', function() {
-  gulp.watch(paths.index, ['index']);
-  gulp.watch(paths.sass, ['sass']);
+gulp.task('clean-robot', function() {
+  return del('web/robots.txt');
 });
 
 
-gulp.task('default', ['index', 'sass', 'watch']);
+gulp.task('robot', ['clean-robot'], function () {
+  return gulp.src(paths.robot)
+    .pipe(gulp.dest('web'));
+});
+
+
+gulp.task('watch', function() {
+  gulp.watch(paths.index, ['index']);
+  gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.robot, ['robot']);
+});
+
+
+gulp.task('default', ['index', 'sass', 'robot', 'watch']);
