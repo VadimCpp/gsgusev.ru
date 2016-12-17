@@ -1,18 +1,24 @@
-
-#read-more {
-  opacity: 1;
-}
-
-#read-more + span {
+.gs-spoiler-state {
   display: none;
-  //opacity: 0;
 }
 
-#read-more:focus {
-  opacity: 0;
+.gs-spoiler-target {
+  display: none;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
 }
 
-#read-more:focus + span {
+.gs-spoiler-state:checked + .gs-spoiler-target {
   display: inline;
-  //opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.gs-spoiler-state ~ .gs-spoiler-trigger:before {
+  content: "Показать весь текст ↓";
+}
+
+.gs-spoiler-state:checked ~ .gs-spoiler-trigger:before {
+  content: 'Свернуть ↑';
 }
