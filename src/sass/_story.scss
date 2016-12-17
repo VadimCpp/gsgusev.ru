@@ -1,0 +1,14 @@
+
+$medium-start: 768px;
+$xlarge-start: 1200px;
+
+p.gs-story {
+  /* layout */
+  margin-top: 10px;
+  @media (min-width: $medium-start) {
+    margin-top: 15px;
+  }
+  @media (min-width: $xlarge-start) {
+    margin-top: 20px;
+  }
+}
