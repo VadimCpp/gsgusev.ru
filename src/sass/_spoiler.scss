@@ -1,0 +1,18 @@
+
+#read-more {
+  opacity: 1;
+}
+
+#read-more + span {
+  display: none;
+  //opacity: 0;
+}
+
+#read-more:focus {
+  opacity: 0;
+}
+
+#read-more:focus + span {
+  display: inline;
+  //opacity: 1;
+}
