@@ -1,4 +1,5 @@
 @import 'header';
+@import 'content';
 
 //
 // NOTE!
@@ -24,4 +25,6 @@ html, body {
   padding: 0;
 
   min-width: 320px;
+
+  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
