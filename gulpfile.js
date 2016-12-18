@@ -79,7 +79,6 @@ gulp.task('watch', function() {
   gulp.watch(paths.index, ['index']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.robot, ['robot']);
-  gulp.watch(paths.favicons, ['favicons']);
 });
 
 
