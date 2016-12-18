@@ -1,0 +1,44 @@
+
+$medium-start: 768px;
+$xlarge-start: 1200px;
+
+.gs-breadcrumb {
+  padding: 0;
+  margin-top: 10px;
+  @media (min-width: $medium-start) {
+    margin-top: 15px;
+  }
+  @media (min-width: $xlarge-start) {
+    margin-top: 20px;
+  }
+
+  list-style: none;
+  font-size: 0.001px;
+
+  > li {
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+
+    > a {
+      display: inline-block;
+    }
+
+    > h1 {
+      display: inline-block;
+      font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      paddin: 0;
+    }
+  }
+
+  > li:nth-child(n+2):before {
+    content: "/";
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  > li:not(.gs-active) > h1 {
+    color: #999;
+  }
+}

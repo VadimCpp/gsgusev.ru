@@ -3,7 +3,10 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 var paths = {
-  index: ['src/index.html'],
+  html: [
+    'index.html',
+    'taxi.html'
+  ],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
   favicons: [
@@ -21,13 +24,22 @@ var paths = {
 };
 
 
-gulp.task('clean-index', function() {
-  return del('web/index.html');
+gulp.task('clean-html', function() {
+  var dist = paths.html.map(function(path){
+    return 'web/' + path;
+  });
+
+  return del(dist);
+
 });
 
 
-gulp.task('index', ['clean-index'], function() {
-  return gulp.src(paths.index)
+gulp.task('html', ['clean-html'], function() {
+  var sources = paths.html.map(function(path){
+    return 'src/' + path;
+  });
+
+  return gulp.src(sources)
     .pipe(gulp.dest('web'));
 });
 
@@ -76,10 +88,13 @@ gulp.task('favicons', ['clean-favicons'], function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch(paths.index, ['index']);
+  var sources = paths.html.map(function(path){
+    return 'src/' + path;
+  });
+  gulp.watch(sources, ['html']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.robot, ['robot']);
 });
 
 
-gulp.task('default', ['favicons', 'index', 'sass', 'robot', 'watch']);
+gulp.task('default', ['favicons', 'html', 'sass', 'robot', 'watch']);
