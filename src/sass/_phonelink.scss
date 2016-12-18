@@ -1,0 +1,17 @@
+
+.gs-phone-link {
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #00a54f;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.gs-phone-link:before {
+  content: "C";
+}
