@@ -1,0 +1,34 @@
+/* ========================================================================
+   Component: List
+ ========================================================================== */
+.gs-list {
+
+  /* layout */
+  margin-top: 10px;
+  @media (min-width: $medium-start) {
+    margin-top: 15px;
+  }
+  @media (min-width: $xlarge-start) {
+    margin-top: 20px;
+  }
+
+  padding: 0;
+  list-style: none;
+
+  > li:before, li:after {
+    content: "";
+    display: table;
+  }
+
+  > li:after {
+    clear: both;
+  }
+
+  > li > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.gs-list-space > li:nth-child(n+2) {
+  margin-top: 5px;
+}

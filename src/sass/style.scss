@@ -2,6 +2,7 @@
 @import 'content';
 @import 'header';
 @import 'link';
+@import 'list';
 @import 'spoiler';
 @import 'story';
 
@@ -31,4 +32,8 @@ html, body {
   min-width: 320px;
 
   font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.gs-disabled {
+  color: #999;
 }

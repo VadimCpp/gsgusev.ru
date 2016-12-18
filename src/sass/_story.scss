@@ -3,6 +3,9 @@ $medium-start: 768px;
 $xlarge-start: 1200px;
 
 p.gs-story {
+
+  font-style: italic;
+
   /* layout */
   margin-top: 10px;
   @media (min-width: $medium-start) {
@@ -10,5 +13,9 @@ p.gs-story {
   }
   @media (min-width: $xlarge-start) {
     margin-top: 20px;
+  }
+
+  > .gs-link {
+    font-style: italic;
   }
 }

@@ -4,12 +4,12 @@ $xlarge-start: 1200px;
 
 .gs-breadcrumb {
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   @media (min-width: $medium-start) {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   @media (min-width: $xlarge-start) {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   list-style: none;
