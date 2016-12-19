@@ -1,0 +1,31 @@
+.gs-story-with-spoiler {
+
+  /* State 1: not checked */
+  > input.gs-story-with-spoiler-state {
+
+    /* Never display check box. Show label instead */
+    display: none;
+
+    & + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+      display: none;
+    }
+
+    & ~ label.gs-story-with-spoiler-trigger:before {
+      content: 'Показать весь текст ↓';
+    }
+  }
+
+  /* State 2: checked */
+  > input.gs-story-with-spoiler-state:checked {
+
+    & + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+      display: inline;
+    }
+
+    & ~ label.gs-story-with-spoiler-trigger:before {
+      content: 'Свернуть ↑';
+    }
+
+  }
+
+}
