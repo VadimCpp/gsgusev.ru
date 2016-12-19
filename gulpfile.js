@@ -20,6 +20,12 @@ var paths = {
     'manifest.json',
     'mstile-150x150.png',
     'safari-pinned-tab.svg'
+  ],
+  'fonts': [
+      'FontAwesome.otf',
+      'fontawesome-webfont.ttf',
+      'fontawesome-webfont.woff',
+      'fontawesome-webfont.woff2'
   ]
 };
 
@@ -87,6 +93,26 @@ gulp.task('favicons', ['clean-favicons'], function() {
 });
 
 
+gulp.task('clean-fonts', function() {
+  var dist = paths.fonts.map(function(path){
+    return 'web/fonts/' + path;
+  });
+
+  return del(dist);
+});
+
+
+gulp.task('fonts', ['clean-fonts'], function() {
+
+  var sources = paths.fonts.map(function(path){
+    return 'src/fonts/' + path;
+  });
+
+  return gulp.src(sources)
+      .pipe(gulp.dest('web/fonts/'));
+});
+
+
 gulp.task('watch', function() {
   var sources = paths.html.map(function(path){
     return 'src/' + path;
@@ -97,4 +123,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['favicons', 'html', 'sass', 'robot', 'watch']);
+gulp.task('default', ['fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);

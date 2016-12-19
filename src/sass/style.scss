@@ -43,18 +43,6 @@ body {
   margin: 0;
 }
 
-h3 {
-  /* layout */
-  margin-top: 10px;
-  margin-bottom: 5px;
-  @media (min-width: $medium-start) {
-    margin-top: 15px;
-  }
-  @media (min-width: $xlarge-start) {
-    margin-top: 20px;
-  }
-}
-
 .gs-disabled {
   color: #999;
 }

@@ -1,17 +1,49 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src:
+    url("../fonts/fontawesome-webfont.woff2") format('woff2'),
+    url("../fonts/fontawesome-webfont.woff") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.gs-phone-link {
-  width: 30px;
-  height: 30px;
+$buttonSize: 45px;
+
+.gs-phone-button {
+  width: $buttonSize;
+  height: $buttonSize;
   text-decoration: none;
   color: white;
   background-color: #00a54f;
-  display: inline-block;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
-  line-height: 30px;
+  line-height: $buttonSize;
+  margin-right: 5px;
 }
 
-.gs-phone-link:before {
-  content: "C";
+[class*='gs-icon-'] {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  //line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*='gs-icon-'],
+[class*='gs-icon-']:hover,
+[class*='gs-icon-']:focus {
+  text-decoration: none;
+}
+
+.gs-icon-phone:before {
+  content: "\f095";
+}
+
+.gs-icon-large {
+  font-size: 190%;
+  vertical-align: -8%;
 }
