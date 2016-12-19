@@ -2,6 +2,8 @@ $medium-start: 768px;
 
 .gs-story-with-spoiler {
 
+  font-style: italic;
+
   /* State 1: not checked */
   > input.gs-story-with-spoiler-state {
 
@@ -55,6 +57,10 @@ $medium-start: 768px;
 
   > span.gs-story-with-spoiler-trigger-wrap {
     display: block;
+
+    > label.gs-story-with-spoiler-trigger {
+      font-style: italic;
+    }
   }
 
 }
