@@ -1,3 +1,5 @@
+$medium-start: 768px;
+
 .gs-story-with-spoiler {
 
   /* State 1: not checked */
@@ -6,8 +8,15 @@
     /* Never display check box. Show label instead */
     display: none;
 
-    & + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: none;
+    & + span.gs-story-with-spoiler-wrap {
+
+      @media (max-width: $medium-start) {
+        text-align: right;
+      }
+
+      > span.gs-spoiler-target {
+        display: none;
+      }
     }
 
     & ~ label.gs-story-with-spoiler-trigger:before {
@@ -18,14 +27,23 @@
   /* State 2: checked */
   > input.gs-story-with-spoiler-state:checked {
 
-    & + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: inline;
+    & + span.gs-story-with-spoiler-wrap {
+
+      text-align: left;
+
+      > span.gs-spoiler-target {
+        display: inline;
+      }
     }
 
     & ~ label.gs-story-with-spoiler-trigger:before {
       content: 'Свернуть ↑';
     }
 
+  }
+
+  > span.gs-story-with-spoiler-wrap {
+    display: block;
   }
 
 }
