@@ -19,8 +19,15 @@ $medium-start: 768px;
       }
     }
 
-    & ~ label.gs-story-with-spoiler-trigger:before {
-      content: 'Показать весь текст ↓';
+    & ~ span.gs-story-with-spoiler-trigger-wrap {
+
+      @media (max-width: $medium-start) {
+        text-align: right;
+      }
+
+      > label.gs-story-with-spoiler-trigger:before {
+        content: 'Показать весь текст ↓';
+      }
     }
   }
 
@@ -36,13 +43,17 @@ $medium-start: 768px;
       }
     }
 
-    & ~ label.gs-story-with-spoiler-trigger:before {
+    & ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
       content: 'Свернуть ↑';
     }
 
   }
 
   > span.gs-story-with-spoiler-wrap {
+    display: block;
+  }
+
+  > span.gs-story-with-spoiler-trigger-wrap {
     display: block;
   }
 
