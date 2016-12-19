@@ -1,0 +1,12 @@
+$medium-start: 768px;
+$xlarge-start: 1200px;
+
+.gs-section {
+  margin-top: 15px;
+  @media (min-width: $medium-start) {
+    margin-top: 20px;
+  }
+  @media (min-width: $xlarge-start) {
+    margin-top: 25px;
+  }
+}
