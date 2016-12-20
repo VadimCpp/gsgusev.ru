@@ -3,10 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 var paths = {
-  html: [
-    'index.html',
-    'taxi.html'
-  ],
+  html: ['*.html'],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
   favicons: [
