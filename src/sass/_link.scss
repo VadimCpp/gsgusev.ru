@@ -9,4 +9,24 @@
   cursor: pointer;
   color: #51a2f1;
   border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+
+  &:hover {
+    color: #CC0000;
+    border-color: #f0b2b2;
+  }
+
+  &:visited {
+    color: #B40EB4;
+    border-color: #e0b2e0;
+
+    &:hover {
+      color: #CC0000;
+      border-color: #f0b2b2;
+    }
+
+  }
+}
+
+.gs-link-dotted {
+  border-bottom-style: dotted;
 }
