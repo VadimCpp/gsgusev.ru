@@ -3,22 +3,20 @@ $xlarge-start: 1200px;
 
 .gs-section {
 
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px auto;
   box-sizing: border-box;
 
   max-width: $medium-start;
   padding: 0 10px;
 
   @media (min-width: $medium-start) {
-    margin-top: 20px;
+    margin: 20px auto;
     max-width: 980px;
     padding: 0 25px;
   }
 
   @media (min-width: $xlarge-start) {
-    margin-top: 25px;
+    margin: 25px auto;
     max-width: 1200px;
     padding: 0 35px;
   }
@@ -31,4 +29,17 @@ $xlarge-start: 1200px;
   &:after {
     clear: both;
   }
+}
+
+.gs-section-nanotech-parallax {
+  /* The image used */
+  background-image: url("../img/nanotech.jpg");
+
+  height:100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

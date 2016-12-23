@@ -6,6 +6,7 @@ var paths = {
   html: ['*.html'],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
+  img: ['nanotech.jpg'],
   favicons: [
     'android-chrome-192x192.png',
     'android-chrome-512x512.png',
@@ -110,6 +111,26 @@ gulp.task('fonts', ['clean-fonts'], function() {
 });
 
 
+gulp.task('clean-img', function() {
+  var dist = paths.img.map(function(path){
+    return 'web/img/' + path;
+  });
+
+  return del(dist);
+});
+
+
+gulp.task('img', ['clean-img'], function() {
+
+  var sources = paths.img.map(function(path){
+    return 'src/img/' + path;
+  });
+
+  return gulp.src(sources)
+      .pipe(gulp.dest('web/img/'));
+});
+
+
 gulp.task('watch', function() {
   var sources = paths.html.map(function(path){
     return 'src/' + path;
@@ -120,4 +141,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);
+gulp.task('default', ['img', 'fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);
