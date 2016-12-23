@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.gs-breadcrumb {
+  padding: 0;
+  list-style: none;
+  font-size: 0.001px; }
+  .gs-breadcrumb > li {
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block; }
+    .gs-breadcrumb > li > a {
+      display: inline-block; }
+    .gs-breadcrumb > li > h1 {
+      display: inline-block;
+      font: 400 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      paddin: 0; }
+  .gs-breadcrumb > li:nth-child(n+2):before {
+    content: "/";
+    display: inline-block;
+    margin: 0 8px; }
+  .gs-breadcrumb > li:not(.gs-active) > h1 {
+    color: #999; }
+
+header.gs-header {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* theme */
+  background-color: #00a54f;
+  /* size */
+  height: 60px; }
+  @media screen and (min-width: 768px) {
+    header.gs-header {
+      height: 80px; } }
+  header.gs-header > label {
+    /* layout */
+    padding: 0 10px;
+    /* theme */
+    color: #fff;
+    text-shadow: 2px 2px 2px green;
+    font-family: 'Lobster', cursive;
+    font-size: 30px; }
+    @media screen and (min-width: 768px) {
+      header.gs-header > label {
+        font-size: 40px; } }
+
+.gs-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font: 400 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #51a2f1;
+  border-bottom: 1px solid rgba(30, 144, 255, 0.33); }
+  .gs-link:hover {
+    color: #CC0000;
+    border-color: #f0b2b2; }
+  .gs-link:visited {
+    color: #B40EB4;
+    border-color: #e0b2e0; }
+    .gs-link:visited:hover {
+      color: #CC0000;
+      border-color: #f0b2b2; }
+
+.gs-link-dotted {
+  border-bottom-style: dotted; }
+
+/* ========================================================================
+   Component: List
+ ========================================================================== */
+.gs-list {
+  margin-top: 0;
+  padding: 0;
+  list-style: none; }
+  .gs-list > li:before, .gs-list li:after {
+    content: "";
+    display: table; }
+  .gs-list > li:after {
+    clear: both; }
+  .gs-list > li > :last-child {
+    margin-bottom: 0; }
+
+.gs-list-space > li:nth-child(n+2) {
+  margin-top: 5px; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.gs-phone-button {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  background-color: #00a54f;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin-right: 5px; }
+
+[class*='gs-icon-'] {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class*='gs-icon-'],
+[class*='gs-icon-']:hover,
+[class*='gs-icon-']:focus {
+  text-decoration: none; }
+
+.gs-icon-phone:before {
+  content: "\f095"; }
+
+.gs-icon-large {
+  font-size: 190%;
+  vertical-align: -8%; }
+
+.gs-section {
+  margin: 15px auto;
+  box-sizing: border-box;
+  max-width: 768px;
+  padding: 0 10px; }
+  @media (min-width: 768px) {
+    .gs-section {
+      margin: 20px auto;
+      max-width: 980px;
+      padding: 0 25px; } }
+  @media (min-width: 1200px) {
+    .gs-section {
+      margin: 25px auto;
+      max-width: 1200px;
+      padding: 0 35px; } }
+  .gs-section:before, .gs-section:after {
+    content: "";
+    display: table; }
+  .gs-section:after {
+    clear: both; }
+
+.gs-section-nanotech-parallax {
+  /* The image used */
+  background-image: url("../img/nanotech.jpg");
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.gs-story-with-spoiler {
+  font-style: italic;
+  /* State 1: not checked */
+  /* State 2: checked */ }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
+    /* Never display check box. Show label instead */
+    display: none; }
+    @media (max-width: 768px) {
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
+        text-align: right; } }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+      display: none; }
+    @media (max-width: 768px) {
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
+        text-align: right; } }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
+      content: 'Показать весь текст ↓'; }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
+    text-align: left; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+      display: inline; }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
+    content: 'Свернуть ↑'; }
+  .gs-story-with-spoiler > span.gs-story-with-spoiler-wrap {
+    display: block; }
+  .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap {
+    display: block; }
+    .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
+      font-style: italic; }
+
+html {
+  /* 1 */
+  font: normal 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  background: #fff;
+  color: #444;
+  background-image: -webkit-radial-gradient(100% 100%, center, #fff, #fff);
+  background-image: radial-gradient(100% 100% at center, #fff, #fff); }
+
+body {
+  min-width: 320px;
+  margin: 0; }
+
+.gs-disabled {
+  color: #999; }

@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 
 var paths = {
   html: ['*.html'],
+  css: ['src/css/*.css'],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
   img: ['nanotech.jpg'],
@@ -48,15 +49,26 @@ gulp.task('html', ['clean-html'], function() {
 });
 
 
+gulp.task('clean-css', function() {
+  return del('web/css');
+});
+
+
+gulp.task('css', ['clean-css'], function() {
+  return gulp.src(paths.css)
+    .pipe(gulp.dest('web/css'));
+});
+
+
 gulp.task('clean-sass', function() {
-  return del('web/css/style.css');
+  return del('src/' + 'css/style.css');
 });
 
 
 gulp.task('sass', ['clean-sass'], function() {
   return gulp.src(paths.sass)
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('web/css'));
+    .pipe(gulp.dest('src/css'));
 });
 
 
@@ -138,6 +150,7 @@ gulp.task('watch', function() {
   gulp.watch(sources, ['html']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.robot, ['robot']);
+  gulp.watch(paths.css, ['css']);
 });
 
 
