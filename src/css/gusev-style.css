@@ -141,17 +141,18 @@
 .gs-disabled {
   color: #999; }
 
-.main-menu > .uk-container > .uk-breadcrumb {
+.gs-main-menu > .uk-container > .uk-breadcrumb {
   margin-bottom: 0; }
-  .main-menu > .uk-container > .uk-breadcrumb > li > h1 {
+  .gs-main-menu > .uk-container > .uk-breadcrumb > li > h1 {
     margin-bottom: 0; }
 
-.main-menu .uk-grid > div {
-  width: 300px; }
-  .main-menu .uk-grid > div > a {
-    color: #51a2f1;
-    border-bottom: 1px solid rgba(30, 144, 255, 0.33);
-    text-decoration: none; }
-    .main-menu .uk-grid > div > a:hover {
-      color: #CC0000;
-      border-color: #f0b2b2; }
+.gs-main-menu .gs-navigation .gs-width-250-px {
+  width: 250px; }
+
+.gs-main-menu .gs-navigation a {
+  color: #51a2f1;
+  border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+  text-decoration: none; }
+  .gs-main-menu .gs-navigation a:hover {
+    color: #CC0000;
+    border-color: #f0b2b2; }

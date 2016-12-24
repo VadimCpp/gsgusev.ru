@@ -27,7 +27,7 @@
   color: #999;
 }
 
-.main-menu {
+.gs-main-menu {
 
   // Breadcrumbs
   > .uk-container {
@@ -42,10 +42,13 @@
 
 
   // Website navigation
-  .uk-grid > div {
-    width: 300px;
+  .gs-navigation {
 
-    > a {
+    .gs-width-250-px {
+      width: 250px;
+    }
+
+    a {
       color: #51a2f1;
       border-bottom: 1px solid rgba(30, 144, 255, 0.33);
       text-decoration: none;
