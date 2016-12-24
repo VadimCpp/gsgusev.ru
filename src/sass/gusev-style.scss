@@ -24,25 +24,18 @@
 // Xlarge	1200px and larger	Large Desktops
 //
 
-
-html {
-  /* 1 */
-  font: normal 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  background: #fff;
-  color: #444;
-  background-image: -webkit-radial-gradient(100% 100%, center, #fff, #fff);
-  background-image: radial-gradient(100% 100% at center, #fff, #fff);
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-}
-
 .gs-disabled {
   color: #999;
+}
+
+.main-menu {
+  > .uk-container {
+    > .uk-breadcrumb {
+      margin-bottom: 0;
+
+      > li > h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
