@@ -1,6 +1,5 @@
 @import 'breadcrumb';
 @import 'header';
-@import 'link';
 @import 'list';
 @import 'phonelink';
 @import 'section';
@@ -29,12 +28,30 @@
 }
 
 .main-menu {
+
+  // Breadcrumbs
   > .uk-container {
     > .uk-breadcrumb {
       margin-bottom: 0;
 
       > li > h1 {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  // Website navigation
+  > .uk-container {
+    > .uk-list {
+      > li > a {
+        color: #51a2f1;
+        border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+        text-decoration: none;
+
+        &:hover {
+          color: #CC0000;
+          border-color: #f0b2b2;
+        }
       }
     }
   }

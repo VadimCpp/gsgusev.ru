@@ -1,6 +1,7 @@
 var del = require('del');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
 
 var paths = {
   html: ['*.html'],
@@ -148,10 +149,22 @@ gulp.task('watch', function() {
     return 'src/' + path;
   });
   gulp.watch(paths.robot, ['robot']);
-  gulp.watch(sources, ['html']);
+  gulp.watch(sources, ['html', browserSync.reload]);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.css, ['css']);
 });
 
 
-gulp.task('default', ['img', 'fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);
+// Run everything
+gulp.task('default', ['browserSync', 'img', 'fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);
+
+
+// Configure the browserSync task
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './web'
+    }
+  })
+});
+

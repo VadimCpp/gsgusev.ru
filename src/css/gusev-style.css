@@ -31,29 +31,6 @@
     .gs-header {
       font-size: 40px; } }
 
-.gs-link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  font: 400 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  color: #51a2f1;
-  border-bottom: 1px solid rgba(30, 144, 255, 0.33); }
-  .gs-link:hover {
-    color: #CC0000;
-    border-color: #f0b2b2; }
-  .gs-link:visited {
-    color: #B40EB4;
-    border-color: #e0b2e0; }
-    .gs-link:visited:hover {
-      color: #CC0000;
-      border-color: #f0b2b2; }
-
-.gs-link-dotted {
-  border-bottom-style: dotted; }
-
 /* ========================================================================
    Component: List
  ========================================================================== */
@@ -168,3 +145,11 @@
   margin-bottom: 0; }
   .main-menu > .uk-container > .uk-breadcrumb > li > h1 {
     margin-bottom: 0; }
+
+.main-menu > .uk-container > .uk-list > li > a {
+  color: #51a2f1;
+  border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+  text-decoration: none; }
+  .main-menu > .uk-container > .uk-list > li > a:hover {
+    color: #CC0000;
+    border-color: #f0b2b2; }
