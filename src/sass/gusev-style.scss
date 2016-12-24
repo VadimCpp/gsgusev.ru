@@ -43,14 +43,18 @@
   // Website navigation
   .gs-navigation {
 
-    > p > a {
-      color: #51a2f1;
-      border-bottom: 1px solid rgba(30, 144, 255, 0.33);
-      text-decoration: none;
+    > p {
+      line-height: 2;
 
-      &:hover {
-        color: #CC0000;
-        border-color: #f0b2b2;
+      > a {
+        color: #51a2f1;
+        border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+        text-decoration: none;
+
+        &:hover {
+          color: #CC0000;
+          border-color: #f0b2b2;
+        }
       }
     }
   }
