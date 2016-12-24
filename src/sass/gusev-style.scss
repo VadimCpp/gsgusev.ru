@@ -40,15 +40,10 @@
     }
   }
 
-
   // Website navigation
   .gs-navigation {
 
-    .gs-width-250-px {
-      width: 250px;
-    }
-
-    a {
+    > p > a {
       color: #51a2f1;
       border-bottom: 1px solid rgba(30, 144, 255, 0.33);
       text-decoration: none;
