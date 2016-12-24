@@ -146,10 +146,12 @@
   .main-menu > .uk-container > .uk-breadcrumb > li > h1 {
     margin-bottom: 0; }
 
-.main-menu > .uk-container > .uk-list > li > a {
-  color: #51a2f1;
-  border-bottom: 1px solid rgba(30, 144, 255, 0.33);
-  text-decoration: none; }
-  .main-menu > .uk-container > .uk-list > li > a:hover {
-    color: #CC0000;
-    border-color: #f0b2b2; }
+.main-menu .uk-grid > div {
+  width: 300px; }
+  .main-menu .uk-grid > div > a {
+    color: #51a2f1;
+    border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+    text-decoration: none; }
+    .main-menu .uk-grid > div > a:hover {
+      color: #CC0000;
+      border-color: #f0b2b2; }
