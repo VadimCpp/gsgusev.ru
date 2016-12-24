@@ -147,9 +147,9 @@ gulp.task('watch', function() {
   var sources = paths.html.map(function(path){
     return 'src/' + path;
   });
+  gulp.watch(paths.robot, ['robot']);
   gulp.watch(sources, ['html']);
   gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.robot, ['robot']);
   gulp.watch(paths.css, ['css']);
 });
 

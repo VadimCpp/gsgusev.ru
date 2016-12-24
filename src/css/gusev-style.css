@@ -21,29 +21,15 @@
   .gs-breadcrumb > li:not(.gs-active) > h1 {
     color: #999; }
 
-header.gs-header {
-  /* layout */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* theme */
+.gs-header {
   background-color: #00a54f;
-  /* size */
-  height: 60px; }
+  color: #fff;
+  text-shadow: 2px 2px 2px green;
+  font-family: 'Lobster', cursive;
+  font-size: 30px; }
   @media screen and (min-width: 768px) {
-    header.gs-header {
-      height: 80px; } }
-  header.gs-header > label {
-    /* layout */
-    padding: 0 10px;
-    /* theme */
-    color: #fff;
-    text-shadow: 2px 2px 2px green;
-    font-family: 'Lobster', cursive;
-    font-size: 30px; }
-    @media screen and (min-width: 768px) {
-      header.gs-header > label {
-        font-size: 40px; } }
+    .gs-header {
+      font-size: 40px; } }
 
 .gs-link {
   background: none;
@@ -144,16 +130,6 @@ header.gs-header {
     display: table; }
   .gs-section:after {
     clear: both; }
-
-.gs-section-nanotech-parallax {
-  /* The image used */
-  background-image: url("../img/nanotech.jpg");
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
 .gs-story-with-spoiler {
   font-style: italic;

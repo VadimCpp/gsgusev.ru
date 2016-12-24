@@ -30,16 +30,3 @@ $xlarge-start: 1200px;
     clear: both;
   }
 }
-
-.gs-section-nanotech-parallax {
-  /* The image used */
-  background-image: url("../img/nanotech.jpg");
-
-  height:100vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
