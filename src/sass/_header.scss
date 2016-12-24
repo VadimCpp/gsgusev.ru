@@ -1,10 +1,8 @@
 
-$medium-start: 768px;
+@import 'variables';
 
 .gs-header {
-
   background-color: #00a54f;
-
   color: #fff;
   text-shadow: 2px 2px 2px green;
   font-family: 'Lobster', cursive;
