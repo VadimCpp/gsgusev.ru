@@ -1,5 +1,6 @@
 @import 'breadcrumb';
 @import 'header';
+@import 'link';
 @import 'list';
 @import 'phonelink';
 @import 'section';
@@ -42,6 +43,11 @@
 }
 
 .gs-main-menu {
+
+  // Story
+  .gs-story-with-spoiler {
+    text-shadow: 0 0 5px white;
+  }
 
   // Breadcrumbs
   > .uk-container {

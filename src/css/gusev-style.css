@@ -31,6 +31,29 @@
     .gs-header {
       font-size: 40px; } }
 
+.gs-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #07d;
+  border-bottom: 1px solid rgba(0, 120, 220, 0.33); }
+  .gs-link:hover {
+    color: #CC0000;
+    border-color: #f0b2b2; }
+  .gs-link:visited {
+    color: #B40EB4;
+    border-color: #e0b2e0; }
+    .gs-link:visited:hover {
+      color: #CC0000;
+      border-color: #f0b2b2; }
+
+.gs-link-dotted {
+  border-bottom-style: dotted; }
+
 /* ========================================================================
    Component: List
  ========================================================================== */
@@ -115,16 +138,14 @@
   .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
     /* Never display check box. Show label instead */
     display: none; }
-    @media (max-width: 768px) {
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
-        text-align: right; } }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: none; }
-    @media (max-width: 768px) {
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
-        text-align: right; } }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-      content: 'Показать весь текст ↓'; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
+      text-align: right; }
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+        display: none; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
+      text-align: right; }
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
+        content: 'Показать весь текст ↓'; }
   .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
     text-align: left; }
     .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
@@ -147,6 +168,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh; }
+
+.gs-main-menu .gs-story-with-spoiler {
+  text-shadow: 0 0 5px white; }
 
 .gs-main-menu > .uk-container > .uk-breadcrumb {
   margin-bottom: 0; }

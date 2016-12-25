@@ -1,4 +1,4 @@
-$medium-start: 768px;
+@import 'variables';
 
 .gs-story-with-spoiler {
 
@@ -12,9 +12,7 @@ $medium-start: 768px;
 
     & + span.gs-story-with-spoiler-wrap {
 
-      @media (max-width: $medium-start) {
-        text-align: right;
-      }
+      text-align: right;
 
       > span.gs-spoiler-target {
         display: none;
@@ -23,9 +21,7 @@ $medium-start: 768px;
 
     & ~ span.gs-story-with-spoiler-trigger-wrap {
 
-      @media (max-width: $medium-start) {
-        text-align: right;
-      }
+      text-align: right;
 
       > label.gs-story-with-spoiler-trigger:before {
         content: 'Показать весь текст ↓';
