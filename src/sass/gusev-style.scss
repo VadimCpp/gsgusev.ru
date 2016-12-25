@@ -102,4 +102,11 @@
     }
   }
 
+  p.uk-flex {
+    max-width: 300px;
+
+    > span.gs-contact-name {
+      width: 75px;
+    }
+  }
 }

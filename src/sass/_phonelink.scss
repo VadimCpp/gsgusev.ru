@@ -20,7 +20,6 @@ $buttonSize: 50px;
   text-align: center;
   vertical-align: middle;
   line-height: $buttonSize;
-  margin-right: 5px;
 }
 
 [class*='gs-icon-'] {
@@ -41,6 +40,10 @@ $buttonSize: 50px;
 
 .gs-icon-phone:before {
   content: "\f095";
+}
+
+.gs-icon-phone:hover {
+  color: white;
 }
 
 .gs-icon-large {

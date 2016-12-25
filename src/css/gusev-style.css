@@ -87,8 +87,7 @@
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px;
-  margin-right: 5px; }
+  line-height: 50px; }
 
 [class*='gs-icon-'] {
   font-family: FontAwesome;
@@ -105,6 +104,9 @@
 
 .gs-icon-phone:before {
   content: "\f095"; }
+
+.gs-icon-phone:hover {
+  color: white; }
 
 .gs-icon-large {
   font-size: 190%;
@@ -200,3 +202,8 @@
       border-color: #f0b2b2; }
   .taxi-v-guseve .uk-breadcrumb > li > h1 {
     display: inline-block; }
+
+.taxi-v-guseve p.uk-flex {
+  max-width: 300px; }
+  .taxi-v-guseve p.uk-flex > span.gs-contact-name {
+    width: 75px; }
