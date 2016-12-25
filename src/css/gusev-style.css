@@ -154,7 +154,8 @@
     margin-bottom: 0; }
 
 .gs-main-menu .gs-navigation > p {
-  line-height: 2; }
+  line-height: 2;
+  text-shadow: 0 0 10px white; }
   .gs-main-menu .gs-navigation > p > a {
     color: #07d;
     border-bottom: 1px solid rgba(0, 120, 220, 0.33);
