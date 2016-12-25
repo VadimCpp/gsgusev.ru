@@ -1,3 +1,4 @@
+@import 'variables';
 
 .gs-link {
   background: none;
@@ -7,8 +8,8 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  color: #51a2f1;
-  border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+  color: $gs-link-color;
+  border-bottom: $gs-link-border-bottom;
 
   &:hover {
     color: #CC0000;

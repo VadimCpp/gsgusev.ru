@@ -138,8 +138,15 @@
     .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
       font-style: italic; }
 
-.gs-disabled {
-  color: #999; }
+.gs-nanotech-parallax {
+  /* The image used */
+  background-image: url("../img/nanotech.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
 
 .gs-main-menu > .uk-container > .uk-breadcrumb {
   margin-bottom: 0; }
@@ -149,8 +156,8 @@
 .gs-main-menu .gs-navigation > p {
   line-height: 2; }
   .gs-main-menu .gs-navigation > p > a {
-    color: #51a2f1;
-    border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+    color: #07d;
+    border-bottom: 1px solid rgba(0, 120, 220, 0.33);
     text-decoration: none; }
     .gs-main-menu .gs-navigation > p > a:hover {
       color: #CC0000;

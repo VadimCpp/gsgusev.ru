@@ -23,8 +23,22 @@
 // Xlarge	1200px and larger	Large Desktops
 //
 
-.gs-disabled {
-  color: #999;
+
+.gs-nanotech-parallax {
+
+  /* The image used */
+  background-image: url("../img/nanotech.jpg");
+
+  ///* Set a specific height */
+  //height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
 }
 
 .gs-main-menu {
@@ -42,13 +56,13 @@
 
   // Website navigation
   .gs-navigation {
-
     > p {
       line-height: 2;
+      //text-shadow: 1px 1px 2px white;
 
       > a {
-        color: #51a2f1;
-        border-bottom: 1px solid rgba(30, 144, 255, 0.33);
+        color: $gs-link-color;
+        border-bottom: $gs-link-border-bottom;
         text-decoration: none;
 
         &:hover {
