@@ -80,3 +80,26 @@
   }
 
 }
+
+.taxi-v-guseve {
+  .uk-breadcrumb {
+    font: $gs-default-large-font;
+
+    > li > .gs-link {
+      font: $gs-default-large-font;
+      color: $gs-link-color;
+      border-bottom: $gs-link-border-bottom;
+      text-decoration: none;
+
+      &:hover {
+        color: #CC0000;
+        border-color: #f0b2b2;
+      }
+    }
+
+    > li > h1 {
+      display: inline-block;
+    }
+  }
+
+}

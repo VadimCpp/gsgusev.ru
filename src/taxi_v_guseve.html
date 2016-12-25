@@ -14,67 +14,71 @@
     <meta name="theme-color" content="#b8fff9">
 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/uikit.almost-flat.css">
+    <link rel="stylesheet" type="text/css" href="css/gusev-style.css">
 </head>
 <body>
-    <header class="gs-header">
-        <label>
-            GS Гусев
-        </label>
+    <header class="uk-block gs-header">
+        <div class="uk-container uk-container-center uk-text-center">
+            <label>
+                GS Гусев
+            </label>
+        </div>
     </header>
-
-    <!-- Breadcrumb section -->
-    <section class="gs-section">
-        <ul class="gs-breadcrumb">
-            <li><a href="index.html" class="gs-link"> GS Гусев </a></li>
-            <li><h1>Такси в Гусеве</h1></li>
-        </ul>
-    </section>
-
-    <!-- Story with spoiler section -->
-    <section class="gs-story-with-spoiler gs-section">
-        <input type="checkbox" class="gs-story-with-spoiler-state" id="read-more" />
-        <span class="gs-story-with-spoiler-wrap">
-            Герман сел в такси. <br>
-            <span class="gs-spoiler-target">
-                &mdash; Тебе куда? &mdash; спросил водитель. <br>
-                &mdash; В город будущего, пожалуйста. <br>
-                Таксист рассказывал что-то о пельменях собственного производства, а потом потребовал сто двадцать рублей
-                за проезд. Герман удивился, ведь на прошлой неделе он заплатил всего восемьдесят. После недолгой словесной
-                перепалки Герман получил двадцать рублей скидки и испорченные нервы... Этого случай научил Германа никогда
-                не садится к таксистам в центре возле супермаркета &laquo;Вестер&raquo; и всегда звонить в службу такси. <br>
+    <section class="taxi-v-guseve">
+        <!-- Story with spoiler section -->
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-story-with-spoiler">
+            <input type="checkbox" class="gs-story-with-spoiler-state" id="read-more" />
+            <span class="gs-story-with-spoiler-wrap">
+                Герман сел в такси. <br>
+                <span class="gs-spoiler-target">
+                    &mdash; Тебе куда? &mdash; спросил водитель. <br>
+                    &mdash; В город будущего, пожалуйста. <br>
+                    Таксист рассказывал что-то о пельменях собственного производства, а потом потребовал сто двадцать рублей
+                    за проезд. Герман удивился, ведь на прошлой неделе он заплатил всего восемьдесят. После недолгой словесной
+                    перепалки Герман получил двадцать рублей скидки и испорченные нервы... Этого случай научил Германа никогда
+                    не садится к таксистам в центре возле супермаркета &laquo;Вестер&raquo; и всегда звонить в службу такси. <br>
+                </span>
             </span>
-        </span>
-        <span class="gs-story-with-spoiler-trigger-wrap">
-            <label for="read-more" class="gs-story-with-spoiler-trigger gs-link gs-link-dotted"></label>
-        </span>
+            <span class="gs-story-with-spoiler-trigger-wrap">
+                <label for="read-more" class="gs-story-with-spoiler-trigger gs-link gs-link-dotted"></label>
+            </span>
+        </div>
+        <!-- Breadcrumb -->
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+            <ul class="uk-breadcrumb">
+                <li><a href="index.html" class="gs-link"> GS Гусев </a></li>
+                <li class="uk-active"><h1 class="uk-text-large">Такси в Гусеве</h1></li>
+            </ul>
+        </div>
+        <!-- Taxi companies section -->
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+            <h3>Таксомоторные предприятия</h3>
+            <p>
+                <a href="tel:84014334330" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
+                <span> Омега </span>
+                <span> 8 (40143) 3-43-30 </span>
+            </p>
+            <p>
+                <a href="tel:84014334630" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
+                <span> Спартак </span>
+                <span> 8 (40143) 3-46-30 </span>
+            </p>
+        </div>
+        <!-- Personal taxi driver section -->
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+
+            <h3>Частный извоз</h3>
+            <p>
+                <a href="tel:89210057799" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
+                <span> Андрей </span>
+                <span> 8 (921) 005-77-99 </span>
+            </p>
+
+        </div>
     </section>
 
-    <!-- Taxi companies section -->
-    <section class="gs-section">
-        <h3>Таксомоторные предприятия</h3>
-        <p>
-            <a href="tel:84014334330" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
-            <span> Омега </span>
-            <span> 8 (40143) 3-43-30 </span>
-        </p>
-        <p>
-            <a href="tel:84014334630" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
-            <span> Спартак </span>
-            <span> 8 (40143) 3-46-30 </span>
-        </p>
-    </section>
 
-    <!-- Personal taxi driver section -->
-    <section class="gs-section">
 
-        <h3>Частный извоз</h3>
-        <p>
-            <a href="tel:89210057799" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
-            <span> Андрей </span>
-            <span> 8 (921) 005-77-99 </span>
-        </p>
-
-    </section>
 </body>
 </html>
