@@ -1,7 +1,7 @@
 # GS Gusev
 
 GS Gusev is a very simple website with a straightforward goal: to help people.
-Visit [GS Gusev (gsgusev.ru)](http://gsgusev.ru/) to see how it works.
+Visit GS Gusev( [gsgusev.ru](http://gsgusev.ru/) ) to see how it works.
 
 ## Getting Started
 
