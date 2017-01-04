@@ -190,17 +190,17 @@
       color: #CC0000;
       border-color: #f0b2b2; }
 
-.taxi-v-guseve .uk-breadcrumb, .taxi-v-kaliningrade .uk-breadcrumb {
+.uk-breadcrumb {
   font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .taxi-v-guseve .uk-breadcrumb > li > .gs-link, .taxi-v-kaliningrade .uk-breadcrumb > li > .gs-link {
+  .uk-breadcrumb > li > .gs-link {
     font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #07d;
     border-bottom: 1px solid rgba(0, 120, 220, 0.33);
     text-decoration: none; }
-    .taxi-v-guseve .uk-breadcrumb > li > .gs-link:hover, .taxi-v-kaliningrade .uk-breadcrumb > li > .gs-link:hover {
+    .uk-breadcrumb > li > .gs-link:hover {
       color: #CC0000;
       border-color: #f0b2b2; }
-  .taxi-v-guseve .uk-breadcrumb > li > h1, .taxi-v-kaliningrade .uk-breadcrumb > li > h1 {
+  .uk-breadcrumb > li > h1 {
     display: inline-block; }
 
 .taxi-v-guseve p.uk-flex, .taxi-v-kaliningrade p.uk-flex {
