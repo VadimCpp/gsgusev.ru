@@ -8,7 +8,10 @@ var paths = {
   css: ['src/css/*.css'],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
-  img: ['nanotech.jpg'],
+  img: [
+    'nanotech.jpg',
+    'ford_transit.jpg'
+  ],
   favicons: [
     'android-chrome-192x192.png',
     'android-chrome-512x512.png',

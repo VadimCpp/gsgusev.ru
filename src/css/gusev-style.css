@@ -203,7 +203,7 @@
   .uk-breadcrumb > li > h1 {
     display: inline-block; }
 
-.taxi-v-guseve p.uk-flex, .taxi-v-kaliningrade p.uk-flex {
+.taxi-v-guseve p.uk-flex, .taxi-v-kaliningrade p.uk-flex, .perevozka-divana p.uk-flex {
   max-width: 300px; }
-  .taxi-v-guseve p.uk-flex > span.gs-contact-name, .taxi-v-kaliningrade p.uk-flex > span.gs-contact-name {
+  .taxi-v-guseve p.uk-flex > span.gs-contact-name, .taxi-v-kaliningrade p.uk-flex > span.gs-contact-name, .perevozka-divana p.uk-flex > span.gs-contact-name {
     width: 75px; }
