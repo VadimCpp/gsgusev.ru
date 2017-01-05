@@ -101,13 +101,10 @@
   }
 }
 
-.taxi-v-guseve, .taxi-v-kaliningrade, .perevozka-divana {
+.gs-contact {
+  max-width: 300px;
 
-  p.uk-flex {
-    max-width: 300px;
-
-    > span.gs-contact-name {
-      width: 75px;
-    }
+  > span.gs-contact-name {
+    width: 75px;
   }
 }
