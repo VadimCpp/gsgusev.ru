@@ -208,3 +208,6 @@
   .gs-contact > span.gs-contact-name {
     width: 75px;
     word-break: break-all; }
+
+.gs-text-large {
+  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
