@@ -26,10 +26,12 @@
   color: #fff;
   text-shadow: 2px 2px 2px green;
   font-family: 'Lobster', cursive;
-  font-size: 30px; }
+  font-size: 30px;
+  height: 60px; }
   @media screen and (min-width: 768px) {
     .gs-header {
-      font-size: 40px; } }
+      font-size: 40px;
+      height: 120px; } }
 
 .gs-link {
   background: none;
@@ -211,3 +213,24 @@
 
 .gs-text-large {
   font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.karta-poselka > ul.uk-breadcrumb {
+  position: fixed;
+  top: 75px;
+  left: 55px; }
+  @media screen and (min-width: 768px) {
+    .karta-poselka > ul.uk-breadcrumb {
+      top: 135px; } }
+
+.karta-poselka > iframe {
+  z-index: -1;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+  @media screen and (min-width: 768px) {
+    .karta-poselka > iframe {
+      top: 120px; } }
