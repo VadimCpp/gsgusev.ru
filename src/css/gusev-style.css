@@ -50,11 +50,15 @@
   color: #fff;
   text-shadow: 2px 2px 2px green;
   font: 400 30px "Lobster", cursive;
-  height: 80px; }
+  height: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
   @media screen and (min-width: 768px) {
     .gs-header {
       font-size: 40px;
-      height: 150px; } }
+      height: 120px;
+      padding-bottom: 30px;
+      padding-top: 30px; } }
 
 /* cyrillic */
 @font-face {
