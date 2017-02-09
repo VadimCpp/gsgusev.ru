@@ -7,13 +7,17 @@ var browserSync = require('browser-sync').create();
 
 var PATH = {
   html: [
-    'src/index.html'
+    'src/index.html',
+    'admin_poselka.html'
   ],
   css: [
     'src/css/index.css',
+    'src/css/admin-poselka.css',
     'src/css/uikit.almost-flat.css'
   ],
-  sass: ['src/sass/**/*.scss'],
+  sass: [
+    'src/sass/**/*.scss'
+  ],
   robot: ['src/robots.txt'],
   img: [
     'nanotech.jpg',

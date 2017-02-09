@@ -1,9 +1,11 @@
 @import 'variables';
-@import 'common/parallax';
 @import 'common/header';
-@import 'common/main-menu';
 @import 'common/story-with-spoiler';
 @import 'common/link';
+@import 'common/section';
+@import 'common/phonelink';
+@import 'common/breadcrumb';
+@import 'common/contact';
 
 .gs-text-large {
     font: $gs-default-large-font;

@@ -3,8 +3,7 @@ $medium-start: 768px;
 $gs-link-color: #07d;
 $gs-link-border-bottom: 1px solid rgba(0, 120, 220, .33);
 
-$gs-default-large-font: 400 16px / 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$gs-default-medium-font: 400 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 //
 // images
@@ -45,6 +44,17 @@ $nanotech-background: "../img/nanotech.jpg";
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+
+/* FontAwesome */
+@font-face {
+    font-family: 'FontAwesome';
+    src:
+            url("../fonts/fontawesome-webfont.woff2") format('woff2'),
+            url("../fonts/fontawesome-webfont.woff") format("woff"),
+            url("../fonts/fontawesome-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 //
 // fonts

@@ -1,9 +1,10 @@
-@import 'breadcrumb';
+@import 'variables';
+@import 'common/breadcrumb';
 @import 'common/header';
 @import 'common/link';
 @import 'list';
-@import 'phonelink';
-@import 'section';
+@import 'common/phonelink';
+@import 'common/section';
 @import 'common/story-with-spoiler';
 
 //
@@ -25,94 +26,7 @@
 //
 
 
-.gs-nanotech-parallax {
 
-  /* The image used */
-  background-image: url("../img/nanotech.jpg");
-
-  ///* Set a specific height */
-  //height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  min-height: 100vh;
-}
-
-.gs-main-menu {
-
-  // Story
-  .gs-story-with-spoiler {
-    text-shadow: 0 0 5px white;
-  }
-
-  // Breadcrumbs
-  > .uk-container {
-    > .uk-breadcrumb {
-      margin-bottom: 0;
-
-      > li > h1 {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  // Website navigation
-  .gs-navigation {
-    > p {
-      line-height: 2;
-      text-shadow: 0 0 10px white;
-
-      > a {
-        color: $gs-link-color;
-        border-bottom: $gs-link-border-bottom;
-        text-decoration: none;
-
-        &:hover {
-          color: #CC0000;
-          border-color: #f0b2b2;
-        }
-      }
-    }
-  }
-
-}
-
-.uk-breadcrumb {
-  font: $gs-default-large-font;
-
-  > li > .gs-link {
-    font: $gs-default-large-font;
-    color: $gs-link-color;
-    border-bottom: $gs-link-border-bottom;
-    text-decoration: none;
-
-    &:hover {
-      color: #CC0000;
-      border-color: #f0b2b2;
-    }
-  }
-
-  > li > h1 {
-    display: inline-block;
-  }
-}
-
-.gs-contact {
-  max-width: 300px;
-
-  > span.gs-contact-name {
-    width: 75px;
-    word-break: break-all;
-  }
-}
-
-.gs-text-large {
-  font: $gs-default-large-font;
-}
 
 .karta-poselka {
   > ul.uk-breadcrumb {
