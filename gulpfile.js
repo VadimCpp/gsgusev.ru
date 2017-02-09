@@ -6,7 +6,9 @@ var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 
 var PATH = {
-  html: ['*.html'],
+  html: [
+    'src/index.html'
+  ],
   css: [
     'src/css/index.css',
     'src/css/uikit.almost-flat.css'
@@ -75,7 +77,9 @@ gulp.task('css', ['clean-css'], function() {
 });
 
 
+//
 // Minify compiled CSS
+//
 gulp.task('minify-css', function() {
   return gulp.src(PATH.css)
       .pipe(cleanCSS({ compatibility: 'ie8' }))
@@ -84,11 +88,25 @@ gulp.task('minify-css', function() {
 });
 
 
+//
 // Compile SASS to CSS
+//
 gulp.task('sass', function() {
   return gulp.src(PATH.sass)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(DEST.sass));
+});
+
+
+//
+// Configure the browserSync task
+//
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './src'
+    }
+  })
 });
 
 
@@ -166,19 +184,9 @@ gulp.task('img', ['clean-img'], function() {
 gulp.task('watch', function() {
   gulp.watch(PATH.sass, ['sass']);
   gulp.watch(PATH.css, ['minify-css']);
+  gulp.watch(PATH.html, browserSync.reload);
 });
 
 
 // Run everything
 gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
-
-
-// Configure the browserSync task
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: './src'
-    }
-  })
-});
-
