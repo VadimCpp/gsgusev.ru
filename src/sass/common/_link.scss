@@ -1,10 +1,9 @@
-@import 'variables';
+@import '../variables';
 
 .gs-link {
   background: none;
   border: none;
   text-decoration: none;
-  font: $gs-default-medium-font;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -12,15 +11,18 @@
   border-bottom: $gs-link-border-bottom;
 
   &:hover {
+    text-decoration: none;
     color: #CC0000;
     border-color: #f0b2b2;
   }
 
   &:visited {
+    text-decoration: none;
     color: #B40EB4;
     border-color: #e0b2e0;
 
     &:hover {
+      text-decoration: none;
       color: #CC0000;
       border-color: #f0b2b2;
     }
@@ -30,4 +32,8 @@
 
 .gs-link-dotted {
   border-bottom-style: dotted;
+}
+
+.gs-link-medium-font {
+  font: $gs-default-medium-font;
 }

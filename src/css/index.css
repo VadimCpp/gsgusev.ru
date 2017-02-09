@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.gs-nanotech-parallax {
+  /* The image used */
+  background-image: url("../img/nanotech.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.gs-header {
+  background-color: #00a54f;
+  color: #fff;
+  text-shadow: 2px 2px 2px green;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  height: 60px; }
+  @media screen and (min-width: 768px) {
+    .gs-header {
+      font-size: 40px;
+      height: 120px; } }
+
+.gs-main-menu .gs-story-with-spoiler {
+  text-shadow: 0 0 5px white; }
+
+.gs-main-menu > .gs-container > .gs-breadcrumb {
+  margin-bottom: 0; }
+  .gs-main-menu > .gs-container > .gs-breadcrumb > li > h1 {
+    margin-bottom: 0; }
+
+.gs-main-menu .gs-navigation > p {
+  line-height: 2;
+  text-shadow: 0 0 10px white; }
+
+.gs-story-with-spoiler {
+  font-style: italic;
+  /* State 1: not checked */
+  /* State 2: checked */ }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
+    /* Never display check box. Show label instead */
+    display: none; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
+      text-align: right; }
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+        display: none; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
+      text-align: right; }
+      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
+        content: 'Показать весь текст ↓'; }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
+    text-align: left; }
+    .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
+      display: inline; }
+  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
+    content: 'Свернуть ↑'; }
+  .gs-story-with-spoiler > span.gs-story-with-spoiler-wrap {
+    display: block; }
+  .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap {
+    display: block; }
+    .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
+      font-style: italic; }
+
+.gs-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #07d;
+  border-bottom: 1px solid rgba(0, 120, 220, 0.33); }
+  .gs-link:hover {
+    text-decoration: none;
+    color: #CC0000;
+    border-color: #f0b2b2; }
+  .gs-link:visited {
+    text-decoration: none;
+    color: #B40EB4;
+    border-color: #e0b2e0; }
+    .gs-link:visited:hover {
+      text-decoration: none;
+      color: #CC0000;
+      border-color: #f0b2b2; }
+
+.gs-link-dotted {
+  border-bottom-style: dotted; }
+
+.gs-link-medium-font {
+  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }

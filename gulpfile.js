@@ -1,11 +1,16 @@
 var del = require('del');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var rename = require("gulp-rename");
+var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 
-var paths = {
+var PATH = {
   html: ['*.html'],
-  css: ['src/css/*.css'],
+  css: [
+    'src/css/index.css',
+    'src/css/uikit.almost-flat.css'
+  ],
   sass: ['src/sass/**/*.scss'],
   robot: ['src/robots.txt'],
   img: [
@@ -33,8 +38,14 @@ var paths = {
 };
 
 
+var DEST = {
+  sass: 'src/css',
+  css: 'src/css'
+};
+
+
 gulp.task('clean-html', function() {
-  var dist = paths.html.map(function(path){
+  var dist = PATH.html.map(function(path){
     return 'web/' + path;
   });
 
@@ -44,7 +55,7 @@ gulp.task('clean-html', function() {
 
 
 gulp.task('html', ['clean-html'], function() {
-  var sources = paths.html.map(function(path){
+  var sources = PATH.html.map(function(path){
     return 'src/' + path;
   });
 
@@ -59,20 +70,25 @@ gulp.task('clean-css', function() {
 
 
 gulp.task('css', ['clean-css'], function() {
-  return gulp.src(paths.css)
+  return gulp.src(PATH.css)
     .pipe(gulp.dest('web/css'));
 });
 
 
-gulp.task('clean-sass', function() {
-  return del('src/' + 'css/style.css');
+// Minify compiled CSS
+gulp.task('minify-css', function() {
+  return gulp.src(PATH.css)
+      .pipe(cleanCSS({ compatibility: 'ie8' }))
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(gulp.dest(DEST.css));
 });
 
 
-gulp.task('sass', ['clean-sass'], function() {
-  return gulp.src(paths.sass)
+// Compile SASS to CSS
+gulp.task('sass', function() {
+  return gulp.src(PATH.sass)
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest(DEST.sass));
 });
 
 
@@ -82,13 +98,13 @@ gulp.task('clean-robot', function() {
 
 
 gulp.task('robot', ['clean-robot'], function() {
-  return gulp.src(paths.robot)
+  return gulp.src(PATH.robot)
     .pipe(gulp.dest('web'));
 });
 
 
 gulp.task('clean-favicons', function() {
-  var dist = paths.favicons.map(function(path){
+  var dist = PATH.favicons.map(function(path){
     return 'web/' + path;
   });
 
@@ -98,7 +114,7 @@ gulp.task('clean-favicons', function() {
 
 gulp.task('favicons', ['clean-favicons'], function() {
 
-  var sources = paths.favicons.map(function(path){
+  var sources = PATH.favicons.map(function(path){
     return 'src/favicons/' + path;
   });
 
@@ -108,7 +124,7 @@ gulp.task('favicons', ['clean-favicons'], function() {
 
 
 gulp.task('clean-fonts', function() {
-  var dist = paths.fonts.map(function(path){
+  var dist = PATH.fonts.map(function(path){
     return 'web/fonts/' + path;
   });
 
@@ -118,7 +134,7 @@ gulp.task('clean-fonts', function() {
 
 gulp.task('fonts', ['clean-fonts'], function() {
 
-  var sources = paths.fonts.map(function(path){
+  var sources = PATH.fonts.map(function(path){
     return 'src/fonts/' + path;
   });
 
@@ -128,7 +144,7 @@ gulp.task('fonts', ['clean-fonts'], function() {
 
 
 gulp.task('clean-img', function() {
-  var dist = paths.img.map(function(path){
+  var dist = PATH.img.map(function(path){
     return 'web/img/' + path;
   });
 
@@ -138,7 +154,7 @@ gulp.task('clean-img', function() {
 
 gulp.task('img', ['clean-img'], function() {
 
-  var sources = paths.img.map(function(path){
+  var sources = PATH.img.map(function(path){
     return 'src/img/' + path;
   });
 
@@ -148,25 +164,20 @@ gulp.task('img', ['clean-img'], function() {
 
 
 gulp.task('watch', function() {
-  var sources = paths.html.map(function(path){
-    return 'src/' + path;
-  });
-  gulp.watch(paths.robot, ['robot']);
-  gulp.watch(sources, ['html', browserSync.reload]);
-  gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.css, ['css']);
+  gulp.watch(PATH.sass, ['sass']);
+  gulp.watch(PATH.css, ['minify-css']);
 });
 
 
 // Run everything
-gulp.task('default', ['browserSync', 'img', 'fonts', 'favicons', 'html', 'sass', 'robot', 'watch']);
+gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: './web'
+      baseDir: './src'
     }
   })
 });

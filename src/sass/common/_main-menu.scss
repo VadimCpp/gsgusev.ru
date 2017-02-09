@@ -1,0 +1,41 @@
+
+@import '../variables';
+
+.gs-main-menu {
+
+    // Story
+    .gs-story-with-spoiler {
+        text-shadow: 0 0 5px white;
+    }
+
+    // Breadcrumbs
+    > .gs-container {
+        > .gs-breadcrumb {
+            margin-bottom: 0;
+
+            > li > h1 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // Website navigation
+    .gs-navigation {
+        > p {
+            line-height: 2;
+            text-shadow: 0 0 10px white;
+
+        //    > a {
+        //        color: $gs-link-color;
+        //        border-bottom: $gs-link-border-bottom;
+        //        text-decoration: none;
+        //
+        //        &:hover {
+        //            color: #CC0000;
+        //            border-color: #f0b2b2;
+        //        }
+        //    }
+        }
+    }
+
+}
