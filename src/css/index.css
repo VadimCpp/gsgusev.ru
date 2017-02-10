@@ -30,6 +30,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.gs-text-large {
+  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /* cyrillic */
 @font-face {
   font-family: 'Lobster';
@@ -273,6 +276,3 @@
 
 .gs-link-medium-font {
   font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.gs-text-large {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }

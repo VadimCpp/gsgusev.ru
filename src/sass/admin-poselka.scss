@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'common/text-large';
 @import 'common/header';
 @import 'common/story-with-spoiler';
 @import 'common/link';
@@ -6,7 +6,3 @@
 @import 'common/phonelink';
 @import 'common/breadcrumb';
 @import 'common/contact';
-
-.gs-text-large {
-    font: $gs-default-large-font;
-}
