@@ -6,16 +6,15 @@
 
     <title> GS Гусев - Кино &laquo;Люмен Фильм&raquo; </title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#b8fff9">
 
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/uikit.almost-flat.css">
-    <link rel="stylesheet" type="text/css" href="css/gusev-style.css">
+    <link rel="stylesheet" type="text/css" href="css/kino-lumen.min.css">
 </head>
 <body>
     <header class="uk-block gs-header">
@@ -26,11 +25,26 @@
         </div>
     </header>
     <section>
+        <!-- Story with spoiler section -->
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-story-with-spoiler">
+            <input type="checkbox" class="gs-story-with-spoiler-state" id="read-more" />
+            <span class="gs-story-with-spoiler-wrap">
+                Сидят муж с женой в кино. <br>
+                <span class="gs-spoiler-target">
+                    Муж сквозь сон боpмочет жене: <br>
+                    &mdash;  Доpогая, пожалуйста, сними с меня тапочки и выключи телевизоp. <br>
+                    &mdash;  Потеpпи, мой пупсик. Мы еще в кинотеатpе. <br>
+                </span>
+            </span>
+            <span class="gs-story-with-spoiler-trigger-wrap">
+                <label for="read-more" class="gs-story-with-spoiler-trigger gs-link gs-link-dotted gs-link-medium-font"></label>
+            </span>
+        </div>
         <!-- Breadcrumb -->
         <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
-            <ul class="uk-breadcrumb">
+            <ul class="uk-breadcrumb gs-breadcrumb">
                 <li><a href="index.html" class="gs-link"> GS Гусев </a></li>
-                <li class="uk-active"><h1 class="uk-text-large">Кино &laquo;Люмен<span class="uk-hidden-small"> Фильм</span>&raquo;</h1></li>
+                <li class="uk-active"><h1 class="gs-text-large uk-display-inline-block">Кино &laquo;Люмен<span class="uk-hidden-small"> Фильм</span>&raquo;</h1></li>
             </ul>
         </div>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-text-large">
