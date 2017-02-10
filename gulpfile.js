@@ -16,7 +16,8 @@ var PATH = {
     'src/css/admin-poselka.css',
     'src/css/bus-gusev-kgd.css',
     'src/css/bus-kgd-gusev.css',
-    'src/css/kino-lumen.css'
+    'src/css/kino-lumen.css',
+    'src/css/karta-poselka.css'
   ],
   sass: [
     'src/sass/**/*.scss'
