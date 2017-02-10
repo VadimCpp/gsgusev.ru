@@ -8,7 +8,15 @@ var browserSync = require('browser-sync').create();
 var PATH = {
   html: [
     'src/index.html',
-    'admin_poselka.html'
+    'src/admin_poselka.html',
+    'src/bus_gusev_kgd.html',
+    'src/bus_kgd_gusev.html',
+    'src/gusev_fok.html',
+    'src/karta_poselka.html',
+    'src/kino_lumen.html',
+    'src/taxi_v_guseve.html',
+    'src/taxi_v_kaliningrade.html',
+    'src/perevozka_divana.html'
   ],
   css: [
     'src/css/uikit.almost-flat.css',
@@ -17,7 +25,8 @@ var PATH = {
     'src/css/bus-gusev-kgd.css',
     'src/css/bus-kgd-gusev.css',
     'src/css/kino-lumen.css',
-    'src/css/karta-poselka.css'
+    'src/css/karta-poselka.css',
+    'src/css/taxi-v-guseve.css'
   ],
   sass: [
     'src/sass/**/*.scss'
