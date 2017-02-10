@@ -24,6 +24,7 @@ var PATH = {
     'src/css/admin-poselka.css',
     'src/css/bus-gusev-kgd.css',
     'src/css/bus-kgd-gusev.css',
+    'src/css/gusev-fok.css',
     'src/css/kino-lumen.css',
     'src/css/karta-poselka.css',
     'src/css/taxi-v-guseve.css',
