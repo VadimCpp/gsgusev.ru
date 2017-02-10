@@ -11,9 +11,11 @@ var PATH = {
     'admin_poselka.html'
   ],
   css: [
+    'src/css/uikit.almost-flat.css',
     'src/css/index.css',
     'src/css/admin-poselka.css',
-    'src/css/uikit.almost-flat.css'
+    'src/css/bus-gusev-kgd.css',
+    'src/css/bus-kgd-gusev.css'
   ],
   sass: [
     'src/sass/**/*.scss'
