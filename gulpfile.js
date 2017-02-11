@@ -49,6 +49,7 @@ var PATH = {
     'src/sass/**/*.scss'
   ],
   robot: ['src/robots.txt'],
+  htaccess: ['src/.htaccess'],
   img: [
     'src/img/nanotech.jpg',
     'src/img/ford_transit.jpg'
@@ -176,5 +177,8 @@ gulp.task('build', function() {
 
   gulp.src(PATH.img)
       .pipe(gulp.dest('web/img'));
+
+  gulp.src(PATH.htaccess)
+      .pipe(gulp.dest('web'));
 });
 
