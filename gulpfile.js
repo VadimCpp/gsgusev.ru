@@ -2,6 +2,7 @@ var del = require('del');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require("gulp-rename");
+var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 
@@ -31,31 +32,47 @@ var PATH = {
     'src/css/taxi-v-kaliningrade.css',
     'src/css/perevozka-divana.css'
   ],
+  cssmin: [
+    'src/css/uikit.almost-flat.min.css',
+    'src/css/index.min.css',
+    'src/css/admin-poselka.min.css',
+    'src/css/bus-gusev-kgd.min.css',
+    'src/css/bus-kgd-gusev.min.css',
+    'src/css/gusev-fok.min.css',
+    'src/css/kino-lumen.min.css',
+    'src/css/karta-poselka.min.css',
+    'src/css/taxi-v-guseve.min.css',
+    'src/css/taxi-v-kaliningrade.min.css',
+    'src/css/perevozka-divana.min.css'
+  ],
   sass: [
     'src/sass/**/*.scss'
   ],
   robot: ['src/robots.txt'],
   img: [
-    'nanotech.jpg',
-    'ford_transit.jpg'
+    'src/img/nanotech.jpg',
+    'src/img/ford_transit.jpg'
   ],
   favicons: [
-    'android-chrome-192x192.png',
-    'android-chrome-512x512.png',
-    'apple-touch-icon.png',
-    'browserconfig.xml',
-    'favicon.ico',
-    'favicon-16x16.png',
-    'favicon-32x32.png',
-    'manifest.json',
-    'mstile-150x150.png',
-    'safari-pinned-tab.svg'
+    'src/android-chrome-192x192.png',
+    'src/android-chrome-512x512.png',
+    'src/apple-touch-icon.png',
+    'src/browserconfig.xml',
+    'src/favicon.ico',
+    'src/favicon-16x16.png',
+    'src/favicon-32x32.png',
+    'src/manifest.json',
+    'src/mstile-150x150.png',
+    'src/safari-pinned-tab.svg'
   ],
   'fonts': [
-      'FontAwesome.otf',
-      'fontawesome-webfont.ttf',
-      'fontawesome-webfont.woff',
-      'fontawesome-webfont.woff2'
+      'src/fonts/FontAwesome.otf',
+      'src/fonts/fontawesome-webfont.ttf',
+      'src/fonts/fontawesome-webfont.woff',
+      'src/fonts/fontawesome-webfont.woff2',
+      'src/fonts/lobster-cyrillic.woff2',
+      'src/fonts/lobster-latin.woff2',
+      'src/fonts/lobster-latin-ext.woff2'
   ]
 };
 
@@ -64,37 +81,6 @@ var DEST = {
   sass: 'src/css',
   css: 'src/css'
 };
-
-
-gulp.task('clean-html', function() {
-  var dist = PATH.html.map(function(path){
-    return 'web/' + path;
-  });
-
-  return del(dist);
-
-});
-
-
-gulp.task('html', ['clean-html'], function() {
-  var sources = PATH.html.map(function(path){
-    return 'src/' + path;
-  });
-
-  return gulp.src(sources)
-    .pipe(gulp.dest('web'));
-});
-
-
-gulp.task('clean-css', function() {
-  return del('web/css');
-});
-
-
-gulp.task('css', ['clean-css'], function() {
-  return gulp.src(PATH.css)
-    .pipe(gulp.dest('web/css'));
-});
 
 
 //
@@ -127,46 +113,6 @@ gulp.task('browserSync', function() {
       baseDir: './src'
     }
   })
-});
-
-
-gulp.task('clean-robot', function() {
-  return del('web/robots.txt');
-});
-
-
-gulp.task('robot', ['clean-robot'], function() {
-  return gulp.src(PATH.robot)
-    .pipe(gulp.dest('web'));
-});
-
-
-gulp.task('clean-favicons', function() {
-  var dist = PATH.favicons.map(function(path){
-    return 'web/' + path;
-  });
-
-  return del(dist);
-});
-
-
-gulp.task('favicons', ['clean-favicons'], function() {
-
-  var sources = PATH.favicons.map(function(path){
-    return 'src/favicons/' + path;
-  });
-
-  return gulp.src(sources)
-    .pipe(gulp.dest('web'));
-});
-
-
-gulp.task('clean-fonts', function() {
-  var dist = PATH.fonts.map(function(path){
-    return 'web/fonts/' + path;
-  });
-
-  return del(dist);
 });
 
 
@@ -210,3 +156,25 @@ gulp.task('watch', function() {
 
 // Run everything
 gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
+
+
+// Build for production
+gulp.task('build', function() {
+
+  gulp.src(PATH.html)
+      .pipe(htmlmin({collapseWhitespace: true}))
+      .pipe(gulp.dest('web'));
+
+  gulp.src(PATH.cssmin)
+      .pipe(gulp.dest('web/css'));
+
+  gulp.src(PATH.favicons)
+      .pipe(gulp.dest('web'));
+
+  gulp.src(PATH.fonts)
+      .pipe(gulp.dest('web/fonts'));
+
+  gulp.src(PATH.img)
+      .pipe(gulp.dest('web/img'));
+});
+
