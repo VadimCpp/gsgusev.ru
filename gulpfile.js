@@ -14,6 +14,7 @@ var PATH = {
     'src/bus_kgd_gusev.html',
     'src/gusev_fok.html',
     'src/karta_poselka.html',
+    'src/kebab.html',
     'src/kino_lumen.html',
     'src/taxi_v_guseve.html',
     'src/taxi_v_kaliningrade.html',
@@ -26,6 +27,7 @@ var PATH = {
     'src/css/bus-gusev-kgd.css',
     'src/css/bus-kgd-gusev.css',
     'src/css/gusev-fok.css',
+    'src/css/kebab.css',
     'src/css/kino-lumen.css',
     'src/css/karta-poselka.css',
     'src/css/taxi-v-guseve.css',
@@ -39,6 +41,7 @@ var PATH = {
     'src/css/bus-gusev-kgd.min.css',
     'src/css/bus-kgd-gusev.min.css',
     'src/css/gusev-fok.min.css',
+    'src/css/kebab.min.css',
     'src/css/kino-lumen.min.css',
     'src/css/karta-poselka.min.css',
     'src/css/taxi-v-guseve.min.css',
@@ -52,7 +55,8 @@ var PATH = {
   htaccess: ['src/.htaccess'],
   img: [
     'src/img/nanotech.jpg',
-    'src/img/ford_transit.jpg'
+    'src/img/ford_transit.jpg',
+    'src/img/kebab.jpg'
   ],
   favicons: [
     'src/android-chrome-192x192.png',
