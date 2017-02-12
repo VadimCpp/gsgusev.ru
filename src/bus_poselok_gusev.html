@@ -33,7 +33,9 @@
             </ul>
         </div>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-text-large">
-            Автобусы идут от остановки "Дачная 2" в сторону города. <br>
+            <b>
+                Автобусы идут от остановки "Дачная 2" в сторону города. <br>
+            </b>
             <b>TODO:</b> Пока я еще не ездил, по-этому не могу у ничего сказать.
         </div>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-text-large">
@@ -51,7 +53,7 @@
                 </tr>
                 <tr> <td colspan="2"> ** - до "Кулинарии" </td>
                 </tr>
-                <tr> <td colspan="2"> *** - до площади </td>
+                <tr> <td colspan="2"> *** - до "Площади" </td>
                 </tr>
                 </tfoot>
                 <tbody>
@@ -101,8 +103,27 @@
                 </tbody>
             </table>
         </div>
+
+        <!-- Google Map -->
         <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-text-large">
-            <b>TODO:</b> Тут скоро появится карта остановки...
+            <div id="google-map" class="google-map"></div>
+            <script>
+                function initMap() {
+                    var uluru = {lat: 52.3702, lng: 4.8952};
+                    var map = new google.maps.Map(document.getElementById('google-map'), {
+                        zoom: 12,
+                        center: uluru,
+                        scrollwheel: false
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJwXiyK1MsZFyNPu740MNQnsf73izV4Ac&callback=initMap">
+            </script>
         </div>
 
     </section>
