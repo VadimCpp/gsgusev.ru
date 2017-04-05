@@ -1,0 +1,39 @@
+
+// Exports
+//------------------------------------------------------
+@include exports("header") {
+
+
+    .gs-header {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        height: 60px;
+        width: 100%;
+
+        @media screen and (min-width: $medium-start) {
+            height: 120px;
+        }
+    }
+
+    .gs-header_theme_mint-dark {
+        background-color: $mint-dark;
+        border-color: $mint-dark;
+    }
+
+    .gs-header_theme_mint-light {
+        background-color: $mint-light;
+        border-color: $mint-light;
+    }
+
+    .gs-header__title {
+        color: white;
+        font-size: 30px;
+
+        @media screen and (min-width: $medium-start) {
+            font-size: 43px;
+        }
+    }
+
+}
