@@ -190,5 +190,8 @@ gulp.task('build', function() {
 
   gulp.src(PATH.htaccess)
       .pipe(gulp.dest('web'));
+
+  gulp.src(PATH.robot)
+      .pipe(gulp.dest('web'));
 });
 
