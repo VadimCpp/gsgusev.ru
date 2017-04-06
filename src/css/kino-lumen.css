@@ -1,49 +1,123 @@
 @charset "UTF-8";
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 .gs-header {
-  background-color: #00a54f;
-  color: #fff;
-  text-shadow: 2px 2px 2px green;
-  font: 400 30px "Lobster", cursive;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   height: 60px;
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .gs-header {
-      font-size: 40px;
-      height: 120px;
-      padding-bottom: 30px;
-      padding-top: 30px; } }
+      height: 120px; } }
+
+.gs-header_theme_mint-dark {
+  background-color: #37BC9B;
+  border-color: #37BC9B; }
+
+.gs-header_theme_mint-light {
+  background-color: #48CFAD;
+  border-color: #48CFAD; }
+
+.gs-header__title {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px; }
+  @media screen and (min-width: 768px) {
+    .gs-header__title {
+      font-size: 43px;
+      font-weight: 500;
+      letter-spacing: 8px; } }
+
+/**
+   * typography
+   * --------------------------------------------------
+   */
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #434A54;
+  background-color: #FFF; }
+
+a {
+  color: #3BAFDA;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #4FC1E9;
+    text-decoration: none; }
+  a:focus {
+    outline: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  color: #e7e9ec; }
+
+h1,
+h2,
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+h6 {
+  font-weight: normal; }
+
+h1,
+.h1 {
+  font-size: 51px; }
+
+h2,
+.h2 {
+  font-size: 43px; }
+
+h3,
+.h3 {
+  font-size: 30px; }
+
+h4,
+.h4 {
+  font-size: 19px; }
+
+h5,
+.h5 {
+  font-size: 18px; }
+
+h6,
+.h6 {
+  font-size: 14px; }
+
+blockquote {
+  border-left: 3px solid #CCD1D9; }
 
 /* cyrillic */
 @font-face {
