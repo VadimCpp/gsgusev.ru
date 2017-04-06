@@ -19,10 +19,14 @@
 
 .gs-header__title {
   color: white;
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px; }
   @media screen and (min-width: 768px) {
     .gs-header__title {
-      font-size: 43px; } }
+      font-size: 43px;
+      font-weight: 500;
+      letter-spacing: 8px; } }
 
 /**
    * typography
