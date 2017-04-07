@@ -40,6 +40,13 @@ $breadcrumb-arrow-radius:                      4px !default;
         color: $breadcrumb-link-color;
     }
 
+    .gs-breadcrumb__hidden-small-text {
+        display: inline;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
 
 }
 
