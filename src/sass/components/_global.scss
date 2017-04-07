@@ -2,6 +2,13 @@
 //------------------------------------------------------
 $modules:                     () !default;
 
+$experimental:                true !default;
+
+// prefix elements
+$prefix-webkit:               true !global;
+$prefix-moz:                  true !global;
+$prefix-spec:                 true !global;
+
 // color elements
 $white:                       #FFF !default;
 $black:                       #000 !default;
@@ -55,4 +62,61 @@ $medium-start: 768px;
         $modules: append($modules, $name) !global;
         @content;
     }
+}
+
+// We use this to add across browser prefixes
+@mixin prefixer($property, $value, $prefixes: webkit moz spec) {
+    @if $experimental {
+        @each $prefix in $prefixes {
+            @if $prefix != spec {
+                @if $property == border-top-left-radius and $prefix == moz {
+                    @if $prefix-moz {
+                        -moz-border-radius-topleft: $value;
+                    }
+                } @else if $property == border-top-right-radius and $prefix == moz {
+                    @if $prefix-moz {
+                        -moz-border-radius-topright: $value;
+                    }
+                } @else if $property == border-bottom-right-radius and $prefix == moz {
+                    @if $prefix-moz {
+                        -moz-border-radius-bottomright: $value;
+                    }
+                } @else if $property == border-bottom-left-radius and $prefix == moz {
+                    @if $prefix-moz {
+                        -moz-border-radius-bottomleft: $value;
+                    }
+                } @else {
+                    @if $prefix == webkit {
+                        @if $prefix-webkit {
+                            -webkit-#{$property}: $value;
+                        }
+                    }
+                    @if $prefix == moz {
+                        @if $prefix-moz {
+                            -moz-#{$property}: $value;
+                        }
+                    }
+                }
+            } @else {
+                @if $prefix-spec {
+                    #{$property}: $value;
+                }
+            }
+        }
+    }
+}
+
+// We use this to add box-sizing across browser prefixes
+@mixin box-sizing($value: border-box) {
+    @include prefixer($property: box-sizing, $value: $value, $prefixes: webkit moz spec);
+}
+
+// We use this to control border radius.
+@mixin radius($type: border-radius, $value: $global-radius) {
+    @include prefixer($property: $type, $value: $value, $prefixes: webkit moz spec);
+}
+
+// We use this to control box shadow.
+@mixin box-shadow($value) {
+    @include prefixer($property: box-shadow, $value: $value, $prefixes: webkit moz spec);
 }
