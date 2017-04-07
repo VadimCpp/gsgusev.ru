@@ -1,0 +1,29 @@
+// Variables
+//------------------------------------------------------
+$container-max-width-default:                   980px !default;
+$container-max-width-large:                     1200px !default;
+$container-padding-left-right-default:          25px !default;
+$container-padding-left-right-large:            35px !default;
+
+// Exports
+//------------------------------------------------------
+@include exports("container") {
+
+    .gs-container {
+        box-sizing: border-box;
+        max-width: $container-max-width-default;
+        padding: 0 $container-padding-left-right-default;
+
+        @media (min-width: 1220px) {
+            max-width: $container-max-width-large;
+            padding:0 $container-padding-left-right-large
+        }
+    }
+
+    .gs-container_center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+

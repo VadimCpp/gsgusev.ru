@@ -1,4 +1,37 @@
-@charset "UTF-8";
+.gs-breadcrumb {
+  color: #434A54;
+  background-color: #E6E9ED;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px; }
+  .gs-breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"; }
+
+.gs-breadcrumb__list-item {
+  display: inline-block; }
+
+.gs-breadcrumb__list-item_active {
+  color: #434A54; }
+
+.gs-breadcrumb__link {
+  color: #3BAFDA; }
+
+.gs-container {
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px; }
+  @media (min-width: 1220px) {
+    .gs-container {
+      max-width: 1200px;
+      padding: 0 35px; } }
+
+.gs-container_center {
+  margin-left: auto;
+  margin-right: auto; }
+
 .gs-header {
   align-items: center;
   display: flex;
@@ -118,353 +151,3 @@ h6,
 
 blockquote {
   border-left: 3px solid #CCD1D9; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-text-large {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-story-with-spoiler {
-  font-style: italic;
-  /* State 1: not checked */
-  /* State 2: checked */ }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
-    /* Never display check box. Show label instead */
-    display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-        display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-        content: 'Показать весь текст ↓'; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
-    text-align: left; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: inline; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-    content: 'Свернуть ↑'; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-wrap {
-    display: block; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap {
-    display: block; }
-    .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
-      font-style: italic; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  color: #07d;
-  border-bottom: 1px solid rgba(0, 120, 220, 0.33); }
-  .gs-link:hover {
-    text-decoration: none;
-    color: #CC0000;
-    border-color: #f0b2b2; }
-  .gs-link:visited {
-    text-decoration: none;
-    color: #B40EB4;
-    border-color: #e0b2e0; }
-    .gs-link:visited:hover {
-      text-decoration: none;
-      color: #CC0000;
-      border-color: #f0b2b2; }
-
-.gs-link-dotted {
-  border-bottom-style: dotted; }
-
-.gs-link-medium-font {
-  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-section {
-  margin: 15px auto;
-  box-sizing: border-box;
-  max-width: 768px;
-  padding: 0 10px; }
-  @media (min-width: 768px) {
-    .gs-section {
-      margin: 20px auto;
-      max-width: 980px;
-      padding: 0 25px; } }
-  @media (min-width: 1200px) {
-    .gs-section {
-      margin: 25px auto;
-      max-width: 1200px;
-      padding: 0 35px; } }
-  .gs-section:before, .gs-section:after {
-    content: "";
-    display: table; }
-  .gs-section:after {
-    clear: both; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-phone-button {
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  color: white;
-  background-color: #00a54f;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px; }
-
-[class*='gs-icon-'] {
-  font-family: FontAwesome;
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-[class*='gs-icon-'],
-[class*='gs-icon-']:hover,
-[class*='gs-icon-']:focus {
-  text-decoration: none; }
-
-.gs-icon-phone:before {
-  content: "\f095"; }
-
-.gs-icon-phone:hover {
-  color: white; }
-
-.gs-icon-large {
-  font-size: 190%;
-  vertical-align: -8%; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-breadcrumb {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .gs-breadcrumb > li > .gs-link {
-    font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #07d;
-    border-bottom: 1px solid rgba(0, 120, 220, 0.33);
-    text-decoration: none; }
-    .gs-breadcrumb > li > .gs-link:hover {
-      color: #CC0000;
-      border-color: #f0b2b2; }
-  .gs-breadcrumb > li > h1 {
-    display: inline-block; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-contact {
-  max-width: 300px; }
-  .gs-contact > span.gs-contact-name {
-    width: 75px;
-    word-break: break-all; }
