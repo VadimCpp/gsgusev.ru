@@ -32,10 +32,17 @@
    * typography
    * --------------------------------------------------
    */
+html {
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #434A54;
-  background-color: #FFF; }
+  background-color: #F5F7FA;
+  margin: 0;
+  min-height: 100%; }
 
 a {
   color: #3BAFDA;

@@ -23,7 +23,6 @@ var PATH = {
     'src/perevozka_divana.html'
   ],
   css: [
-    'src/css/uikit.almost-flat.css',
     'src/css/index.css',
     'src/css/admin-poselka.css',
     'src/css/bus-gusev-kgd.css',
@@ -39,7 +38,6 @@ var PATH = {
     'src/css/perevozka-divana.css'
   ],
   cssmin: [
-    'src/css/uikit.almost-flat.min.css',
     'src/css/index.min.css',
     'src/css/admin-poselka.min.css',
     'src/css/bus-gusev-kgd.min.css',
