@@ -15,18 +15,19 @@ $call-button-radius:                    50px;
 
         @include radius($type: border-radius, $value: $call-button-radius);
 
-        padding: 6px 12px;
-        margin-bottom: 0;
-        font-weight: normal;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        touch-action: manipulation;
-        cursor: pointer;
-        user-select: none;
         background-image: none;
         border: 1px solid transparent;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        text-align: center;
         text-decoration: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        user-select: none;
 
         &,
         &:active,

@@ -29,18 +29,19 @@
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  text-decoration: none; }
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none; }
   .gs-call-button, .gs-call-button:active, .gs-call-button.active, .gs-call-button.disabled, .gs-call-button[disabled] {
     color: #FFF;
     border-color: #37BC9B;
