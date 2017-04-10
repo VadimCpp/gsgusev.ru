@@ -75,13 +75,11 @@ var PATH = {
     'src/safari-pinned-tab.svg'
   ],
   'fonts': [
-      'src/fonts/FontAwesome.otf',
-      'src/fonts/fontawesome-webfont.ttf',
-      'src/fonts/fontawesome-webfont.woff',
-      'src/fonts/fontawesome-webfont.woff2',
-      'src/fonts/lobster-cyrillic.woff2',
-      'src/fonts/lobster-latin.woff2',
-      'src/fonts/lobster-latin-ext.woff2'
+      'src/fonts/call_button.eot',
+      'src/fonts/call_button.svg',
+      'src/fonts/call_button.ttf',
+      'src/fonts/call_button.woff',
+      'src/fonts/call_button.woff2'
   ]
 };
 
