@@ -129,17 +129,6 @@ blockquote {
 .gs-text-large {
   font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.gs-nanotech-parallax {
-  /* The image used */
-  background-image: url("../img/nanotech.jpg");
-  /* Set a specific height */
-  min-height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .gs-main-menu .gs-story-with-spoiler {
   text-shadow: 0 0 5px white; }
 

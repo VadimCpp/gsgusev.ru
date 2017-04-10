@@ -1,0 +1,20 @@
+$parallax-background: "../img/city_landscape_background.png";
+
+// Exports
+//------------------------------------------------------
+@include exports("parallax") {Фвв
+
+    .gs-parallax {
+        /* The image used */
+        background-image: url($parallax-background);
+
+        /* Set a specific height */
+        min-height: 100vh;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

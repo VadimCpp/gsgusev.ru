@@ -58,7 +58,7 @@ var PATH = {
   robot: ['src/robots.txt'],
   htaccess: ['src/.htaccess'],
   img: [
-    'src/img/nanotech.jpg',
+    'src/img/city_landscape_background.jpg',
     'src/img/ford_transit.jpg',
     'src/img/kebab.jpg'
   ],

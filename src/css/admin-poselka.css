@@ -150,6 +150,18 @@
       font-weight: 500;
       letter-spacing: 8px; } }
 
+Фвв
+.gs-parallax {
+  /* The image used */
+  background-image: url("../img/city_landscape_background.png");
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
 .gs-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
