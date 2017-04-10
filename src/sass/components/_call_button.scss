@@ -1,0 +1,55 @@
+$call-button-info:                    $mint-dark !default;
+$call-button-info-hover:              $mint-light !default;
+$call-button-font-color-light:        $white !default;
+
+$call-button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
+
+// Exports
+//------------------------------------------------------
+
+@include exports("call-button") {
+
+
+    .gs-call-button {
+
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &,
+        &:active,
+        &.active,
+        &.disabled,
+        &[disabled] {
+            color: $call-button-font-color-light;
+            border-color: $call-button-info;
+            background-color: $call-button-info;
+        }
+
+        &:hover,
+        &:focus {
+            color: $call-button-font-color-light;
+            border-color: $call-button-info-hover;
+            background-color: $call-button-info-hover;
+            outline: 0 !important;
+
+        }
+
+        &:active,
+        &.active {
+            @include box-shadow($value: $call-button-shadow);
+        }
+    }
+}

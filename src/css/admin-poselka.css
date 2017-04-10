@@ -24,6 +24,36 @@
     .gs-breadcrumb__hidden-small-text {
       display: none; } }
 
+.gs-call-button {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none; }
+  .gs-call-button, .gs-call-button:active, .gs-call-button.active, .gs-call-button.disabled, .gs-call-button[disabled] {
+    color: #FFF;
+    border-color: #37BC9B;
+    background-color: #37BC9B; }
+  .gs-call-button:hover, .gs-call-button:focus {
+    color: #FFF;
+    border-color: #48CFAD;
+    background-color: #48CFAD;
+    outline: 0 !important; }
+  .gs-call-button:active, .gs-call-button.active {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
+
 .gs-container {
   margin-top: 15px;
   box-sizing: border-box;
@@ -82,14 +112,15 @@
   border: none; }
 
 .gs-thumbnail__caption {
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 10px; }
   .gs-thumbnail__caption > h1,
   .gs-thumbnail__caption > h2,
   .gs-thumbnail__caption > h3,
   .gs-thumbnail__caption > h4,
   .gs-thumbnail__caption > h5,
   .gs-thumbnail__caption > h6 {
-    margin: 5px 0 10px;
+    margin: 0;
     font-size: 16px; }
 
 .gs-thumbnail__caption_text-center {
@@ -105,7 +136,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #434A54;
   background-color: #F5F7FA;
   margin: 0;
@@ -214,105 +245,3 @@ blockquote {
     padding: 20px; }
   .gs-well-sm {
     padding: 5px; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-phone-button {
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  color: white;
-  background-color: #00a54f;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px; }
-
-[class*='gs-icon-'] {
-  font-family: FontAwesome;
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-[class*='gs-icon-'],
-[class*='gs-icon-']:hover,
-[class*='gs-icon-']:focus {
-  text-decoration: none; }
-
-.gs-icon-phone:before {
-  content: "\f095"; }
-
-.gs-icon-phone:hover {
-  color: white; }
-
-.gs-icon-large {
-  font-size: 190%;
-  vertical-align: -8%; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lobster"), local("Lobster-Regular"), url("../fonts/lobster-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
-/* FontAwesome */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-contact {
-  max-width: 300px; }
-  .gs-contact > span.gs-contact-name {
-    width: 75px;
-    word-break: break-all; }
