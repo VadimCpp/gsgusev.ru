@@ -12,6 +12,11 @@ To start developing open console and run commands:
 3. `npm install`
 4. `gulp`
 
+To release:
+
+1. `gulp build`
+2. Copy web folder to hosting
+
 ## Copyright and License
 
 Copyright 2017 GS Gusev. All rights reserved.
