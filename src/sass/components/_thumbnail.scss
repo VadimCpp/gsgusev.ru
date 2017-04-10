@@ -1,6 +1,8 @@
-$thumbnail-background-color:      $white !default;
-$thumbnail-shadow:                0 1px 2px rgba(0, 0, 0, .2) !default;
-$thumbnail-radius:                4px;
+$thumbnail-background-color:        $white !default;
+$thumbnail-shadow:                  0 1px 2px rgba(0, 0, 0, .2) !default;
+$thumbnail-radius:                  4px;
+
+$thumbnail-max-width:               270px;
 
 // Exports
 //------------------------------------------------------
@@ -12,6 +14,7 @@ $thumbnail-radius:                4px;
 
         background-color: $thumbnail-background-color;
         border: none;
+        max-width: $thumbnail-max-width;
     }
 
     .gs-thumbnail__caption {
