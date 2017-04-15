@@ -1,4 +1,53 @@
-@charset "UTF-8";
+.gs-breadcrumb {
+  color: #434A54;
+  background-color: #E6E9ED;
+  padding: 8px 15px;
+  list-style: none;
+  border-radius: 4px; }
+  .gs-breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"; }
+
+.gs-breadcrumb__list-item {
+  display: inline-block; }
+
+.gs-breadcrumb__list-item_active {
+  color: #434A54; }
+
+.gs-breadcrumb__link {
+  color: #3BAFDA; }
+
+.gs-breadcrumb__hidden-small-text {
+  display: inline; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__hidden-small-text {
+      display: none; } }
+
+.gs-breadcrumb__visible-small-text {
+  display: none; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__visible-small-text {
+      display: inline; } }
+
+.gs-container {
+  margin-top: 15px;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px; }
+  @media (min-width: 980px) {
+    .gs-container {
+      margin-top: 25px; } }
+  @media (min-width: 1220px) {
+    .gs-container {
+      margin-top: 35px;
+      max-width: 1200px;
+      padding: 0 35px; } }
+
+.gs-container_center {
+  margin-left: auto;
+  margin-right: auto; }
+
 .gs-header {
   align-items: center;
   display: flex;
@@ -129,34 +178,6 @@ blockquote {
 .gs-text-large {
   font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.gs-story-with-spoiler {
-  font-style: italic;
-  /* State 1: not checked */
-  /* State 2: checked */ }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
-    /* Never display check box. Show label instead */
-    display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-        display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-        content: 'Показать весь текст ↓'; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
-    text-align: left; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: inline; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-    content: 'Свернуть ↑'; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-wrap {
-    display: block; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap {
-    display: block; }
-    .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
-      font-style: italic; }
-
 .gs-link {
   background: none;
   border: none;
@@ -239,19 +260,6 @@ blockquote {
 .gs-icon-large {
   font-size: 190%;
   vertical-align: -8%; }
-
-.gs-breadcrumb {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .gs-breadcrumb > li > .gs-link {
-    font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #07d;
-    border-bottom: 1px solid rgba(0, 120, 220, 0.33);
-    text-decoration: none; }
-    .gs-breadcrumb > li > .gs-link:hover {
-      color: #CC0000;
-      border-color: #f0b2b2; }
-  .gs-breadcrumb > li > h1 {
-    display: inline-block; }
 
 .gs-contact {
   max-width: 300px; }

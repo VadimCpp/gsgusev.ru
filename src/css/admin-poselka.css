@@ -25,6 +25,12 @@
     .gs-breadcrumb__hidden-small-text {
       display: none; } }
 
+.gs-breadcrumb__visible-small-text {
+  display: none; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__visible-small-text {
+      display: inline; } }
+
 .gs-call-button {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
