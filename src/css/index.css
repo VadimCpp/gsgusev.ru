@@ -1,4 +1,47 @@
-@charset "UTF-8";
+.gs-breadcrumb {
+  color: #434A54;
+  background-color: #E6E9ED;
+  padding: 8px 15px;
+  list-style: none;
+  border-radius: 4px; }
+  .gs-breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"; }
+
+.gs-breadcrumb__list-item {
+  display: inline-block; }
+
+.gs-breadcrumb__list-item_active {
+  color: #434A54; }
+
+.gs-breadcrumb__link {
+  color: #3BAFDA; }
+
+.gs-breadcrumb__hidden-small-text {
+  display: inline; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__hidden-small-text {
+      display: none; } }
+
+.gs-container {
+  margin-top: 15px;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px; }
+  @media (min-width: 980px) {
+    .gs-container {
+      margin-top: 25px; } }
+  @media (min-width: 1220px) {
+    .gs-container {
+      margin-top: 35px;
+      max-width: 1200px;
+      padding: 0 35px; } }
+
+.gs-container_center {
+  margin-left: auto;
+  margin-right: auto; }
+
 .gs-header {
   align-items: center;
   display: flex;
@@ -27,6 +70,17 @@
       font-size: 43px;
       font-weight: 500;
       letter-spacing: 8px; } }
+
+.gs-parallax {
+  /* The image used */
+  background-image: url("../img/city_landscape_background.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 320px; }
 
 /**
    * typography
@@ -125,69 +179,3 @@ h6,
 
 blockquote {
   border-left: 3px solid #CCD1D9; }
-
-.gs-text-large {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.gs-main-menu .gs-story-with-spoiler {
-  text-shadow: 0 0 5px white; }
-
-.gs-main-menu .gs-navigation > p {
-  line-height: 2;
-  text-shadow: 0 0 10px white; }
-
-.gs-story-with-spoiler {
-  font-style: italic;
-  /* State 1: not checked */
-  /* State 2: checked */ }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state {
-    /* Never display check box. Show label instead */
-    display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-        display: none; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap {
-      text-align: right; }
-      .gs-story-with-spoiler > input.gs-story-with-spoiler-state ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-        content: 'Показать весь текст ↓'; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap {
-    text-align: left; }
-    .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked + span.gs-story-with-spoiler-wrap > span.gs-spoiler-target {
-      display: inline; }
-  .gs-story-with-spoiler > input.gs-story-with-spoiler-state:checked ~ span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger:before {
-    content: 'Свернуть ↑'; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-wrap {
-    display: block; }
-  .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap {
-    display: block; }
-    .gs-story-with-spoiler > span.gs-story-with-spoiler-trigger-wrap > label.gs-story-with-spoiler-trigger {
-      font-style: italic; }
-
-.gs-link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  color: #07d;
-  border-bottom: 1px solid rgba(0, 120, 220, 0.33); }
-  .gs-link:hover {
-    text-decoration: none;
-    color: #CC0000;
-    border-color: #f0b2b2; }
-  .gs-link:visited {
-    text-decoration: none;
-    color: #B40EB4;
-    border-color: #e0b2e0; }
-    .gs-link:visited:hover {
-      text-decoration: none;
-      color: #CC0000;
-      border-color: #f0b2b2; }
-
-.gs-link-dotted {
-  border-bottom-style: dotted; }
-
-.gs-link-medium-font {
-  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }
