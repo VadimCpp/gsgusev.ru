@@ -1,0 +1,21 @@
+// Variables
+//------------------------------------------------------
+$medium-column-count:                           2;
+$large-column-count:                            3;
+
+// Exports
+//------------------------------------------------------
+@include exports("main-menu") {
+
+    .gs-main-menu {
+
+        @media (min-width: $medium-start) {
+            @include prefixer(column-count, $medium-column-count, webkit moz spec);
+        }
+
+        @media (min-width: $large-start) {
+            @include prefixer(column-count, $large-column-count, webkit moz spec);
+        }
+
+    }
+}

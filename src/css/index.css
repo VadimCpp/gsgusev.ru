@@ -71,6 +71,18 @@
       font-weight: 500;
       letter-spacing: 8px; } }
 
+@media (min-width: 768px) {
+  .gs-main-menu {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
+@media (min-width: 1220px) {
+  .gs-main-menu {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; } }
+
 .gs-parallax {
   /* The image used */
   background-image: url("../img/city_landscape_background.jpg");
