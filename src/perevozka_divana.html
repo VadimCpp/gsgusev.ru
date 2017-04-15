@@ -21,7 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css/uikit.almost-flat.min.css">
     <link rel="stylesheet" type="text/css" href="css/perevozka-divana.min.css">
 </head>
-<body>
+
+<body class="gs-parallax">
     <header class="gs-header gs-header_theme_mint-dark">
         <label class="gs-header__title">
             GS Гусев
@@ -38,18 +39,23 @@
         </ol>
     </section>
 
-    <section>
-        <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom gs-text-large">
-            <img class="uk-border-rounded" src="img/ford_transit.jpg" alt="Ford Transit">
-            <p>
-            Вместительный Ford Transit безопасно доставит ваш груз в любую точку области.
-            </p>
-            <p class="uk-flex uk-flex-space-between uk-flex-middle gs-contact">
-                <a href="tel:89216176013" class="gs-phone-button gs-icon-phone gs-icon-large"></a>
-                <span class="gs-contact-name"> Дмитрий </span>
-                <span> 8 (921) 617-60-13 </span>
-            </p>
+    <!-- Thumbnail -->
+    <section class="gs-container gs-container_center gs-container_padding-bottom">
+        <div class="gs-thumbnail">
+            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+                <img class="uk-border-rounded" src="img/ford_transit.jpg" alt="Ford Transit">
+                <p>
+                    Вместительный Ford Transit безопасно доставит ваш груз в любую точку области.
+                </p>
+                <h4>Дмитрий</h4>
+                <p>8 (911) 490-08-41</p>
+                <a href="tel:89216176013" class="gs-call-button">
+                    <i class="gs-call-button__phone-icon"> </i>
+                    Позвонить
+                </a>
+            </div>
         </div>
     </section>
+
 </body>
 </html>

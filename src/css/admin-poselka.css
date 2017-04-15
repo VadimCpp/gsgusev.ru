@@ -127,6 +127,9 @@
   margin-left: auto;
   margin-right: auto; }
 
+.gs-container_padding-bottom {
+  padding-bottom: 100px; }
+
 .gs-header {
   align-items: center;
   display: flex;
