@@ -14,6 +14,12 @@ $thumbnail-max-width:               270px;
 
         background-color: $thumbnail-background-color;
         border: none;
+        padding: 3px;
+    }
+
+    .gs-thumbnail__image {
+        @include radius($type: border-radius, $value: $thumbnail-radius);
+        width: 100%;
     }
 
     .gs-thumbnail__caption {
