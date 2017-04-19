@@ -1,19 +1,22 @@
+// Variables
+//------------------------------------------------------
+$height-small:                  $header-height-small;
+$height-large:                  $header-height-large;
 
 // Exports
 //------------------------------------------------------
 @include exports("header") {
-
 
     .gs-header {
         align-items: center;
         display: flex;
         justify-content: center;
 
-        height: 60px;
+        height: $height-small;
         width: 100%;
 
         @media screen and (min-width: $medium-start) {
-            height: 120px;
+            height: $height-large;
         }
     }
 

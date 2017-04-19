@@ -1,7 +1,7 @@
 // Variables
 //------------------------------------------------------
-$medium-column-count:                           2;
-$large-column-count:                            3;
+$offset-top-small:                  $header-height-small;
+$offset-top-large:                  $header-height-large;
 
 // Exports
 //------------------------------------------------------
@@ -14,7 +14,7 @@ $large-column-count:                            3;
     .gs-osm-map__iframe {
         z-index: -1;
         position: fixed;
-        top: 60px;
+        top: $offset-top-small;
         left: 0;
         bottom: 0;
         right: 0;
@@ -22,7 +22,7 @@ $large-column-count:                            3;
         height: 100%;
 
         @media screen and (min-width: $medium-start) {
-            top: 120px;
+            top: $offset-top-large;
         }
 
     }
