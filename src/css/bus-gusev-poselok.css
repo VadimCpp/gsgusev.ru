@@ -51,6 +51,9 @@
 .gs-container_padding-bottom {
   padding-bottom: 100px; }
 
+.gs-container_padding-left {
+  padding-left: 65px; }
+
 .gs-header {
   align-items: center;
   display: flex;
@@ -197,38 +200,3 @@ h6,
 
 blockquote {
   border-left: 3px solid #CCD1D9; }
-
-.gs-text-large {
-  font: 400 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.gs-link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  color: #07d;
-  border-bottom: 1px solid rgba(0, 120, 220, 0.33); }
-  .gs-link:hover {
-    text-decoration: none;
-    color: #CC0000;
-    border-color: #f0b2b2; }
-  .gs-link:visited {
-    text-decoration: none;
-    color: #B40EB4;
-    border-color: #e0b2e0; }
-    .gs-link:visited:hover {
-      text-decoration: none;
-      color: #CC0000;
-      border-color: #f0b2b2; }
-
-.gs-link-dotted {
-  border-bottom-style: dotted; }
-
-.gs-link-medium-font {
-  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.gs-more-links > p {
-  line-height: 2;
-  text-shadow: 0 0 10px white; }

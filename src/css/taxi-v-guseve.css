@@ -130,6 +130,9 @@
 .gs-container_padding-bottom {
   padding-bottom: 100px; }
 
+.gs-container_padding-left {
+  padding-left: 65px; }
+
 .gs-header {
   align-items: center;
   display: flex;
