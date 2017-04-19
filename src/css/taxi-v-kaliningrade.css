@@ -31,6 +31,10 @@
     .gs-breadcrumb__visible-small-text {
       display: inline; } }
 
+.gs-breadcrumb_margin-right-left {
+  margin-left: 60px;
+  margin-right: 15px; }
+
 .gs-call-button {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -129,9 +133,6 @@
 
 .gs-container_padding-bottom {
   padding-bottom: 100px; }
-
-.gs-container_padding-left {
-  padding-left: 65px; }
 
 .gs-header {
   align-items: center;
