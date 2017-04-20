@@ -236,6 +236,9 @@
 .gs-table_text-center {
   text-align: center; }
 
+.gs-table_text-left {
+  text-align: left; }
+
 .gs-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);

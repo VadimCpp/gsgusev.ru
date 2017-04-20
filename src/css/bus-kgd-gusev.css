@@ -157,6 +157,9 @@
 .gs-table_text-center {
   text-align: center; }
 
+.gs-table_text-left {
+  text-align: left; }
+
 /**
    * typography
    * --------------------------------------------------
