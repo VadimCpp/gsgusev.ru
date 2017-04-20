@@ -201,3 +201,25 @@ h6,
 
 blockquote {
   border-left: 3px solid #CCD1D9; }
+
+/**
+   * well
+   * --------------------------------------------------
+   */
+.gs-well {
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #434A54;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  .gs-well blockquote {
+    border-color: #CCD1D9; }
+  .gs-well-lg {
+    padding: 20px; }
+  .gs-well-sm {
+    padding: 5px; }
