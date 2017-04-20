@@ -75,6 +75,11 @@ var PATH = {
     'src/safari-pinned-tab.svg'
   ],
   'fonts': [
+      'src/fonts/rubble_icon.eot',
+      'src/fonts/rubble_icon.svg',
+      'src/fonts/rubble_icon.ttf',
+      'src/fonts/rubble_icon.woff',
+      'src/fonts/rubble_icon.woff2',
       'src/fonts/call_button.eot',
       'src/fonts/call_button.svg',
       'src/fonts/call_button.ttf',

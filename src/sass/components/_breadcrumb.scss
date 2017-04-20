@@ -1,10 +1,11 @@
 // Variables
 //------------------------------------------------------
-$breadcrumb-font-color:                        $darkgray-dark !default;
-$breadcrumb-link-color:                        $aqua-dark !default;
-$breadcrumb-background-color:                  $lightgray-dark !default;
+$breadcrumb-font-color:                         $darkgray-dark !default;
+$breadcrumb-link-color:                         $aqua-dark !default;
+$breadcrumb-background-color:                   $lightgray-dark !default;
 
-$breadcrumb-arrow-radius:                      4px !default;
+$breadcrumb-arrow-radius:                       4px !default;
+$breadcrumb-max-width:                          $medium-start - 1;
 
 // Exports
 //------------------------------------------------------
@@ -39,7 +40,7 @@ $breadcrumb-arrow-radius:                      4px !default;
     .gs-breadcrumb__hidden-small-text {
         display: inline;
 
-        @media (max-width: 767px) {
+        @media (max-width: $breadcrumb-max-width) {
             display: none;
         }
     }
@@ -47,7 +48,7 @@ $breadcrumb-arrow-radius:                      4px !default;
     .gs-breadcrumb__visible-small-text {
         display: none;
 
-        @media (max-width: 767px) {
+        @media (max-width: $breadcrumb-max-width) {
             display: inline;
         }
     }
