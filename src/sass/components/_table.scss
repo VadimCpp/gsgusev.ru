@@ -1,0 +1,80 @@
+// Variables
+//------------------------------------------------------
+//$breadcrumb-font-color:                        $darkgray-dark !default;
+//$breadcrumb-link-color:                        $aqua-dark !default;
+//$breadcrumb-background-color:                  $lightgray-dark !default;
+//
+//$breadcrumb-arrow-radius:                      4px !default;
+
+// Exports
+//------------------------------------------------------
+@include exports("table") {
+
+    .gs-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /*
+     * Add margin if adjacent element
+     */
+    * + .gs-table {
+        margin-top: 15px;
+    }
+    .gs-table th,
+    .gs-table td {
+        padding: 8px 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /*
+     * Set alignment
+     */
+    .gs-table th {
+        text-align: left;
+    }
+    .gs-table td {
+        vertical-align: top;
+    }
+    .gs-table thead th {
+        vertical-align: bottom;
+    }
+
+    /*
+     * Caption and footer
+     */
+    .gs-table caption,
+    .gs-table tfoot {
+        font-size: 12px;
+        font-style: italic;
+    }
+    .gs-table caption {
+        text-align: left;
+        color: #999;
+    }
+
+    .gs-table__thead_hidden-small-text {
+        display: inline;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .gs-table__thead_visible-small-text {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: inline;
+        }
+    }
+
+    .gs-table_text-center {
+        text-align: center;
+    }
+
+}
+
+
