@@ -75,16 +75,11 @@ var PATH = {
     'src/safari-pinned-tab.svg'
   ],
   'fonts': [
-      'src/fonts/rubble_icon.eot',
-      'src/fonts/rubble_icon.svg',
-      'src/fonts/rubble_icon.ttf',
-      'src/fonts/rubble_icon.woff',
-      'src/fonts/rubble_icon.woff2',
-      'src/fonts/call_button.eot',
-      'src/fonts/call_button.svg',
-      'src/fonts/call_button.ttf',
-      'src/fonts/call_button.woff',
-      'src/fonts/call_button.woff2'
+    'src/fonts/fontello.eot',
+    'src/fonts/fontello.svg',
+    'src/fonts/fontello.ttf',
+    'src/fonts/fontello.woff',
+    'src/fonts/fontello.woff2'
   ]
 };
 

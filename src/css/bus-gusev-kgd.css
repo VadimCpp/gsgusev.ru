@@ -1,4 +1,60 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?22736674");
+  src: url("../fonts/fontello.eot?22736674#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?22736674") format("woff2"), url("../fonts/fontello.woff?22736674") format("woff"), url("../fonts/fontello.ttf?22736674") format("truetype"), url("../fonts/fontello.svg?22736674#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?22736674#fontello') format('svg');
+  }
+}
+*/
+[class^="gs-icon-"]:before, [class*=" gs-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.gs-icon-phone:before {
+  content: '\e808'; }
+
+/* '' */
+.gs-icon-angle-right:before {
+  content: '\f105'; }
+
+/* '' */
+.gs-icon-rouble:before {
+  content: '\f158'; }
+
+/* '' */
 .gs-breadcrumb {
   color: #434A54;
   background-color: #E6E9ED;
@@ -65,53 +121,6 @@
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
-
-@font-face {
-  font-family: 'call_button';
-  src: url("../fonts/call_button.eot?8997920");
-  src: url("../fonts/call_button.eot?8997920#iefix") format("embedded-opentype"), url("../fonts/call_button.woff2?8997920") format("woff2"), url("../fonts/call_button.woff?8997920") format("woff"), url("../fonts/call_button.ttf?8997920") format("truetype"), url("../fonts/call_button.svg?8997920#call_button") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-call-button__phone-icon {
-  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-  /*
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-          @font-face {
-            font-family: 'call_button';
-            src: url('../font/call_button.svg?8997920#call_button') format('svg');
-          }
-        }
-        */
-  font-family: "call_button";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  /* '' */ }
-  .gs-call-button__phone-icon:before {
-    content: '\e808'; }
 
 .gs-container {
   margin-top: 15px;
@@ -238,40 +247,6 @@
 
 .gs-table_text-left {
   text-align: left; }
-
-@font-face {
-  font-family: 'rubble_icon';
-  src: url("../fonts/rubble_icon.eot?40945339");
-  src: url("../fonts/rubble_icon.eot?40945339#iefix") format("embedded-opentype"), url("../fonts/rubble_icon.woff2?40945339") format("woff2"), url("../fonts/rubble_icon.woff?40945339") format("woff"), url("../fonts/rubble_icon.ttf?40945339") format("truetype"), url("../fonts/rubble_icon.svg?40945339#call_button") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.gs-table__rubble-icon {
-  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-  /*
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-          @font-face {
-            font-family: 'call_button';
-            src: url('../font/call_button.svg?8997920#call_button') format('svg');
-          }
-        }
-        */
-  font-family: "rubble_icon";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  /* '' */ }
-  .gs-table__rubble-icon:before {
-    content: '\f158'; }
 
 .gs-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
