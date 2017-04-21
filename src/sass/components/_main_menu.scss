@@ -3,6 +3,13 @@
 $medium-column-count:                           2;
 $large-column-count:                            3;
 
+$main-menu-link-radius:                         0;
+$main-menu-link-shadow:                         inset 0 1px 2px rgba(0, 0, 0, .125) !default;
+$main-menu-link-font-color-dark:                        $darkgray-dark !default;
+$main-menu-link-normal:                                 $mediumgray-dark !default;
+$main-menu-link-normal-hover:                           $mediumgray-light !default;
+$main-menu-link-default:                                $white !default;
+
 // Exports
 //------------------------------------------------------
 @include exports("main-menu") {
@@ -18,4 +25,45 @@ $large-column-count:                            3;
         }
 
     }
+
+    .gs-main-menu__link {
+
+        @include radius($type: border-radius, $value: $main-menu-link-radius);
+
+        background-image: none;
+        border: 1px solid $main-menu-link-normal;
+        cursor: pointer;
+        display: block;
+        font-weight: normal;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        user-select: none;
+
+        color: $main-menu-link-font-color-dark;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: $main-menu-link-default;
+            border-color: $main-menu-link-normal-hover;
+            background-color: $main-menu-link-normal-hover;
+        }
+        &,
+        &.disabled,
+        &[disabled] {
+            background-color: $main-menu-link-default;
+        }
+
+        &:active,
+        &.active {
+            @include box-shadow($value: $main-menu-link-shadow);
+        }
+    }
+
 }
