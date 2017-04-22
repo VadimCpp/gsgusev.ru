@@ -130,12 +130,12 @@ $header-height-large:         120px;
 //------------------------------------------------------
 @font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.eot?22736674');
-    src: url('../fonts/fontello.eot?22736674#iefix') format('embedded-opentype'),
-    url('../fonts/fontello.woff2?22736674') format('woff2'),
-    url('../fonts/fontello.woff?22736674') format('woff'),
-    url('../fonts/fontello.ttf?22736674') format('truetype'),
-    url('../fonts/fontello.svg?22736674#fontello') format('svg');
+    src: url('../fonts/fontello.eot?v=1.0');
+    src: url('../fonts/fontello.eot?v=1.0#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff2?v=1.0') format('woff2'),
+    url('../fonts/fontello.woff?v=1.0') format('woff'),
+    url('../fonts/fontello.ttf?v=1.0') format('truetype'),
+    url('../fonts/fontello.svg?v=1.0#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
 }
