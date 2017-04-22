@@ -29,3 +29,16 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
+
+###################
+# DENY IFRAME     #
+###################
+<IfModule mod_headers.c>
+
+     Header set X-Frame-Options "SAMEORIGIN"
+
+     <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
+         Header unset X-Frame-Options
+     </FilesMatch>
+
+</IfModule>
