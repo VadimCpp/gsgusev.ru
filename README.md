@@ -1,5 +1,8 @@
 # GS Gusev
 
+<a href="http://opensource.org/licenses/MIT"><img src="https://camo.githubusercontent.com/576f25c78e59902f0c6ccfff81f0448ef660e90d/687474703a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667" alt="License" data-canonical-src="http://img.shields.io/badge/License-MIT-blue.svg" style="max-width:100%;"></a>
+<br><br>
+
 GS Gusev is a very simple website with a straightforward goal: to help people.
 Visit GS Gusev( [gsgusev.ru](http://gsgusev.ru/) ) to see how it works.
 
@@ -16,7 +19,3 @@ To release:
 
 1. `gulp build`
 2. Copy web folder to hosting
-
-## Copyright and License
-
-Copyright 2017 GS Gusev. All rights reserved.
