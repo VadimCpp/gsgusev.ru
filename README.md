@@ -10,7 +10,7 @@ Visit GS Gusev( [gsgusev.ru](http://gsgusev.ru/) ) to see how it works.
 
 To start developing open console and run commands:
 
-1. `git clone https://vadymkaninskyi@bitbucket.org/vadymkaninskyi/gsgusev.ru.git gsgusev.ru`
+1. `git clone https://github.com/VadimCpp/gsgusev.ru.git gsgusev.ru`
 2. `cd gsgusev.ru`
 3. `npm install`
 4. `gulp`
