@@ -15,7 +15,6 @@ To start developing open console and run commands:
 3. `npm install`
 4. `gulp`
 
-To release:
+Only one command to release:
 
-1. `gulp build`
-2. Copy web folder to hosting
+1. `./update-pafes.sh`
