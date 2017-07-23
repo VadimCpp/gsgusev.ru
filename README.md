@@ -4,7 +4,9 @@
 <br><br>
 
 GS Gusev is a very simple website with a straightforward goal: to help people.
-Visit GS Gusev( [gsgusev.ru](http://gsgusev.ru/) ) to see how it works.
+Visit GS Gusev( [https://vadimcpp.github.io/gsgusev.ru](https://vadimcpp.github.io/gsgusev.ru) ) to see how it works.
+
+Another domain name which is linked to GS Gusev is [https://gsgusev.ru/](https://gsgusev.ru/)
 
 ## Getting Started
 
