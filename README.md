@@ -19,4 +19,4 @@ To start developing open console and run commands:
 
 Only one command to release:
 
-1. `./update-pafes.sh`
+1. `./update-pages.sh`
