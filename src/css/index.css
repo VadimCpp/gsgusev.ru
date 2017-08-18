@@ -157,6 +157,7 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  background-color: #FFF;
   background-image: none;
   border: 1px solid #AAB2BD;
   cursor: pointer;
@@ -175,12 +176,14 @@
     color: #FFF;
     border-color: #CCD1D9;
     background-color: #CCD1D9; }
-  .gs-main-menu__link, .gs-main-menu__link.disabled, .gs-main-menu__link[disabled] {
-    background-color: #FFF; }
   .gs-main-menu__link:active, .gs-main-menu__link.active {
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
+
+.gs-main-menu__link_disabled {
+  opacity: 0.5;
+  cursor: default; }
 
 .gs-parallax {
   /* The image used */
