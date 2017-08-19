@@ -20,7 +20,8 @@ var PATH = {
     'src/kino_lumen.html',
     'src/taxi_v_guseve.html',
     'src/taxi_v_kaliningrade.html',
-    'src/perevozka_divana.html'
+    'src/perevozka_divana.html',
+    'src/voda.html'
   ],
   css: [
     'src/css/index.css',
@@ -35,7 +36,8 @@ var PATH = {
     'src/css/karta-poselka.css',
     'src/css/taxi-v-guseve.css',
     'src/css/taxi-v-kaliningrade.css',
-    'src/css/perevozka-divana.css'
+    'src/css/perevozka-divana.css',
+    'src/css/voda.css'
   ],
   cssmin: [
     'src/css/index.min.css',
@@ -50,7 +52,8 @@ var PATH = {
     'src/css/karta-poselka.min.css',
     'src/css/taxi-v-guseve.min.css',
     'src/css/taxi-v-kaliningrade.min.css',
-    'src/css/perevozka-divana.min.css'
+    'src/css/perevozka-divana.min.css',
+    'src/css/voda.min.css'
   ],
   sass: [
     'src/sass/**/*.scss'

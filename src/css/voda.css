@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?v=1.0");
+  src: url("../fonts/fontello.eot?v=1.0#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?v=1.0") format("woff2"), url("../fonts/fontello.woff?v=1.0") format("woff"), url("../fonts/fontello.ttf?v=1.0") format("truetype"), url("../fonts/fontello.svg?v=1.0#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?22736674#fontello') format('svg');
+  }
+}
+*/
+[class^="gs-icon-"]:before, [class*=" gs-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.gs-icon-phone:before {
+  content: '\e808'; }
+
+/* '' */
+.gs-icon-angle-right:before {
+  content: '\f105'; }
+
+/* '' */
+.gs-icon-rouble:before {
+  content: '\f158'; }
+
+/* '' */
+.gs-breadcrumb {
+  color: #434A54;
+  background-color: #E6E9ED;
+  padding: 8px 15px;
+  list-style: none;
+  border-radius: 4px; }
+  .gs-breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"; }
+
+.gs-breadcrumb__list-item {
+  display: inline-block; }
+
+.gs-breadcrumb__list-item_active {
+  color: #434A54; }
+
+.gs-breadcrumb__link {
+  color: #3BAFDA; }
+
+.gs-breadcrumb__hidden-small-text {
+  display: inline; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__hidden-small-text {
+      display: none; } }
+
+.gs-breadcrumb__visible-small-text {
+  display: none; }
+  @media (max-width: 767px) {
+    .gs-breadcrumb__visible-small-text {
+      display: inline; } }
+
+.gs-breadcrumb_margin-right-left {
+  margin-left: 60px;
+  margin-right: 15px; }
+
+.gs-call-button {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none; }
+  .gs-call-button, .gs-call-button:active, .gs-call-button.active, .gs-call-button.disabled, .gs-call-button[disabled] {
+    color: #FFF;
+    border-color: #37BC9B;
+    background-color: #37BC9B; }
+  .gs-call-button:hover, .gs-call-button:focus {
+    color: #FFF;
+    border-color: #48CFAD;
+    background-color: #48CFAD;
+    outline: 0 !important; }
+  .gs-call-button:active, .gs-call-button.active {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
+
+.gs-container {
+  margin-top: 15px;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px; }
+  @media (min-width: 980px) {
+    .gs-container {
+      margin-top: 25px; } }
+  @media (min-width: 1220px) {
+    .gs-container {
+      margin-top: 35px;
+      max-width: 1200px;
+      padding: 0 35px; } }
+
+.gs-container_center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.gs-container_padding-bottom {
+  padding-bottom: 100px; }
+
+.gs-header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .gs-header {
+      height: 120px; } }
+
+.gs-header_theme_mint-dark {
+  background-color: #37BC9B;
+  border-color: #37BC9B; }
+
+.gs-header_theme_mint-light {
+  background-color: #48CFAD;
+  border-color: #48CFAD; }
+
+.gs-header__title {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px; }
+  @media screen and (min-width: 768px) {
+    .gs-header__title {
+      font-size: 43px;
+      font-weight: 500;
+      letter-spacing: 8px; } }
+
+.gs-parallax {
+  /* The image used */
+  background-image: url("../img/city_landscape_background.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 320px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+
+.gs-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: none;
+  padding: 3px; }
+
+.gs-thumbnail__image {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%; }
+
+.gs-thumbnail__caption {
+  font-size: 14px;
+  padding: 10px; }
+  .gs-thumbnail__caption > h1,
+  .gs-thumbnail__caption > h2,
+  .gs-thumbnail__caption > h3,
+  .gs-thumbnail__caption > h4,
+  .gs-thumbnail__caption > h5,
+  .gs-thumbnail__caption > h6 {
+    margin: 0;
+    font-size: 16px; }
+
+.gs-thumbnail__caption_text-center {
+  text-align: center; }
+
+/**
+   * typography
+   * --------------------------------------------------
+   */
+html {
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  min-height: 100%; }
+
+body {
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #434A54;
+  background-color: #F5F7FA;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  z-index: 0; }
+
+a {
+  color: #3BAFDA;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #4FC1E9;
+    text-decoration: none; }
+  a:focus {
+    outline: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  color: #e7e9ec; }
+
+h1,
+h2,
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+h6 {
+  font-weight: normal; }
+
+h1,
+.h1 {
+  font-size: 51px; }
+
+h2,
+.h2 {
+  font-size: 43px; }
+
+h3,
+.h3 {
+  font-size: 30px; }
+
+h4,
+.h4 {
+  font-size: 19px; }
+
+h5,
+.h5 {
+  font-size: 18px; }
+
+h6,
+.h6 {
+  font-size: 14px; }
+
+blockquote {
+  border-left: 3px solid #CCD1D9; }
+
+/**
+   * well
+   * --------------------------------------------------
+   */
+.gs-well {
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #434A54;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  .gs-well blockquote {
+    border-color: #CCD1D9; }
+  .gs-well-lg {
+    padding: 20px; }
+  .gs-well-sm {
+    padding: 5px; }
