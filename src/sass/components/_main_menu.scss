@@ -30,6 +30,7 @@ $main-menu-link-default:                        $white !default;
 
         @include radius($type: border-radius, $value: $main-menu-link-radius);
 
+        background-color: $main-menu-link-default;
         background-image: none;
         border: 1px solid $main-menu-link-normal;
         cursor: pointer;
@@ -54,16 +55,16 @@ $main-menu-link-default:                        $white !default;
             border-color: $main-menu-link-normal-hover;
             background-color: $main-menu-link-normal-hover;
         }
-        &,
-        &.disabled,
-        &[disabled] {
-            background-color: $main-menu-link-default;
-        }
 
         &:active,
         &.active {
             @include box-shadow($value: $main-menu-link-shadow);
         }
+    }
+    
+    .gs-main-menu__link_disabled {
+		opacity: 0;
+		cursor: default;
     }
 
 }

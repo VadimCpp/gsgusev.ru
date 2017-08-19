@@ -91,6 +91,37 @@
   margin-left: 60px;
   margin-right: 15px; }
 
+.gs-call-button {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none; }
+  .gs-call-button, .gs-call-button:active, .gs-call-button.active, .gs-call-button.disabled, .gs-call-button[disabled] {
+    color: #FFF;
+    border-color: #37BC9B;
+    background-color: #37BC9B; }
+  .gs-call-button:hover, .gs-call-button:focus {
+    color: #FFF;
+    border-color: #48CFAD;
+    background-color: #48CFAD;
+    outline: 0 !important; }
+  .gs-call-button:active, .gs-call-button.active {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
+
 .gs-container {
   margin-top: 15px;
   box-sizing: border-box;
@@ -141,50 +172,6 @@
       font-weight: 500;
       letter-spacing: 8px; } }
 
-@media (min-width: 768px) {
-  .gs-main-menu {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2; } }
-
-@media (min-width: 1220px) {
-  .gs-main-menu {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3; } }
-
-.gs-main-menu__link {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #FFF;
-  background-image: none;
-  border: 1px solid #AAB2BD;
-  cursor: pointer;
-  display: block;
-  font-weight: normal;
-  margin-bottom: 1px;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  user-select: none;
-  color: #434A54; }
-  .gs-main-menu__link:hover, .gs-main-menu__link:focus, .gs-main-menu__link:active, .gs-main-menu__link.active {
-    color: #FFF;
-    border-color: #CCD1D9;
-    background-color: #CCD1D9; }
-  .gs-main-menu__link:active, .gs-main-menu__link.active {
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
-    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125); }
-
-.gs-main-menu__link_disabled {
-  opacity: 0;
-  cursor: default; }
-
 .gs-parallax {
   /* The image used */
   background-image: url("../img/city_landscape_background.jpg");
@@ -201,6 +188,38 @@
   top: 0;
   width: 100%;
   z-index: -1; }
+
+.gs-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: none;
+  padding: 3px; }
+
+.gs-thumbnail__image {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%; }
+
+.gs-thumbnail__caption {
+  font-size: 14px;
+  padding: 10px; }
+  .gs-thumbnail__caption > h1,
+  .gs-thumbnail__caption > h2,
+  .gs-thumbnail__caption > h3,
+  .gs-thumbnail__caption > h4,
+  .gs-thumbnail__caption > h5,
+  .gs-thumbnail__caption > h6 {
+    margin: 0;
+    font-size: 16px; }
+
+.gs-thumbnail__caption_text-center {
+  text-align: center; }
 
 /**
    * typography
@@ -302,3 +321,25 @@ h6,
 
 blockquote {
   border-left: 3px solid #CCD1D9; }
+
+/**
+   * well
+   * --------------------------------------------------
+   */
+.gs-well {
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #434A54;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  .gs-well blockquote {
+    border-color: #CCD1D9; }
+  .gs-well-lg {
+    padding: 20px; }
+  .gs-well-sm {
+    padding: 5px; }
