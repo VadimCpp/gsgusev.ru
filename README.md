@@ -20,3 +20,7 @@ To start developing open console and run commands:
 Only one command to release:
 
 1. `./update-pages.sh`
+
+## Learn coding
+
+See [wiki](https://github.com/VadimCpp/gsgusev.ru/wiki)
