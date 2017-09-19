@@ -21,7 +21,8 @@ var PATH = {
     'src/taxi_v_guseve.html',
     'src/taxi_v_kaliningrade.html',
     'src/perevozka_divana.html',
-    'src/voda.html'
+    'src/voda.html',
+    'src/about.html'
   ],
   css: [
     'src/css/index.css',
