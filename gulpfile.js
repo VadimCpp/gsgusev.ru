@@ -37,7 +37,8 @@ var PATH = {
     'src/css/taxi-v-guseve.css',
     'src/css/taxi-v-kaliningrade.css',
     'src/css/perevozka-divana.css',
-    'src/css/voda.css'
+    'src/css/voda.css',
+    'src/css/about.css'
   ],
   cssmin: [
     'src/css/index.min.css',
@@ -53,7 +54,8 @@ var PATH = {
     'src/css/taxi-v-guseve.min.css',
     'src/css/taxi-v-kaliningrade.min.css',
     'src/css/perevozka-divana.min.css',
-    'src/css/voda.min.css'
+    'src/css/voda.min.css',
+    'src/css/about.min.css'
   ],
   sass: [
     'src/sass/**/*.scss'
