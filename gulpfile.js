@@ -22,7 +22,8 @@ var PATH = {
     'src/taxi_v_kaliningrade.html',
     'src/perevozka_divana.html',
     'src/voda.html',
-    'src/about.html'
+    'src/about.html',
+    'src/fusion_express.html'
   ],
   css: [
     'src/css/index.css',
@@ -39,7 +40,8 @@ var PATH = {
     'src/css/taxi-v-kaliningrade.css',
     'src/css/perevozka-divana.css',
     'src/css/voda.css',
-    'src/css/about.css'
+    'src/css/about.css',
+    'src/css/fusion-express.css'
   ],
   cssmin: [
     'src/css/index.min.css',
@@ -56,7 +58,8 @@ var PATH = {
     'src/css/taxi-v-kaliningrade.min.css',
     'src/css/perevozka-divana.min.css',
     'src/css/voda.min.css',
-    'src/css/about.min.css'
+    'src/css/about.min.css',
+    'src/css/fusion-express.min.css'
   ],
   sass: [
     'src/sass/**/*.scss'
@@ -66,7 +69,8 @@ var PATH = {
   img: [
     'src/img/city_landscape_background.jpg',
     'src/img/ford_transit.jpg',
-    'src/img/kebab.jpg'
+    'src/img/kebab.jpg',
+    'src/img/fusion-logo.png'
   ],
   favicons: [
     'src/android-chrome-192x192.png',
