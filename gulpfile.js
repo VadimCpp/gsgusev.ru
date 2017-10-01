@@ -67,7 +67,7 @@ var PATH = {
   robot: ['src/robots.txt'],
   htaccess: ['src/.htaccess'],
   img: [
-    'src/img/city_landscape_background.jpg',
+    'src/img/nanotech.png',
     'src/img/ford_transit.jpg',
     'src/img/kebab.jpg',
     'src/img/fusion-logo.png'

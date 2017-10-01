@@ -187,7 +187,7 @@
 
 .gs-parallax {
   /* The image used */
-  background-image: url("../img/city_landscape_background.jpg");
+  background-image: url("../img/nanotech.png");
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: bottom;
