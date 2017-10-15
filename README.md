@@ -24,3 +24,7 @@ Only one command to release:
 ## Learn coding
 
 See [wiki](https://github.com/VadimCpp/gsgusev.ru/wiki)
+
+## Stack
+
+css3, gulp, html5, npm, sass
