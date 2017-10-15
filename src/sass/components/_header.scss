@@ -3,6 +3,12 @@
 $height-small:                  $header-height-small;
 $height-large:                  $header-height-large;
 
+$offcanvas-height-small:        $height-small / 2;
+$offcanvas-widht-small:         $height-small / 2;
+
+$offcanvas-height-large:        $height-large / 2;
+$offcanvas-widht-large:         $height-large / 2;
+
 // Exports
 //------------------------------------------------------
 @include exports("header") {
@@ -40,6 +46,36 @@ $height-large:                  $header-height-large;
             font-size: 43px;
             font-weight: 500;
             letter-spacing: 8px;
+        }
+    }
+
+    .gs-header__off-canvas-btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 3px;
+
+        top: $height-small / 4;
+        right: $height-small / 4;
+        height: $height-small / 2;
+        width: $height-small / 2;
+
+        @media screen and (min-width: $medium-start) {
+            font-size: 43px;
+            font-weight: 500;
+            letter-spacing: 8px;
+
+            top: $height-large / 4;
+            right: $height-large / 4;
+            height: $height-large / 2;
+            width: $height-large / 2;
         }
     }
 
