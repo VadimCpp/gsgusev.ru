@@ -1,0 +1,57 @@
+// Variables
+//------------------------------------------------------
+// $height-small:                  $header-height-small;
+// $height-large:                  $header-height-large;
+
+// $offcanvas-height-small:        $height-small / 2;
+// $offcanvas-widht-small:         $height-small / 2;
+
+// $offcanvas-height-large:        $height-large / 2;
+// $offcanvas-widht-large:         $height-large / 2;
+
+// Exports
+//------------------------------------------------------
+@include exports("off-canvas") {
+
+    .gs-off-canvas {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .4);
+        overflow-x: hidden; /* Disable horizontal scroll */
+        // transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    .gs-off-canvas__bar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 2; /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    .gs-off-canvas__close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .gs-off-canvas__btn {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+}

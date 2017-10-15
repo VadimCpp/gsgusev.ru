@@ -24,7 +24,7 @@
         <label class="gs-header__title">
             GS Гусев
         </label>
-        <div class="gs-header__off-canvas-btn">
+        <div class="gs-header__off-canvas-btn" id="off-canvas-btn">
             <i class="gs-icon-menu"> </i>
         </div>
     </header>
@@ -35,6 +35,15 @@
             <li class="gs-breadcrumb__list-item gs-breadcrumb__list-item_active"> GS Гусев </li>
         </ol>
     </section>
+
+    <!-- Off-canvas -->
+    <div class="gs-off-canvas" id="off-canvas">
+
+        <div class="gs-off-canvas__bar" id="off-canvas-bar">
+            <button class="gs-off-canvas__btn" id="gusev-btn">Гусев</button>
+            <button class="gs-off-canvas__btn" id="kgd-btn">Калининград</button>
+        </div>
+    </div>
 
     <!-- Main menu -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
@@ -65,5 +74,40 @@
         <!-- Parallax fix for Chrome browser on Android -->
         <!-- Link: http://stackoverflow.com/a/15009774/1775459 -->
     </div>
+
+    <script type="text/javascript">
+        /* Reference: https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+        function openNav() {
+            document.getElementById("off-canvas").style.width = "100%";
+            document.getElementById("off-canvas-bar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("off-canvas").style.width = "0";
+            document.getElementById("off-canvas-bar").style.width = "0";
+        }
+
+        document.getElementById("off-canvas").addEventListener("click", function() {
+            closeNav();
+        });
+
+        document.getElementById("off-canvas-bar").addEventListener("click", function(e) {
+            e.stopImmediatePropagation();
+        });
+
+        document.getElementById("off-canvas-btn").addEventListener("click", function() {
+            openNav();
+        });
+
+        document.getElementById("gusev-btn").addEventListener("click", function() {
+            alert('показать все что связаны с гусев');
+            closeNav();
+        });
+    
+        document.getElementById("kgd-btn").addEventListener("click", function() {
+            alert('показать все что связаны с калининградом');
+            closeNav();
+        });    
+    </script>
 </body>
 </html>
