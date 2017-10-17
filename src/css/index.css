@@ -263,6 +263,15 @@
   opacity: 0;
   cursor: default; }
 
+[data-city] {
+  display: none;
+}
+
+.gusev > [data-city="gusev"],
+.kaliningrad > [data-city="kaliningrad"] {
+  display: block;
+}
+
 .gs-parallax {
   /* The image used */
   background-image: url("../img/nanotech.png");
