@@ -195,14 +195,24 @@
   /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #111;
-  /* Black*/
+  background-color: #434A54;
+  /* darkgray-dark*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 30px;
   /* Place content 30px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */ }
+
+.gs-off-canvas__label {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #37bc9b;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 2rem;
+  vertical-align: middle;
+  white-space: nowrap; }
 
 .gs-off-canvas__btn {
   padding: 8px 8px 8px 24px;
@@ -211,7 +221,16 @@
   color: #818181;
   display: block;
   margin-top: 10px;
-  width: 100%; }
+  width: 100%;
+  background: none;
+  border: none; }
+
+.active_btn {
+  background-color: #37BC9B;
+  color: #ffffff; }
+
+.active_btn::after {
+  content: " V"; }
 
 @media (min-width: 768px) {
   .gs-main-menu {
