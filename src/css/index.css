@@ -264,13 +264,11 @@
   cursor: default; }
 
 [data-city] {
-  display: none;
-}
+  display: none; }
 
 .gusev > [data-city="gusev"],
 .kaliningrad > [data-city="kaliningrad"] {
-  display: block;
-}
+  display: block; }
 
 .gs-parallax {
   /* The image used */

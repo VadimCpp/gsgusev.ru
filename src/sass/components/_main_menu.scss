@@ -67,4 +67,13 @@ $main-menu-link-default:                        $white !default;
 		cursor: default;
     }
 
+    [data-city] {
+        display: none;
+    }
+    
+    .gusev > [data-city="gusev"],
+    .kaliningrad > [data-city="kaliningrad"] {
+        display: block;
+    }
+
 }
