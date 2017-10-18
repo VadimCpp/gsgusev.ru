@@ -199,25 +199,19 @@
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
+  padding-top: 30px;
+  /* Place content 30px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */ }
 
-.gs-off-canvas__close-btn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
-
 .gs-off-canvas__btn {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 24px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s; }
+  margin-top: 10px;
+  width: 100%; }
 
 @media (min-width: 768px) {
   .gs-main-menu {

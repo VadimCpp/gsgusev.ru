@@ -22,7 +22,6 @@
         right: 0;
         background-color: rgba(0, 0, 0, .4);
         overflow-x: hidden; /* Disable horizontal scroll */
-        // transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     }
 
     .gs-off-canvas__bar {
@@ -34,24 +33,35 @@
         right: 0;
         background-color: #111; /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
+        padding-top: 30px; /* Place content 30px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    }
 
-    .gs-off-canvas__close-btn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+        // TODO (2): 
+        // посмотреть какие у нас есть стандартные цвета в global.scss 
+        // и выбрать для бекграунда какой-нибудь темный цвет на свой вкус
+    }
+    
+    .gs-off-canvas__label {
+        // TODO (2):
+        // подобрать стили по вкусу
     }
 
     .gs-off-canvas__btn {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 24px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
         display: block;
-        transition: 0.3s;
+        margin-top: 10px;
+        width: 100%;
+
+        // TODO (2): 
+        // подобрать стили по вкусу
+        // ожидается, что:
+        //  - у кнопки не будет рамки и бекграунда
+        //  - цвет текста будет светлый
+        //  - если кнопка выбрана, появляется цвет у бекграунда и этот цвет подсказывает пользователю, что кнопка выбрана
+        //  - также у выбранной кнопки появляется иконка "галочка", что еще раз показывает текущий город 
+
     }
 }
