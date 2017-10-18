@@ -38,8 +38,10 @@
     }
     
     .gs-off-canvas__label {
-        display: inline-block;
-        padding: 0 10px;
+        display: inline-block ;
+        padding: 0 20px;
+        margin: 20px 55%;
+        text-align: center;
         background-color: #37bc9b;
         color: #fff;
         line-height: 1.5;
@@ -58,6 +60,13 @@
         width: 100%;
         background: none;
         border: none;
+        white-space: nowrap;
+    }
+
+    .gs-off-canvas__btn:active,
+    .gs-off-canvas__btn:focus
+    {
+        outline: none;
     }
 
     .active_btn{
@@ -65,7 +74,7 @@
         color: #ffffff;
     }
 
-    .active_btn::after {
-        content: " V";
+    .active_btn::before {
+        content: "V ";
     }
 }
