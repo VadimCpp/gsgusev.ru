@@ -86,12 +86,21 @@
             document.getElementById("label-city").style.opacity = 1;
         }
 
+        document.getElementById("gusev-btn").onclick = function() {
+            this.style.opacity = 0;
+            document.getElementById("kgd-btn").style.opacity = 0;
+            document.getElementById("label-city").style.opacity = 0;
+        }
+
+        document.getElementById("kgd-btn").onclick = function() {
+            this.style.opacity = 0;
+            document.getElementById("gusev-btn").style.opacity = 0;
+            document.getElementById("label-city").style.opacity = 0;
+        }
+
         function closeNav() {
             document.getElementById("off-canvas").style.width = "0";
             document.getElementById("off-canvas-bar").style.width = "0";
-            document.getElementById("gusev-btn").style.opacity = 0;
-            document.getElementById("kgd-btn").style.opacity = 0;
-            document.getElementById("label-city").style.opacity = 0;
         }
 
         document.getElementById("off-canvas").addEventListener("click", function() {

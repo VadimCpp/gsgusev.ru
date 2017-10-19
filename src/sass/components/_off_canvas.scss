@@ -69,12 +69,24 @@
         outline: none;
     }
 
-    .active_btn{
+    .active_btn {
         background-color: #37BC9B;
         color: #ffffff;
-    }
+     }
 
     .active_btn::before {
         content: "V ";
+    }
+
+    #gusev-btn {
+        transition: opacity 1s;
+    }
+
+    #kgd-btn {
+        transition: opacity 1s;
+    }
+
+    #label-city {
+        transition: opacity 0.5s;
     }
 }
