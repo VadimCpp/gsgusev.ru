@@ -79,14 +79,17 @@
     }
 
     #gusev-btn {
-        transition: opacity 1s;
+        transition-property: opacity;
+        transition-duration: .5s;
     }
 
     #kgd-btn {
-        transition: opacity 1s;
+        transition-property: opacity;
+        transition-duration: .5s;
     }
 
     #label-city {
-        transition: opacity 0.5s;
+        transition-property: opacity;
+        transition-duration: .5s;
     }
 }
