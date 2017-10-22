@@ -235,6 +235,8 @@ body {
   width: 100%;
   background: none;
   border: none;
+  transition-property: opacity;
+  transition-duration: .5s;
   white-space: nowrap; }
 
 .gs-off-canvas__btn:active,
@@ -247,18 +249,6 @@ body {
 
 .active_btn::before {
   content: "V "; }
-
-#gusev-btn {
-  transition-property: opacity;
-  transition-duration: .5s; }
-
-#kgd-btn {
-  transition-property: opacity;
-  transition-duration: .5s; }
-
-#label-city {
-  transition-property: opacity;
-  transition-duration: .5s; }
 
 @media (min-width: 768px) {
   .gs-main-menu {
