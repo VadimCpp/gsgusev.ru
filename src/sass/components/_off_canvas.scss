@@ -60,6 +60,8 @@
         width: 100%;
         background: none;
         border: none;
+        transition-property: opacity;
+        transition-duration: .5s;
         white-space: nowrap;
     }
 
@@ -78,18 +80,4 @@
         content: "V ";
     }
 
-    #gusev-btn {
-        transition-property: opacity;
-        transition-duration: .5s;
-    }
-
-    #kgd-btn {
-        transition-property: opacity;
-        transition-duration: .5s;
-    }
-
-    #label-city {
-        transition-property: opacity;
-        transition-duration: .5s;
-    }
 }
