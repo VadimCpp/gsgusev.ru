@@ -107,16 +107,16 @@
         });
 
         document.getElementById("gusev-btn").addEventListener("click", function() {
-            document.getElementById("gusev-btn").classList.add('active_btn');
-            document.getElementById("kgd-btn").classList.remove('active_btn');
+            document.getElementById("gusev-btn").classList.add('active');
+            document.getElementById("kgd-btn").classList.remove('active');
             document.getElementById("main-menu").classList.remove('kaliningrad');
             document.getElementById("main-menu").classList.add('gusev');
             closeNav();
         });
     
         document.getElementById("kgd-btn").addEventListener("click", function() {
-            document.getElementById("kgd-btn").classList.add('active_btn');
-            document.getElementById("gusev-btn").classList.remove('active_btn');
+            document.getElementById("kgd-btn").classList.add('active');
+            document.getElementById("gusev-btn").classList.remove('active');
             document.getElementById("main-menu").classList.remove('gusev');
             document.getElementById("main-menu").classList.add('kaliningrad');
             closeNav();

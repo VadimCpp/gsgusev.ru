@@ -56,28 +56,27 @@
         font-size: 25px;
         color: #818181;
         display: block;
-        margin-top: 10px;
         width: 100%;
         background: none;
         border: none;
         transition-property: opacity;
         transition-duration: .5s;
         white-space: nowrap;
+
+        &.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+
+            &::before {
+                content: "V ";
+            }
+        }
     }
 
     .gs-off-canvas__btn:active,
     .gs-off-canvas__btn:focus
     {
         outline: none;
-    }
-
-    .active_btn {
-        background-color: #37BC9B;
-        color: #ffffff;
-     }
-
-    .active_btn::before {
-        content: "V ";
     }
 
 }
