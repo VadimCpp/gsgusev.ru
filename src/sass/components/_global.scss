@@ -189,3 +189,14 @@ $header-height-large:         120px;
 .gs-icon-menu:before { content: '\f0c9'; } /* '' */
 .gs-icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-rouble:before { content: '\f158'; } /* '' */
+
+
+// Body padding due to fixed header position
+//------------------------------------------------------
+body {
+    padding-top: $header-height-small;
+
+    @media screen and (min-width: $medium-start) {
+        padding-top: $header-height-large;
+    }
+}
