@@ -228,24 +228,25 @@ body {
   white-space: nowrap; }
 
 .gs-off-canvas__btn {
-  padding: 8px 8px 8px 24px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #656D78;
-  display: block;
-  width: 100%;
   background: none;
   border: none;
+  color: #656D78;
+  display: block;
+  font: normal 18px/26px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 8px 8px 8px 24px;
+  text-align: left;
+  text-decoration: none;
   transition-property: opacity;
   transition-duration: .5s;
-  white-space: nowrap; }
+  white-space: nowrap;
+  width: 100%; }
   .gs-off-canvas__btn > i {
-    display: none; }
+    opacity: 0; }
   .gs-off-canvas__btn.active {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFF; }
     .gs-off-canvas__btn.active > i {
-      display: inline; }
+      opacity: 1; }
 
 .gs-off-canvas__btn:active,
 .gs-off-canvas__btn:focus {

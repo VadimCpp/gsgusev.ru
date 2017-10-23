@@ -43,20 +43,21 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
     }
 
     .gs-off-canvas__btn {
-        padding: 8px 8px 8px 24px;
-        text-decoration: none;
-        font-size: 25px;
-        color: $darkgray-light;
-        display: block;
-        width: 100%;
         background: none;
         border: none;
+        color: $darkgray-light;
+        display: block;
+        font: normal 18px/26px "Helvetica Neue",Helvetica,Arial,sans-serif;
+        padding: 8px 8px 8px 24px;
+        text-align: left;
+        text-decoration: none;
         transition-property: opacity;
         transition-duration: .5s;
         white-space: nowrap;
+        width: 100%;
 
         > i {
-            display: none;
+            opacity: 0;
         }
 
         &.active {
@@ -64,7 +65,7 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
             color: $white;
 
             > i {
-                display: inline;
+                opacity: 1;
             }
         }
     }
