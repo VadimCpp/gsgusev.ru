@@ -30,14 +30,16 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
     }
     
     .gs-off-canvas__label {
+        border-bottom: 1px solid $offcanvas-btn-back; 
+        color: $white;
         display: inline-block ;
+        font: italic 26px/40px "Helvetica Neue",Helvetica,Arial,sans-serif;
         padding: 0 20px;
         margin: 20px 55%;
         text-align: center;
-        background-color: $mint-dark;
-        color: $white;
         line-height: 1.5;
-        font-size: 2rem;
+        transition-property: opacity;
+        transition-duration: .5s;
         vertical-align: middle;
         white-space: nowrap;
     }
