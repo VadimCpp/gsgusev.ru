@@ -55,12 +55,16 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
         transition-duration: .5s;
         white-space: nowrap;
 
+        > i {
+            display: none;
+        }
+
         &.active {
             background-color: $offcanvas-btn-back;
             color: $white;
 
-            &::before {
-                content: "V ";
+            > i {
+                display: inline;
             }
         }
     }
