@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?v=1.1");
-  src: url("../fonts/fontello.eot?v=1.1#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?v=1.1") format("woff2"), url("../fonts/fontello.woff?v=1.1") format("woff"), url("../fonts/fontello.ttf?v=1.1") format("truetype"), url("../fonts/fontello.svg?v=1.1#fontello") format("svg");
+  src: url("../fonts/fontello.eot?v=1.2");
+  src: url("../fonts/fontello.eot?v=1.2#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?v=1.2") format("woff2"), url("../fonts/fontello.woff?v=1.2") format("woff"), url("../fonts/fontello.ttf?v=1.2") format("truetype"), url("../fonts/fontello.svg?v=1.2#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -43,6 +43,10 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
+.gs-icon-ok:before {
+  content: '\e800'; }
+
+/* '' */
 .gs-icon-phone:before {
   content: '\e808'; }
 
@@ -55,7 +59,7 @@
   content: '\f105'; }
 
 /* '' */
-.icon-rouble:before {
+.gs-icon-rouble:before {
   content: '\f158'; }
 
 /* '' */
@@ -235,11 +239,13 @@ body {
   transition-property: opacity;
   transition-duration: .5s;
   white-space: nowrap; }
+  .gs-off-canvas__btn > i {
+    display: none; }
   .gs-off-canvas__btn.active {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFF; }
-    .gs-off-canvas__btn.active::before {
-      content: "V "; }
+    .gs-off-canvas__btn.active > i {
+      display: inline; }
 
 .gs-off-canvas__btn:active,
 .gs-off-canvas__btn:focus {
