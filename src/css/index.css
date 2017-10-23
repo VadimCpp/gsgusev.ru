@@ -189,7 +189,6 @@ body {
   /* Stay on top */
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
   overflow-x: hidden;
   /* Disable horizontal scroll */ }
 
@@ -205,7 +204,6 @@ body {
   top: 0;
   right: 0;
   background-color: #434A54;
-  /* darkgray-dark*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 30px;
@@ -218,8 +216,8 @@ body {
   padding: 0 20px;
   margin: 20px 55%;
   text-align: center;
-  background-color: #37bc9b;
-  color: #fff;
+  background-color: #37BC9B;
+  color: #FFF;
   line-height: 1.5;
   font-size: 2rem;
   vertical-align: middle;
@@ -229,7 +227,7 @@ body {
   padding: 8px 8px 8px 24px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #656D78;
   display: block;
   width: 100%;
   background: none;
@@ -239,7 +237,7 @@ body {
   white-space: nowrap; }
   .gs-off-canvas__btn.active {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #fff; }
+    color: #FFF; }
     .gs-off-canvas__btn.active::before {
       content: "V "; }
 

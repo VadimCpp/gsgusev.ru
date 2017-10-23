@@ -1,13 +1,6 @@
 // Variables
 //------------------------------------------------------
-// $height-small:                  $header-height-small;
-// $height-large:                  $header-height-large;
-
-// $offcanvas-height-small:        $height-small / 2;
-// $offcanvas-widht-small:         $height-small / 2;
-
-// $offcanvas-height-large:        $height-large / 2;
-// $offcanvas-widht-large:         $height-large / 2;
+$offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
 
 // Exports
 //------------------------------------------------------
@@ -20,7 +13,6 @@
         z-index: 1; /* Stay on top */
         top: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, .4);
         overflow-x: hidden; /* Disable horizontal scroll */
     }
 
@@ -31,7 +23,7 @@
         z-index: 2; /* Stay on top */
         top: 0;
         right: 0;
-        background-color: #434A54; /* darkgray-dark*/
+        background-color: $darkgray-dark;
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 30px; /* Place content 30px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -42,8 +34,8 @@
         padding: 0 20px;
         margin: 20px 55%;
         text-align: center;
-        background-color: #37bc9b;
-        color: #fff;
+        background-color: $mint-dark;
+        color: $white;
         line-height: 1.5;
         font-size: 2rem;
         vertical-align: middle;
@@ -54,7 +46,7 @@
         padding: 8px 8px 8px 24px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: $darkgray-light;
         display: block;
         width: 100%;
         background: none;
@@ -64,8 +56,8 @@
         white-space: nowrap;
 
         &.active {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background-color: $offcanvas-btn-back;
+            color: $white;
 
             &::before {
                 content: "V ";
