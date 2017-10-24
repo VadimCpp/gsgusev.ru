@@ -165,8 +165,8 @@ gulp.task('img', ['clean-img'], function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch(PATH.sass, ['sass']);
-  gulp.watch(PATH.css, ['minify-css']);
+  gulp.watch(PATH.sass, ['sass']).on('change', browserSync.reload);
+  gulp.watch(PATH.css, ['minify-css']).on('change', browserSync.reload);
   gulp.watch(PATH.html, browserSync.reload);
 });
 

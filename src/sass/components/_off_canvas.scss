@@ -30,8 +30,6 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
     }
     
     .gs-off-canvas__label {
-        border-left: 1px solid $offcanvas-btn-back; 
-        border-top: 1px solid $offcanvas-btn-back; 
         color: $white;
         display: inline-block ;
         font: italic 26px/32px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -47,7 +45,7 @@ $offcanvas-btn-back:            rgba(255, 255, 255, 0.1);
     .gs-off-canvas__bar > hr {
         border: none; 
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         background-color: $offcanvas-btn-back; 
         color: $offcanvas-btn-back; 
         height: 1px; 
