@@ -103,7 +103,7 @@ var DEST = {
 //
 // Minify compiled CSS
 //
-gulp.task('minify-css', function() {
+gulp.task('minify-css', ['sass'], function() {
   return gulp.src(PATH.css)
       .pipe(cleanCSS({ compatibility: 'ie8' }))
       .pipe(rename({ suffix: '.min' }))
