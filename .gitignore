@@ -4,4 +4,4 @@ web/
 node_modules/
 .idea/
 vendor/
-*[.min.css]
+src/css/
