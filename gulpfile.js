@@ -68,6 +68,7 @@ var PATH = {
   htaccess: ['src/.htaccess'],
   img: [
     'src/img/nanotech.png',
+    'src/img/nanotech_land.png',
     'src/img/ford_transit.jpg',
     'src/img/kebab.jpg',
     'src/img/fusion-logo.png',

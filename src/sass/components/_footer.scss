@@ -1,6 +1,7 @@
 // Variables
 //------------------------------------------------------
 $nanotech-background-img:       url("../img/nanotech.png");
+$nanotech-land-background-img:  url("../img/nanotech_land.png");
 $img-background-size:           $common-width;
 $footer-height:                 $common-height;
 
@@ -40,6 +41,19 @@ $footer-height:                 $common-height;
         background-image: $nanotech-background-img;
         background-position: bottom;
         background-repeat: no-repeat;
+        background-size: $img-background-size;
+    }
+
+    .gs-footer__image_land {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-image: $nanotech-land-background-img;
+        background-position: bottom;
+        background-repeat: repeat-x;
         background-size: $img-background-size;
     }
 }
