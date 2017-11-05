@@ -12,7 +12,7 @@ $main-menu-link-default:                        $white !default;
 @include exports("main-menu") {
 
     .gs-main-menu {
-        
+
     }
 
     .gs-main-menu__link {
@@ -60,8 +60,8 @@ $main-menu-link-default:                        $white !default;
         display: none;
     }
     
-    .gusev > [data-city="gusev"],
-    .kaliningrad > [data-city="kaliningrad"] {
+    .gusev > [data-city*="gusev"],
+    .kaliningrad > [data-city*="kaliningrad"] {
         display: block;
     }
 
