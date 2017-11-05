@@ -39,6 +39,7 @@
 
         <div class="gs-off-canvas__bar" id="off-canvas-bar">
             <p class="gs-off-canvas__label" id="label-city"> Город </p>
+            <hr>
             <button class="gs-off-canvas__btn active" id="gusev-btn"> <i class="gs-icon-ok"> </i> Гусев</button>
             <button class="gs-off-canvas__btn" id="kgd-btn"> <i class="gs-icon-ok"> </i> Калининград</button>
         </div>
@@ -47,8 +48,13 @@
     <!-- Main menu -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
         <div class="gs-main-menu gusev" id="main-menu">
+<<<<<<< HEAD
             <a href="bus_gusev_kgd.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Гусев-Калининград <i class="gs-icon-angle-right"> </i> </a>
             <a href="bus_kgd_gusev.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Калининград-Гусев <i class="gs-icon-angle-right"> </i> </a>
+=======
+            <a href="bus_gusev_kgd.html" class="gs-main-menu__link"> Автобус Гусев-Калининград <i class="gs-icon-angle-right"> </i> </a>
+            <a href="bus_kgd_gusev.html" class="gs-main-menu__link"> Автобус Калининград-Гусев <i class="gs-icon-angle-right"> </i> </a>
+>>>>>>> 3d15c1f09b6a440cf432ea43b6fab9111e938302
             <a href="bus_gusev_poselok.html" class="gs-main-menu__link" data-city="gusev"> Автобус Гусев-Поселок <i class="gs-icon-angle-right"> </i> </a>
             <a href="bus_poselok_gusev.html" class="gs-main-menu__link" data-city="gusev"> Автобус Поселок-Гусев <i class="gs-icon-angle-right"> </i> </a>
             <a href="admin_poselka.html" class="gs-main-menu__link" data-city="gusev"> Администратор поселка <i class="gs-icon-angle-right"> </i> </a>
@@ -89,17 +95,19 @@
         function openNav() {
             document.getElementById("off-canvas").style.width = "100%";
             document.getElementById("off-canvas-bar").style.width = "250px";
-            document.getElementById("gusev-btn").style.opacity = 1;
-            document.getElementById("kgd-btn").style.opacity = 1;
-            document.getElementById("label-city").style.opacity = 1;
+            document.getElementById("gusev-btn").style.opacity = "1";
+            document.getElementById("kgd-btn").style.opacity = "1";
+            document.getElementById("label-city").style.opacity = "1";
+            document.getElementsByTagName("hr")[0].style.opacity = "1";
         }
 
         function closeNav() {
-            document.getElementById("kgd-btn").style.opacity = 0;
-            document.getElementById("gusev-btn").style.opacity = 0;
-            document.getElementById("label-city").style.opacity = 0;
+            document.getElementById("kgd-btn").style.opacity = "0";
+            document.getElementById("gusev-btn").style.opacity = "0";
+            document.getElementById("label-city").style.opacity = "0";
             document.getElementById("off-canvas").style.width = "0";
             document.getElementById("off-canvas-bar").style.width = "0";
+            document.getElementsByTagName("hr")[0].style.opacity = "0";
         }
 
         document.getElementById("off-canvas").addEventListener("click", function() {
