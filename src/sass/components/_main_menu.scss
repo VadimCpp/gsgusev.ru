@@ -1,8 +1,5 @@
 // Variables
 //------------------------------------------------------
-$medium-column-count:                           2;
-$large-column-count:                            3;
-
 $main-menu-link-radius:                         4px;
 $main-menu-link-shadow:                         inset 0 1px 2px rgba(0, 0, 0, .125) !default;
 $main-menu-link-font-color-dark:                $darkgray-dark !default;
@@ -15,15 +12,7 @@ $main-menu-link-default:                        $white !default;
 @include exports("main-menu") {
 
     .gs-main-menu {
-
-        @media (min-width: $medium-start) {
-            @include prefixer(column-count, $medium-column-count, webkit moz spec);
-        }
-
-        @media (min-width: $large-start) {
-            @include prefixer(column-count, $large-column-count, webkit moz spec);
-        }
-
+        
     }
 
     .gs-main-menu__link {
