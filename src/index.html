@@ -72,7 +72,19 @@
     </footer>
 
     <script type="text/javascript">
+
+        // TODO: todo
+
+        function saveDefaultCity(city) {
+            // TODO: save currently selected city to IndexedDB
+        }
+
+        function loadDefaultCity() {
+            // TODO: load default city from IndexedDB
+        }
+
         /* Reference: https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+
         function openNav() {
             document.getElementById("off-canvas").style.width = "100%";
             document.getElementById("off-canvas-bar").style.width = "250px";
@@ -107,6 +119,7 @@
             document.getElementById("main-menu").classList.remove('kaliningrad');
             document.getElementById("main-menu").classList.add('gusev');
             closeNav();
+            saveDefaultCity('gusev');
         });
     
         document.getElementById("kgd-btn").addEventListener("click", function() {
@@ -115,7 +128,11 @@
             document.getElementById("main-menu").classList.remove('gusev');
             document.getElementById("main-menu").classList.add('kaliningrad');
             closeNav();
+            saveDefaultCity('kaliningrad');
         });
+
+        loadDefaultCity();
+
     </script>
 </body>
 </html>
