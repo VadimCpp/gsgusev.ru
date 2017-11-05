@@ -70,7 +70,8 @@ var PATH = {
     'src/img/nanotech.png',
     'src/img/ford_transit.jpg',
     'src/img/kebab.jpg',
-    'src/img/fusion-logo.png'
+    'src/img/fusion-logo.png',
+    'src/img/header.png'
   ],
   favicons: [
     'src/android-chrome-192x192.png',
