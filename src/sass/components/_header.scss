@@ -1,13 +1,8 @@
 // Variables
 //------------------------------------------------------
-$height-small:                  $header-height-small;
-$height-large:                  $header-height-large;
+$header-height:                 $common-height;
+$img-background-size:           $common-width;
 
-$offcanvas-height-small:        $height-small / 2;
-$offcanvas-widht-small:         $height-small / 2;
-
-$offcanvas-height-large:        $height-large / 2;
-$offcanvas-widht-large:         $height-large / 2;
 $nanotech-background-img:       url("../img/header.png");
 
 // Exports
@@ -19,16 +14,14 @@ $nanotech-background-img:       url("../img/header.png");
         top: 0;
         left: 0;
         width: 100%;
-        height: 80px;
+        height: $header-height;
 
         /* The image used */
         background-image: $nanotech-background-img;
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: 320px;
+        background-size: $img-background-size;
         z-index: 1;
     }
 
@@ -40,26 +33,15 @@ $nanotech-background-img:       url("../img/header.png");
 
         cursor: pointer;
 
-        color: white;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 3px;
 
-        top: $height-small / 4;
-        right: $height-small / 4;
-        height: $height-small / 2;
-        width: $height-small / 2;
+        top: $header-height / 3;
+        right: $header-height / 5;
+        height: $header-height / 2;
+        width: $header-height / 2;
 
-        @media screen and (min-width: $medium-start) {
-            font-size: 43px;
-            font-weight: 500;
-            letter-spacing: 8px;
-
-            top: $height-large / 4;
-            right: $height-large / 4;
-            height: $height-large / 2;
-            width: $height-large / 2;
-        }
     }
 
 }

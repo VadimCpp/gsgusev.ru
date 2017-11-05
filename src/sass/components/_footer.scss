@@ -1,6 +1,7 @@
 // Variables
 //------------------------------------------------------
 $nanotech-background-img:       url("../img/nanotech.png");
+$img-background-size:           $common-width;
 
 // Exports
 //------------------------------------------------------
@@ -20,7 +21,7 @@ $nanotech-background-img:       url("../img/nanotech.png");
         background-attachment: fixed;
         background-position: bottom;
         background-repeat: no-repeat;
-        background-size: 320px;
+        background-size: $img-background-size;
         z-index: 1;
     }
 }

@@ -53,9 +53,10 @@ $darkgray-light:              #656D78 !default;
 $medium-start:                768px;
 $large-start:                 1220px;
 
-// header height
-$header-height-small:         60px;
-$header-height-large:         120px;
+// $common-height : $common-width = 1 : 4
+
+$common-height:               80px;
+$common-width:                260px;
 
 // Global Mixins
 //------------------------------------------------------
@@ -194,10 +195,8 @@ $header-height-large:         120px;
 
 // Body padding due to fixed header position
 //------------------------------------------------------
-body {
-    padding-top: $header-height-small;
 
-    @media screen and (min-width: $medium-start) {
-        padding-top: $header-height-large;
-    }
+body {
+    padding-top: $common-height;
+    padding-bottom: $common-height;
 }
