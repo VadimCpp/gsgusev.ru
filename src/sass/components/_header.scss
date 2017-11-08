@@ -3,6 +3,8 @@
 $header-height:                 $common-height;
 $img-background-size:           $common-width;
 
+$default-map-color:                    #f2eee9;
+
 $nanotech-background-img:       url("../img/header.png");
 
 // Exports
@@ -30,6 +32,10 @@ $nanotech-background-img:       url("../img/header.png");
         background: -moz-linear-gradient(top, rgba(245,247,250,1) 0%, rgba(245,247,250,1) 75%, rgba(245,247,250,0) 100%);
         background: -webkit-linear-gradient(top, rgba(245,247,250,1) 0%, rgba(245,247,250,1) 75%,rgba(245,247,250,0) 100%);
         background: linear-gradient(to bottom, rgba(245,247,250,1) 0%, rgba(245,247,250,1) 75%,rgba(245,247,250,0) 100%);
+    }
+
+    .gs-header__veil_default-map-color {
+        background: $default-map-color;
     }
 
     .gs-header__image {
