@@ -8,7 +8,7 @@ $well-blockquote-color:      $mediumgray-light !default;
 $well-radius:                4px;
 $well-shadow:                0 1px 2px rgba(0, 0, 0, .2) !default;
 
-$modal-font-color:            $darkgray-dark !default;
+$modal-font-color:           $darkgray-dark !default;
 
 // Exports
 //------------------------------------------------------
@@ -39,6 +39,17 @@ $modal-font-color:            $darkgray-dark !default;
     }
   }
 
+  .gs-well_text-center {
+    text-align: center;
+  }
+
+  .gs-well_margin-remove {
+    margin: 5px 0;
+  }
+
+  .gs-well__image {
+      @include radius($type: border-radius, $value: $well-radius);
+      width: 100%;
+  }
+
 }
-
-

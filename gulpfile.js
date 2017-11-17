@@ -7,6 +7,9 @@ var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 
 var PATH = {
+  scripts: [
+    'src/scripts/kino_lumen.php'
+  ],
   html: [
     'src/index.html',
     'src/admin_poselka.html',
@@ -64,8 +67,12 @@ var PATH = {
   sass: [
     'src/sass/**/*.scss'
   ],
-  robot: ['src/robots.txt'],
-  htaccess: ['src/.htaccess'],
+  robot: [
+    'src/robots.txt'
+  ],
+  htaccess: [
+    'src/.htaccess'
+  ],
   img: [
     'src/img/nanotech.png',
     'src/img/nanotech_land.png',
@@ -86,7 +93,7 @@ var PATH = {
     'src/mstile-150x150.png',
     'src/safari-pinned-tab.svg'
   ],
-  'fonts': [
+  fonts: [
     'src/fonts/fontello.eot',
     'src/fonts/fontello.svg',
     'src/fonts/fontello.ttf',
@@ -201,5 +208,8 @@ gulp.task('build', function() {
 
   gulp.src(PATH.robot)
       .pipe(gulp.dest('web'));
+
+  gulp.src(PATH.scripts)
+      .pipe(gulp.dest('web'));      
 });
 
