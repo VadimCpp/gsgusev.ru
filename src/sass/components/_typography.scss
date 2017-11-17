@@ -43,12 +43,12 @@ $image-radius:               4px !default;
 
   a {
     color: $link-font-color;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover,
     &:focus {
       color: $link-font-color-hover;
-      text-decoration: none;
+      text-decoration: underline;
     }
     &:focus {
       outline: none;
