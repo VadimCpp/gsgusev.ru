@@ -36,6 +36,7 @@ $call-button-radius:                    50px;
             color: $call-button-font-color-light;
             border-color: $call-button-info;
             background-color: $call-button-info;
+            text-decoration: none;
         }
 
         &:hover,
@@ -44,7 +45,7 @@ $call-button-radius:                    50px;
             border-color: $call-button-info-hover;
             background-color: $call-button-info-hover;
             outline: 0 !important;
-
+            text-decoration: none;
         }
 
         &:active,

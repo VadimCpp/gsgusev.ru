@@ -43,6 +43,7 @@ $main-menu-link-default:                        $white !default;
             color: $main-menu-link-default;
             border-color: $main-menu-link-normal-hover;
             background-color: $main-menu-link-normal-hover;
+            text-decoration: none;
         }
 
         &:active,
