@@ -9,6 +9,7 @@
 //
 
 header("Content-type:application/json");
+header("Access-Control-Allow-Origin:*");
 
 $html = file_get_contents('http://lumenfilm.com/gusev/affishe');
 
