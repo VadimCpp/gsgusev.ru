@@ -8,7 +8,7 @@ var browserSync = require('browser-sync').create();
 
 var PATH = {
   scripts: [
-    'src/scripts/kino_lumen.php'
+    'src/scripts/*.php'
   ],
   html: [
     'src/index.html',
@@ -153,26 +153,6 @@ gulp.task('fonts', ['clean-fonts'], function() {
 });
 
 
-gulp.task('clean-img', function() {
-  var dist = PATH.img.map(function(path){
-    return 'web/img/' + path;
-  });
-
-  return del(dist);
-});
-
-
-gulp.task('img', ['clean-img'], function() {
-
-  var sources = PATH.img.map(function(path){
-    return 'src/img/' + path;
-  });
-
-  return gulp.src(sources)
-      .pipe(gulp.dest('web/img/'));
-});
-
-
 gulp.task('watch', function() {
   gulp.watch(PATH.sass, ['sass']).on('change', browserSync.reload);
   gulp.watch(PATH.css, ['minify-css']).on('change', browserSync.reload);
@@ -185,7 +165,7 @@ gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 
 
 // Build for production
-gulp.task('build', function() {
+gulp.task('build', ['sass', 'minify-css'], function() {
 
   gulp.src(PATH.html)
       .pipe(htmlmin({collapseWhitespace: true}))
@@ -210,6 +190,6 @@ gulp.task('build', function() {
       .pipe(gulp.dest('web'));
 
   gulp.src(PATH.scripts)
-      .pipe(gulp.dest('web'));      
+      .pipe(gulp.dest('web/scripts'));      
 });
 
