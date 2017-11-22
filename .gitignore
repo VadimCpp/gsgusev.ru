@@ -1,7 +1,9 @@
 
 .gitignore
 web/
+dist/
 node_modules/
 .idea/
+.publish/
 vendor/
 src/css/

@@ -5,6 +5,7 @@ var rename = require("gulp-rename");
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
+var ghPages = require('gulp-gh-pages');
 
 var PATH = {
   scripts: [
@@ -149,7 +150,7 @@ gulp.task('fonts', ['clean-fonts'], function() {
   });
 
   return gulp.src(sources)
-      .pipe(gulp.dest('web/fonts/'));
+      .pipe(gulp.dest('dist/fonts/'));
 });
 
 
@@ -169,27 +170,33 @@ gulp.task('build', ['sass', 'minify-css'], function() {
 
   gulp.src(PATH.html)
       .pipe(htmlmin({collapseWhitespace: true}))
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.cssmin)
-      .pipe(gulp.dest('web/css'));
+      .pipe(gulp.dest('dist/css'));
 
   gulp.src(PATH.favicons)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.fonts)
-      .pipe(gulp.dest('web/fonts'));
+      .pipe(gulp.dest('dist/fonts'));
 
   gulp.src(PATH.img)
-      .pipe(gulp.dest('web/img'));
+      .pipe(gulp.dest('dist/img'));
 
   gulp.src(PATH.htaccess)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.robot)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.scripts)
-      .pipe(gulp.dest('web/scripts'));      
+      .pipe(gulp.dest('dist/scripts'));      
 });
 
+
+// Deploy build to github pages
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('dist/**/*')
+    .pipe(ghPages());
+});
