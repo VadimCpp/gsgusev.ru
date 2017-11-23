@@ -5,10 +5,11 @@ var rename = require("gulp-rename");
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
+var ghPages = require('gulp-gh-pages');
 
 var PATH = {
   scripts: [
-    'src/scripts/kino_lumen.php'
+    'src/scripts/*.php'
   ],
   html: [
     'src/index.html',
@@ -149,27 +150,7 @@ gulp.task('fonts', ['clean-fonts'], function() {
   });
 
   return gulp.src(sources)
-      .pipe(gulp.dest('web/fonts/'));
-});
-
-
-gulp.task('clean-img', function() {
-  var dist = PATH.img.map(function(path){
-    return 'web/img/' + path;
-  });
-
-  return del(dist);
-});
-
-
-gulp.task('img', ['clean-img'], function() {
-
-  var sources = PATH.img.map(function(path){
-    return 'src/img/' + path;
-  });
-
-  return gulp.src(sources)
-      .pipe(gulp.dest('web/img/'));
+      .pipe(gulp.dest('dist/fonts/'));
 });
 
 
@@ -184,32 +165,32 @@ gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 
 
 // Build for production
-gulp.task('build', function() {
+gulp.task('build', ['sass', 'minify-css'], function() {
 
   gulp.src(PATH.html)
       .pipe(htmlmin({collapseWhitespace: true}))
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.cssmin)
-      .pipe(gulp.dest('web/css'));
+      .pipe(gulp.dest('dist/css'));
 
   gulp.src(PATH.favicons)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.fonts)
-      .pipe(gulp.dest('web/fonts'));
+      .pipe(gulp.dest('dist/fonts'));
 
   gulp.src(PATH.img)
-      .pipe(gulp.dest('web/img'));
+      .pipe(gulp.dest('dist/img'));
 
   gulp.src(PATH.htaccess)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.robot)
-      .pipe(gulp.dest('web'));
+      .pipe(gulp.dest('dist'));
 
   gulp.src(PATH.scripts)
-      .pipe(gulp.dest('web'));      
+      .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('gh-pages', ['build'], function(done) {
@@ -221,4 +202,10 @@ gulp.task('gh-pages', ['build'], function(done) {
 
     done();
   });
+});
+
+// Deploy build to github pages
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('dist/**/*')
+    .pipe(ghPages());
 });

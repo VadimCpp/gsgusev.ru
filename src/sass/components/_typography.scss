@@ -127,7 +127,10 @@ $image-radius:               4px !default;
   blockquote {
     border-left: 3px solid $blockquote-border-color;
   }
-
+  hr {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+  }
 }
 
 
