@@ -217,7 +217,7 @@ gulp.task('gh-pages', ['build'], function(done) {
 
   ghpages.publish('web', function(err) {
     if (err) return done(err);
-    console.log("deploy done", arguments);
+    console.log("deploy done");
 
     done();
   });
