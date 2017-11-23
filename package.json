@@ -8,9 +8,15 @@
   },
   "author": "Vadym Kaninskyi",
   "license": "MIT",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "deploy": "gulp gh-pages"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "del": "^2.2.2",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.2",
     "gulp-htmlmin": "^3.0.0",

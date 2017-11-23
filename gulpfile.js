@@ -179,7 +179,6 @@ gulp.task('watch', function() {
   gulp.watch(PATH.html, browserSync.reload);
 });
 
-
 // Run everything
 gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 
@@ -213,3 +212,13 @@ gulp.task('build', function() {
       .pipe(gulp.dest('web'));      
 });
 
+gulp.task('gh-pages', ['build'], function(done) {
+  var ghpages = require('gh-pages');
+
+  ghpages.publish('web', function(err) {
+    if (err) return done(err);
+    console.log("deploy done", arguments);
+
+    done();
+  });
+});
