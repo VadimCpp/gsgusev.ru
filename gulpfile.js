@@ -6,6 +6,7 @@ var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 var merge = require('merge-stream');
+var revts = require('gulp-rev-timestamp');
 
 var PATH = {
   scripts: [
@@ -168,6 +169,7 @@ gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 gulp.task('build', ['sass', 'minify-css'], function() {
 
   var html = gulp.src(PATH.html)
+      .pipe(revts())
       .pipe(htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('dist'));
 
