@@ -15,11 +15,11 @@ To start developing open console and run commands:
 1. `git clone https://github.com/VadimCpp/gsgusev.ru.git gsgusev.ru`
 2. `cd gsgusev.ru`
 3. `npm install`
-4. `gulp`
+4. `npm run dev`
 
 Only one command to release:
 
-1. `./update-pages.sh`
+1. `npm run deploy`
 
 ## Learn coding
 
