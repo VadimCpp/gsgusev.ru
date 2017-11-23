@@ -5,7 +5,7 @@ var rename = require("gulp-rename");
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
-var ghPages = require('gulp-gh-pages');
+var merge = require('merge-stream');
 
 var PATH = {
   scripts: [
@@ -167,45 +167,40 @@ gulp.task('default', ['browserSync', 'sass', 'minify-css', 'watch']);
 // Build for production
 gulp.task('build', ['sass', 'minify-css'], function() {
 
-  gulp.src(PATH.html)
+  var html = gulp.src(PATH.html)
       .pipe(htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('dist'));
 
-  gulp.src(PATH.cssmin)
+  var cssmin = gulp.src(PATH.cssmin)
       .pipe(gulp.dest('dist/css'));
 
-  gulp.src(PATH.favicons)
+  var favicons = gulp.src(PATH.favicons)
       .pipe(gulp.dest('dist'));
 
-  gulp.src(PATH.fonts)
+  var fonts = gulp.src(PATH.fonts)
       .pipe(gulp.dest('dist/fonts'));
 
-  gulp.src(PATH.img)
+  var img = gulp.src(PATH.img)
       .pipe(gulp.dest('dist/img'));
 
-  gulp.src(PATH.htaccess)
+  var htaccess = gulp.src(PATH.htaccess)
       .pipe(gulp.dest('dist'));
 
-  gulp.src(PATH.robot)
+  var robot = gulp.src(PATH.robot)
       .pipe(gulp.dest('dist'));
 
-  gulp.src(PATH.scripts)
+  var scripts = gulp.src(PATH.scripts)
       .pipe(gulp.dest('dist/scripts'));
-});
 
-gulp.task('gh-pages', ['build'], function(done) {
-  var ghpages = require('gh-pages');
-
-  ghpages.publish('web', function(err) {
-    if (err) return done(err);
-    console.log("deploy done");
-
-    done();
-  });
+  return merge(html, cssmin, favicons, fonts, img, htaccess, robot, scripts);
 });
 
 // Deploy build to github pages
-gulp.task('deploy', ['build'], function() {
-  return gulp.src('dist/**/*')
-    .pipe(ghPages());
+gulp.task('gh-pages', ['build'], function(done) {
+  var ghpages = require('gh-pages');
+
+  ghpages.publish('dist', function(err) {
+    if (err) return done(err);
+    done();
+  });
 });
