@@ -4,13 +4,8 @@ $offset-top:                        $common-height;
 
 // Exports
 //------------------------------------------------------
-@include exports("osm-map") {
-
-    .gs-osm-map {
-        // nothing here
-    }
-
-    .gs-osm-map__iframe {
+@include exports("leaflet-map") {
+    .gs-leaflet-map {
         z-index: -1;
         position: fixed;
         top: $offset-top;

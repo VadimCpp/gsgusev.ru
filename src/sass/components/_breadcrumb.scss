@@ -3,6 +3,7 @@
 $breadcrumb-font-color:                         $darkgray-dark !default;
 $breadcrumb-link-color:                         $aqua-dark !default;
 $breadcrumb-background-color:                   $lightgray-dark !default;
+$breadcrumb-background-color-transparent:       rgba(230, 233, 237, .6);
 
 $breadcrumb-arrow-radius:                       4px !default;
 $breadcrumb-max-width:                          $medium-start - 1;
@@ -56,6 +57,10 @@ $breadcrumb-max-width:                          $medium-start - 1;
     .gs-breadcrumb_margin-right-left {
         margin-left: 60px;
         margin-right: 15px;
+    }
+
+    .gs-breadcrumb_bg-color-transparency {
+        background-color: $breadcrumb-background-color-transparent;
     }
 }
 
