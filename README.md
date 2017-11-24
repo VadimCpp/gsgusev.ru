@@ -4,7 +4,7 @@
 <br><br>
 
 GS Gusev is aimed at getting actual and correct information about the Gusev area. <br>
-Visit [GS Gusev website](https://gsgusev.ru/) to see how it works.
+Visit [https://gsgusev.ru/](https://gsgusev.ru/) to see how it works.
 
 Mirror: [https://vadimcpp.github.io/gsgusev.ru](https://vadimcpp.github.io/gsgusev.ru)
 
