@@ -4,11 +4,11 @@
 <br><br>
 
 GS Gusev is a very simple website with a straightforward goal: to help people.
-Visit GS Gusev( [https://vadimcpp.github.io/gsgusev.ru](https://vadimcpp.github.io/gsgusev.ru) ) to see how it works.
+Visit [GS Gusev website](https://gsgusev.ru/) to see how it works.
 
-Another domain name which is linked to GS Gusev is [http://gsgusev.ru/](https://gsgusev.ru/)
+Mirror: [https://vadimcpp.github.io/gsgusev.ru](https://vadimcpp.github.io/gsgusev.ru)
 
-## Getting Started
+## Quick Start
 
 To start developing open console and run commands:
 
@@ -17,7 +17,7 @@ To start developing open console and run commands:
 3. `npm install`
 4. `npm run dev`
 
-Only one command to release:
+Only one command to release https://{your_accont_mane}.github.io/gsgusev.ru:
 
 1. `npm run deploy`
 
@@ -27,4 +27,4 @@ See [wiki](https://github.com/VadimCpp/gsgusev.ru/wiki)
 
 ## Stack
 
-css3, gulp, html5, npm, sass
+js, css3, html5, sass, npm, gulp
