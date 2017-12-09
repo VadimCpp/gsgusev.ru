@@ -35,11 +35,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
-ul {
+// 
+// Тут есть поддержка стилей sass!
+//
+
+@mixin list-style() {
   list-style-type: none;
   padding: 0;
+}
+
+ul {
+  @include list-style();
 }
 
 li {
