@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    <header>
-      <span>Тут будет шапка</span>
+    
+    <!-- Header -->
+    <header class="gs-header">
+        <div class="gs-header__veil"></div>
+        <div class="gs-header__image"></div>
+        <div class="gs-header__off-canvas-btn" id="off-canvas-btn">
+            <i class="gs-icon-menu"> </i>
+        </div>
     </header>
     <main>
       <router-view></router-view>
     </main>
-    <footer>
-      <span>Тут будет завод</span>
+
+    <!-- Footer -->
+    <footer class="gs-footer">
+        <div class="gs-footer__veil"></div>
+        <div class="gs-footer__image_land"></div>
+        <div class="gs-footer__image"></div>
     </footer>
+
   </div>
 
 </template>
@@ -19,17 +30,9 @@ export default {
 }
 </script>
 
-<style>
-body {
-  margin: 0;
-}
+<style lang="scss">
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -37,52 +40,6 @@ body {
   height: 100%;
 }
 
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-footer {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-}
-
-footer span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-}
+@import './assets/scss/index.scss';
 
 </style>

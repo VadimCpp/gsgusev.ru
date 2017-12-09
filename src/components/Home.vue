@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 // 
 // Тут есть поддержка стилей sass!
 //
@@ -49,7 +50,6 @@ export default {
 ul {
   @include list-style();
 }
-
 li {
   margin: 0 10px;
 }
