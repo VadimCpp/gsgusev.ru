@@ -1,60 +1,55 @@
 <template>
   <div class="home">
-    <p>Тут будет навигация breadcrumbs</p>
-    <ul>
-      <li v-for="page in pages">
-        <router-link :to=page.route> {{ page.name }} </router-link>
-      </li>
-    </ul>
+
+    <!-- Breadcrumb -->
+    <section class="gs-container gs-container_center">
+        <ol class="gs-breadcrumb">
+            <li class="gs-breadcrumb__list-item gs-breadcrumb__list-item_active"> GS Гусев </li>
+        </ol>
+    </section>
+
+    <!-- Off-canvas -->
+    <div class="gs-off-canvas" id="off-canvas">
+
+        <div class="gs-off-canvas__bar" id="off-canvas-bar">
+            <p class="gs-off-canvas__label" id="label-city"> Город </p>
+            <hr>
+            <button class="gs-off-canvas__btn active" id="gusev-btn"> <i class="gs-icon-ok"> </i> Гусев</button>
+            <button class="gs-off-canvas__btn" id="kgd-btn"> <i class="gs-icon-ok"> </i> Калининград</button>
+        </div>
+    </div>
+
+    <!-- Main menu -->
+    <section class="gs-container gs-container_center gs-container_padding-bottom">
+        <div class="gs-main-menu gusev" id="main-menu">
+            <a href="bus_gusev_kgd.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Гусев-Калининград <i class="gs-icon-angle-right"> </i> </a>
+            <a href="bus_kgd_gusev.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Калининград-Гусев <i class="gs-icon-angle-right"> </i> </a>
+            <a href="bus_gusev_poselok.html" class="gs-main-menu__link" data-city="gusev"> Автобус Гусев-Поселок <i class="gs-icon-angle-right"> </i> </a>
+            <a href="bus_poselok_gusev.html" class="gs-main-menu__link" data-city="gusev"> Автобус Поселок-Гусев <i class="gs-icon-angle-right"> </i> </a>
+            <a href="admin_poselka.html" class="gs-main-menu__link" data-city="gusev"> Администратор поселка <i class="gs-icon-angle-right"> </i> </a>
+            <a href="voda.html" class="gs-main-menu__link" data-city="gusev"> Заказ воды &laquo;Айсберг&raquo; <i class="gs-icon-angle-right"> </i> </a>
+            <a href="kino_lumen.html" class="gs-main-menu__link" data-city="gusev"> Кино &laquo;Люмен Фильм&raquo; <i class="gs-icon-angle-right"> </i> </a>
+            <a href="karta_poselka.html" class="gs-main-menu__link" data-city="gusev"> Карта поселка <i class="gs-icon-angle-right"> </i> </a>
+            <a href="taxi_v_guseve.html" class="gs-main-menu__link" data-city="gusev"> Такси в Гусеве <i class="gs-icon-angle-right"> </i> </a>
+            <a href="taxi_v_kaliningrade.html" class="gs-main-menu__link" data-city="kaliningrad"> Такси в Калининграде <i class="gs-icon-angle-right"> </i> </a>
+            <a href="perevozka_divana.html" class="gs-main-menu__link" data-city="gusev"> Перевозка ваших вещей <i class="gs-icon-angle-right"> </i> </a>
+            <a href="gusev_fok.html" class="gs-main-menu__link" data-city="gusev"> ФОК города Гусева <i class="gs-icon-angle-right"> </i> </a>
+            <a href="kebab.html" class="gs-main-menu__link" data-city="gusev"> Кафе #КЕБАБ <i class="gs-icon-angle-right"> </i> </a>
+            <a href="fusion_express.html" class="gs-main-menu__link" data-city="kaliningrad"> Кафе &laquo;Фьюжн экспресс&raquo; <i class="gs-icon-angle-right"> </i> </a>
+            <a href="about.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> О нас  <i class="gs-icon-angle-right"> </i> </a>
+        </div>
+    </section>
+
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      pages: [
-        { route: '1', name: 'Автобус Гусев-Калининград' },
-        { route: '2', name: 'Автобус Калининград-Гусев ' },
-        { route: '3', name: 'Автобус Гусев-Поселок' },
-        { route: '4', name: 'Автобус Поселок-Гусев' },
-        { route: '5', name: 'Администратор поселка' },
-        { route: '6', name: 'Заказ воды «Айсберг»' },
-        { route: '7', name: 'Кино «Люмен Фильм»' },
-        { route: '8', name: 'Карта поселка' },
-        { route: '9', name: 'Такси в Гусеве' },
-        { route: '10', name: 'Такси в Калининграде' },
-        { route: '11', name: 'Перевозка ваших вещей' },
-        { route: '12', name: 'ФОК города Гусева' },
-        { route: '13', name: 'Кафе #КЕБАБ' },
-        { route: '14', name: 'Кафе «Фьюжн экспресс»' },
-        { route: '15', name: 'О нас' }
-      ]
-    }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
 
+@import '../assets/scss/home.scss';
 
-// 
-// Тут есть поддержка стилей sass!
-//
-
-@mixin list-style() {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul {
-  @include list-style();
-}
-li {
-  margin: 0 10px;
-}
-
-a {
-  color: #35495E;
-}
 </style>

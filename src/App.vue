@@ -5,9 +5,9 @@
     <header class="gs-header">
         <div class="gs-header__veil"></div>
         <div class="gs-header__image"></div>
-        <div class="gs-header__off-canvas-btn" id="off-canvas-btn">
+        <!-- <div class="gs-header__off-canvas-btn" id="off-canvas-btn">
             <i class="gs-icon-menu"> </i>
-        </div>
+        </div> -->
     </header>
 
     <!-- Main -->
@@ -42,6 +42,6 @@ export default {
   height: 100%;
 }
 
-@import './assets/scss/index.scss';
+@import './assets/scss/app.scss';
 
 </style>
