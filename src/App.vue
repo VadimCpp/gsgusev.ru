@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+
     <!-- Header -->
     <header class="gs-header">
         <div class="gs-header__veil"></div>
@@ -9,6 +9,8 @@
             <i class="gs-icon-menu"> </i>
         </div>
     </header>
+
+    <!-- Main -->
     <main>
       <router-view></router-view>
     </main>
