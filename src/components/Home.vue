@@ -36,7 +36,7 @@
             <a href="gusev_fok.html" class="gs-main-menu__link" data-city="gusev"> ФОК города Гусева <i class="gs-icon-angle-right"> </i> </a>
             <a href="kebab.html" class="gs-main-menu__link" data-city="gusev"> Кафе #КЕБАБ <i class="gs-icon-angle-right"> </i> </a>
             <a href="fusion_express.html" class="gs-main-menu__link" data-city="kaliningrad"> Кафе &laquo;Фьюжн экспресс&raquo; <i class="gs-icon-angle-right"> </i> </a>
-            <a href="about.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> О нас  <i class="gs-icon-angle-right"> </i> </a>
+            <router-link :to="{ name: 'About' }" class="gs-main-menu__link"> О нас <i class="gs-icon-angle-right"> </i> </router-link>
         </div>
     </section>
 
