@@ -209,11 +209,7 @@ $common-width:                260px;
     animation: spin 4s linear infinite;
 }
 
-
-// Body padding due to fixed header position
-//------------------------------------------------------
-
 body {
-    padding-top: $common-height;
-    padding-bottom: $common-height;
+    padding: 0;
+    margin: 0;
 }
