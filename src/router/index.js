@@ -10,7 +10,10 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      props: {
+        title: 'GS Гусев - Главная'
+      }
     },
     {
       path: '/about',
