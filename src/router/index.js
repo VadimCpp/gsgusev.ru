@@ -20,7 +20,7 @@ export default new Router({
       name: 'About',
       component: About,
       props: {
-        title: 'GS Гусев - Заказ воды «Айсберг»'
+        title: 'GS Гусев - О нас'
       }
     }
   ]
