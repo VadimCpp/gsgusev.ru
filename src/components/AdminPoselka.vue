@@ -1,10 +1,5 @@
 <template>
   <div class="admin-poselka">
-    <!-- Header -->
-    <header class="gs-header">
-        <div class="gs-header__veil"></div>
-        <div class="gs-header__image"></div>
-    </header>
 
     <!-- Breadcrumb -->
     <section class="gs-container gs-container_center">
@@ -38,13 +33,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="gs-footer">
-        <div class="gs-footer__veil"></div>
-        <div class="gs-footer__image_land"></div>
-        <div class="gs-footer__image"></div>
-    </footer>
 
   </div>
 </template>

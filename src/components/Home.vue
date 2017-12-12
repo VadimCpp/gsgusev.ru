@@ -22,7 +22,10 @@
     <!-- Main menu -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
         <div class="gs-main-menu gusev" id="main-menu">
-            <a href="bus_gusev_kgd.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Гусев-Калининград <i class="gs-icon-angle-right"> </i> </a>
+            <router-link :to="{ name: 'BusGusevKgd' }" class="gs-main-menu__link"> 
+                Автобус Гусев-Калининград 
+                <i class="gs-icon-angle-right"> </i> 
+            </router-link>
             <a href="bus_kgd_gusev.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Калининград-Гусев <i class="gs-icon-angle-right"> </i> </a>
             <a href="bus_gusev_poselok.html" class="gs-main-menu__link" data-city="gusev"> Автобус Гусев-Поселок <i class="gs-icon-angle-right"> </i> </a>
             <a href="bus_poselok_gusev.html" class="gs-main-menu__link" data-city="gusev"> Автобус Поселок-Гусев <i class="gs-icon-angle-right"> </i> </a>
