@@ -26,9 +26,18 @@
                 Автобус Гусев-Калининград 
                 <i class="gs-icon-angle-right"> </i> 
             </router-link>
-            <a href="bus_kgd_gusev.html" class="gs-main-menu__link" data-city="gusev kaliningrad"> Автобус Калининград-Гусев <i class="gs-icon-angle-right"> </i> </a>
-            <a href="bus_gusev_poselok.html" class="gs-main-menu__link" data-city="gusev"> Автобус Гусев-Поселок <i class="gs-icon-angle-right"> </i> </a>
-            <a href="bus_poselok_gusev.html" class="gs-main-menu__link" data-city="gusev"> Автобус Поселок-Гусев <i class="gs-icon-angle-right"> </i> </a>
+            <router-link :to="{ name: 'BusKgdGusev' }" class="gs-main-menu__link"> 
+                Автобус Калининград-Гусев 
+                <i class="gs-icon-angle-right"> </i> 
+            </router-link>
+            <router-link :to="{ name: 'BusGusevPoselok' }" class="gs-main-menu__link"> 
+                Автобус Гусев-Поселок 
+                <i class="gs-icon-angle-right"> </i> 
+            </router-link>
+            <router-link :to="{ name: 'BusPoselokGusev' }" class="gs-main-menu__link"> 
+                Автобус Поселок-Гусев 
+                <i class="gs-icon-angle-right"> </i> 
+            </router-link>
             <router-link :to="{ name: 'AdminPoselka' }" class="gs-main-menu__link"> 
                 Администратор поселка 
                 <i class="gs-icon-angle-right"> </i> 

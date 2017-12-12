@@ -4,6 +4,9 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import AdminPoselka from '@/components/AdminPoselka'
 import BusGusevKgd from '@/components/BusGusevKgd'
+import BusGusevPoselok from '@/components/BusGusevPoselok'
+import BusKgdGusev from '@/components/BusKgdGusev'
+import BusPoselokGusev from '@/components/BusPoselokGusev'
 
 Vue.use(Router)
 
@@ -39,6 +42,30 @@ export default new Router({
       component: BusGusevKgd,
       props: {
         title: 'GS Гусев - Гусев-Калининград'
+      }
+    },
+    {
+      path: '/bus_gusev_poselok',
+      name: 'BusGusevPoselok',
+      component: BusGusevPoselok,
+      props: {
+        title: 'GS Гусев - Гусев-Поселок'
+      }
+    },
+    {
+      path: '/bus_kgd_gusev',
+      name: 'BusKgdGusev',
+      component: BusKgdGusev,
+      props: {
+        title: 'GS Гусев - Калининград-Гусев'
+      }
+    },
+    {
+      path: '/bus_poselok_gusev',
+      name: 'BusPoselokGusev',
+      component: BusPoselokGusev,
+      props: {
+        title: 'GS Гусев - Поселок-Гусев'
       }
     }
   ]
