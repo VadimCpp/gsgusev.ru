@@ -42,8 +42,10 @@
                 Администратор поселка 
                 <i class="gs-icon-angle-right"> </i> 
             </router-link>
-            <a href="admin_poselka.html" class="gs-main-menu__link" data-city="gusev"> Администратор поселка <i class="gs-icon-angle-right"> </i> </a>
-            <a href="voda.html" class="gs-main-menu__link" data-city="gusev"> Заказ воды «Айсберг» <i class="gs-icon-angle-right"> </i> </a>
+            <router-link :to="{ name: 'Voda' }" class="gs-main-menu__link"> 
+                Заказ воды «Айсберг» 
+                <i class="gs-icon-angle-right"> </i> 
+            </router-link>
             <a href="kino_lumen.html" class="gs-main-menu__link" data-city="gusev"> Кино &laquo;Люмен Фильм&raquo; <i class="gs-icon-angle-right"> </i> </a>
             <a href="karta_poselka.html" class="gs-main-menu__link" data-city="gusev"> Карта поселка <i class="gs-icon-angle-right"> </i> </a>
             <a href="taxi_v_guseve.html" class="gs-main-menu__link" data-city="gusev"> Такси в Гусеве <i class="gs-icon-angle-right"> </i> </a>

@@ -90,7 +90,7 @@
 
 <script>
 export default {
-  name: 'BusGusevKgd',
+  name: 'BusPoselokGusev',
   props: ['title'],
   created () {
     document.title = this.title
@@ -108,6 +108,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/bus-gusev-kgd.scss';
+@import '../assets/scss/bus-poselok-gusev.scss';
 
 </style>

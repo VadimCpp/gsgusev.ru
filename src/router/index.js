@@ -7,6 +7,7 @@ import BusGusevKgd from '@/components/BusGusevKgd'
 import BusGusevPoselok from '@/components/BusGusevPoselok'
 import BusKgdGusev from '@/components/BusKgdGusev'
 import BusPoselokGusev from '@/components/BusPoselokGusev'
+import Voda from '@/components/Voda'
 
 Vue.use(Router)
 
@@ -66,6 +67,14 @@ export default new Router({
       component: BusPoselokGusev,
       props: {
         title: 'GS Гусев - Поселок-Гусев'
+      }
+    },
+    {
+      path: '/voda',
+      name: 'Voda',
+      component: Voda,
+      props: {
+        title: 'GS Гусев - Заказ воды «Айсберг»'
       }
     }
   ]
