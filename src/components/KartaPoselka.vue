@@ -15,7 +15,7 @@
 
     // TODO: https://www.npmjs.com/package/vue2-leaflet
     
-    <script>
+    <!--<script>
         var map = L.map('map').setView([54.6072,22.2027], 16);
 
         // 
@@ -27,7 +27,7 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
         }).addTo(map);
         
-    </script>
+    </script>-->
 
   </div>
 </template>

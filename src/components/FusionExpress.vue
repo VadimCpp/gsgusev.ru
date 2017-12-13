@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: FusionExpress
+  name: 'FusionExpress',
   props: ['title'],
   created () {
     document.title = this.title

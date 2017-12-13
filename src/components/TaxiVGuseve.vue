@@ -1,5 +1,5 @@
 <template>
-  <div class="taksi-v-guseve">
+  <div class="taxi-v-guseve">
 
     <!-- Breadcrumb -->
     <section class="gs-container gs-container_center">
@@ -82,6 +82,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/taksi-v-guseve.scss';
+@import '../assets/scss/taxi-v-guseve.scss';
 
 </style>
