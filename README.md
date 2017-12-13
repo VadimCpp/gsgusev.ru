@@ -22,4 +22,11 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Stack
 
+* [Vue.js](https://vuejs.org/)
+* [SASS](http://sass-lang.com/)
+
+## Features
+
 * [vue2-leaflet](https://www.npmjs.com/package/vue2-leaflet)
+
+
