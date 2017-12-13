@@ -12,7 +12,7 @@
     <!-- Thumbnail -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
         <div class="gs-thumbnail">
-            <img class="gs-thumbnail__image" src="img/kebab.jpg" alt="#КЕБАБ">
+            <img class="gs-thumbnail__image" src="../assets/img/kebab.jpg" alt="#КЕБАБ">
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <p>
                     Хрустящие кебабы и шаверма, а также бодрящий и ароматный кофе! <br>

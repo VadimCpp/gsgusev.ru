@@ -14,7 +14,7 @@
     <!-- Thumbnail -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
       <div class="gs-thumbnail">
-        <img class="gs-thumbnail__image" src="img/ford_transit.jpg" alt="Ford Transit">
+        <img class="gs-thumbnail__image" src="../assets/img/ford_transit.jpg" alt="Ford Transit">
         <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
             <p>
                 Вместительный Ford Transit безопасно доставит ваш груз в любую точку области.
