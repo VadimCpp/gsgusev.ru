@@ -128,8 +128,6 @@ export default {
     }
 
     loadImagesList()
-  },
-  render () {
   }
 }
 </script>

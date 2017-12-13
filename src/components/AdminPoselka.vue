@@ -49,8 +49,6 @@ export default {
       // only used when the title changes after page load
       document.title = this.title
     }
-  },
-  render () {
   }
 }
 </script>
