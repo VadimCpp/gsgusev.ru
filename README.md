@@ -28,5 +28,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ## Features
 
 * [vue2-leaflet](https://www.npmjs.com/package/vue2-leaflet)
+* [Animate.css](https://daneden.github.io/animate.css/)
 
 

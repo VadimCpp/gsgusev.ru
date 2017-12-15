@@ -12,9 +12,7 @@
 
     <!-- Main -->
     <main>
-      <transition name="fade">  
         <router-view></router-view>
-      </transition>
     </main>
 
     <!-- Footer -->
