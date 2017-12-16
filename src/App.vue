@@ -12,7 +12,7 @@
 
     <!-- Main -->
     <main>
-        <router-view></router-view>
+      <router-view></router-view>
     </main>
 
     <!-- Footer -->
@@ -35,15 +35,5 @@ export default {
 <style lang="scss">
 
 @import './assets/scss/app.scss';
-
-// TODO: read and update transition
-// https://vuejs.org/v2/guide/transitions.html
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0
-}
 
 </style>
