@@ -12,7 +12,7 @@
     <!-- Thumbnail -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
         <div class="gs-thumbnail">
-            <img class="gs-thumbnail__image" src="img/fusion-logo.png" alt="Кафе «Фьюжн экспресс»">
+            <img class="gs-thumbnail__image" src="../assets/img/fusion-logo.png" alt="Кафе «Фьюжн экспресс»">
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <p>
                     Кафе паназитской кухни, очень вкусно и сытно. Не жди пока приготовят, а позвони и закажи заранее.
