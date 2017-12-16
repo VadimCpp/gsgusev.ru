@@ -25,10 +25,7 @@
                 </p>
                 <h4>Доставка</h4>
                 <p>8 (906) 23-79-981</p>
-                <a href="tel:89062379981" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phoneNumber="89062379981"/>
             </div>
         </div>
     </section>
@@ -37,11 +34,17 @@
 </template>
 
 <script>
+
+import CallButton from '../Components/CallButton'
+
 export default {
   name: 'Kebab',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {
