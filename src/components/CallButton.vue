@@ -1,5 +1,5 @@
 <template>
-  <a href="tel:89062379981" class="gs-call-button">
+  <a :href="url" class="gs-call-button">
       <i class="gs-icon-phone"> </i>
       Позвонить
   </a>
@@ -8,7 +8,15 @@
 <script>
 
 export default {
-  name: 'CallButton'
+  name: 'CallButton',
+  props: [ 
+    'phone' 
+  ],
+  data: function () {
+    return {
+      'url': 'tel:' + this.phone
+    }
+  }
 }
 </script>
 

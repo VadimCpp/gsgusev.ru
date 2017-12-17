@@ -25,7 +25,7 @@
                 </p>
                 <h4>Доставка</h4>
                 <p>8 (906) 23-79-981</p>
-                <CallButton phoneNumber="89062379981"/>
+                <CallButton phone="89062379981"/>
             </div>
         </div>
     </section>
