@@ -25,9 +25,17 @@ const proxyTable = config.dev.proxyTable
 const app = express()
 const compiler = webpack(webpackConfig)
 
+// ref: https://github.com/vuejs-templates/webpack/issues/378#issuecomment-263466173
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
-  quiet: true
+  stats: {
+    colors: true,
+    chunks: false
+  },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  }
 })
 
 const hotMiddleware = require('webpack-hot-middleware')(compiler, {
