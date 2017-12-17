@@ -9,8 +9,8 @@
 
 export default {
   name: 'CallButton',
-  props: [ 
-    'phone' 
+  props: [
+    'phone'
   ],
   data: function () {
     return {
