@@ -75,7 +75,7 @@
           Кафе #КЕБАБ
           <i class="gs-icon-angle-right"> </i> 
         </router-link>
-        <router-link :to="{ name: 'FusionExpress' }" class="gs-main-menu__link" data-city="gusev"> 
+        <router-link :to="{ name: 'FusionExpress' }" class="gs-main-menu__link" data-city="kaliningrad"> 
           Кафе «Фьюжн экспресс»
           <i class="gs-icon-angle-right"> </i> 
         </router-link>
