@@ -12,8 +12,9 @@
   <!-- Well -->
   <section class="gs-container gs-container_center">
     <div class="gs-well gs-well_text-center" id="schedule-block">
-      <p>Грузим расписание... </p>
-      <h4><i class="gs-icon-spinner gs-icon-spin"> </i></h4>
+      <!-- <p> TODO: враспарсить расписание </p> -->
+      <iframe src="http://lumenfilm.com/gusev/affishe"></iframe>
+      <!-- <h4><i class="gs-icon-spinner gs-icon-spin"> </i></h4> -->
     </div>
   </section>
 
@@ -35,7 +36,13 @@
   </div>
 </template>
 
-<script>
+
+<!--<script>
+
+//
+// TODO: http://lumenfilm.com/gusev/affishe?
+//
+
 export default {
   name: 'KinoLumen',
   props: ['title'],
@@ -130,10 +137,16 @@ export default {
     loadImagesList()
   }
 }
-</script>
+</script>-->
 
 <style lang="scss" scoped>
 
 @import '../assets/scss/kino-lumen.scss';
+
+iframe, object, embed {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+}
 
 </style>
