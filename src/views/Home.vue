@@ -9,17 +9,6 @@
       </ol>
     </section>
 
-    <!-- Off-canvas -->
-    <div class="gs-off-canvas" id="off-canvas">
-
-      <div class="gs-off-canvas__bar" id="off-canvas-bar">
-        <p class="gs-off-canvas__label" id="label-city"> Город </p>
-        <hr>
-        <button class="gs-off-canvas__btn active" id="gusev-btn"> <i class="gs-icon-ok"> </i> Гусев</button>
-        <button class="gs-off-canvas__btn" id="kgd-btn"> <i class="gs-icon-ok"> </i> Калининград</button>
-      </div>
-    </div>
-
     <!-- Main menu -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
       <div class="gs-main-menu gusev" id="main-menu">
