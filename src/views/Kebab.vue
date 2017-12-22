@@ -35,7 +35,7 @@
 
 <script>
 
-import CallButton from '../Components/CallButton'
+import CallButton from '../components/CallButton'
 
 export default {
   name: 'Kebab',
