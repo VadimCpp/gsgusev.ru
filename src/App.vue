@@ -3,7 +3,7 @@
 
   <!-- Header -->
   <header class="gs-header">
-    <div class="gs-header__veil"></div>
+    <div class="gs-header__veil" v-bind:class="{ 'gs-header__veil_default-map-color' : !isFooterVisible() }"></div>
     <div class="gs-header__image"></div>   
     <div class="gs-header__off-canvas-btn" id="off-canvas-btn" v-on:click="toggleSidebar()" v-show="isNavButtonVisible()">
       <i class="gs-icon-menu"> </i>
@@ -23,7 +23,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="gs-footer">
+  <footer class="gs-footer" v-show="isFooterVisible()">
     <div class="gs-footer__veil"></div>
     <div class="gs-footer__image_land"></div>
     <div class="gs-footer__image"></div>
@@ -46,12 +46,14 @@ export default {
   data: function () {
     return {
       sidebarVisible: false,
-      navbtnVisible: true
+      navbtnVisible: true,
+      footerVisible: true
     }
   },
   mounted () {
     this.loadDefaultCity()
     this.navbtnVisible = this.$route.path === '/'
+    this.footerVisible = this.$route.path !== '/karta_poselka'
   },
   watch: {
     '$route': function (to, from) {
@@ -59,6 +61,12 @@ export default {
         this.navbtnVisible = true
       } else {
         this.navbtnVisible = false
+      }
+
+      if (to.path === '/karta_poselka') {
+        this.footerVisible = false
+      } else {
+        this.footerVisible = true
       }
     }
   },
@@ -68,6 +76,9 @@ export default {
     },
     isNavButtonVisible: function () {
       return this.navbtnVisible
+    },
+    isFooterVisible: function () {
+      return this.footerVisible
     },
     showSidebar: function () {
       document.getElementById('off-canvas').style.width = '100%'
