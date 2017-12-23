@@ -26,10 +26,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Maxim </h4>
                 <p> 8 (4012) 999-666 </p>
-                <a href="tel:84012999666" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84012999666"/>
             </div>
         </div>
         <br>
@@ -39,10 +36,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Везёт </h4>
                 <p> 8 (4012) 666-111 </p>
-                <a href="tel:84012666111" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84012666111"/>
             </div>
         </div>
 
@@ -56,10 +50,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Татьяна </h4>
                 <p> 8 (921) 712-84-20 </p>
-                <a href="tel:89217128420" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="89217128420"/>
             </div>
         </div>
 
@@ -69,11 +60,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'TaksiVKaliningrade',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

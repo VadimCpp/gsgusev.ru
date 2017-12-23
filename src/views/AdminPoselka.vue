@@ -26,10 +26,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4>Администратор</h4>
                 <p>8 (911) 490-08-41</p>
-                <a href="tel:89114900841" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="89114900841"/>
             </div>
         </div>
     </section>
@@ -38,11 +35,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'AdminPoselka',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

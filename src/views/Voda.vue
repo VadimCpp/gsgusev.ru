@@ -12,7 +12,6 @@
     <!-- Well -->
     <section class="gs-container gs-container_center">
         <p class="gs-well">
-        <!-- Текст описания страницы-->
         К сожалению, вода в поселке иногда вызывает нарекания жителей. Так что удобнее ее заказывать. <br>
         Официальный сайт: <a href="http://www.iceberg-aqua.ru/" class="gs-main-menu__link"> http://www.iceberg-aqua.ru/</a>
         </p>
@@ -24,10 +23,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4>Заказ воды «Айсберг»</h4>
                 <p>8 (906) 236 69 95</p>
-                <a href="tel:89062366995" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="89062366995"/>
             </div>
         </div>
     </section>
@@ -36,11 +32,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'Voda',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

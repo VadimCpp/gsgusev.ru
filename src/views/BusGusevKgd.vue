@@ -277,10 +277,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4>АС Гусев</h4>
                 <p>8 (40143) 3-25-21</p>
-                <a href="tel:84014332521" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84014332521"/>
             </div>
         </div>
     </section>

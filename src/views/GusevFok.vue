@@ -25,10 +25,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4>Рецепция ФОК</h4>
                 <p>8 (4012) 36-22-24</p>
-                <a href="tel:84012362224" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84012362224"/>
             </div>
         </div>
     </section>
@@ -37,11 +34,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'GusevFok',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

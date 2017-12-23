@@ -21,10 +21,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Омега </h4>
                 <p> 8 (40143) 3-43-30 </p>
-                <a href="tel:84014334330" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84014334330"/>
             </div>
         </div>
         <br>
@@ -34,10 +31,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Спартак </h4>
                 <p> 8 (40143) 3-46-30 </p>
-                <a href="tel:84014334630" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84014334630"/>
             </div>
         </div>
 
@@ -51,10 +45,7 @@
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <h4> Андрей </h4>
                 <p> 8 (921) 005-77-99 </p>
-                <a href="tel:89210057799" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="89210057799"/>
             </div>
         </div>
     </section>
@@ -63,11 +54,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'TaksiVGuseve',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

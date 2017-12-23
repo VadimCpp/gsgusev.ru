@@ -21,10 +21,7 @@
             </p>
             <h4>Дмитрий</h4>
             <p>8 (921) 617-60-13</p>
-            <a href="tel:89216176013" class="gs-call-button">
-                <i class="gs-icon-phone"> </i>
-                Позвонить
-            </a>
+            <CallButton phone="89216176013"/>
         </div>
       </div>
     </section>
@@ -33,11 +30,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'PerevozkaDivana',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {

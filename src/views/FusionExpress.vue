@@ -25,10 +25,7 @@
                 </p>
                 <h4>Заказ</h4>
                 <p>8 (4012) 52-44-71</p>
-                <a href="tel:84012524471" class="gs-call-button">
-                    <i class="gs-icon-phone"> </i>
-                    Позвонить
-                </a>
+                <CallButton phone="84012524471"/>
             </div>
         </div>
     </section>
@@ -37,11 +34,17 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'FusionExpress',
   props: ['title'],
   created () {
     document.title = this.title
+  },
+  components: {
+    CallButton
   },
   watch: {
     title () {
