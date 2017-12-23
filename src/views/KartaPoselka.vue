@@ -10,38 +10,39 @@
     </section>
 
     <!-- Leaflet map -->
-    <div id='map' class="gs-leaflet-map">
-    </div>
-
-    // TODO: https://www.npmjs.com/package/vue2-leaflet
-    
-    <!--<script>
-        var map = L.map('map').setView([54.6072,22.2027], 16);
-
-        // 
-        // To customize layer provider visit the website:
-        // http://leaflet-extras.github.io/leaflet-providers/preview/
-        //
-        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
-        }).addTo(map);
-        
-    </script>-->
-
+    <v-map class="gs-leaflet-map" :zoom="zoom" :center="center">
+      <v-tilelayer :url="url" :attribution="attribution" :maxZoom="maxZoom"></v-tilelayer>
+    </v-map>
   </div>
 </template>
 
 <script>
+
+import L from 'leaflet'
+import Vue2Leaflet from 'vue2-leaflet'
+
 export default {
   name: 'KartaPoselka',
   props: ['title'],
   created () {
     document.title = this.title
   },
+  components: {
+    'v-map': Vue2Leaflet.Map,
+    'v-tilelayer': Vue2Leaflet.TileLayer,
+    'v-marker': Vue2Leaflet.Marker
+  },
+  data: function () {
+    return {
+      url: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>',
+      maxZoom: 19,
+      zoom: 16,
+      center: L.latLng(54.6072, 22.2027)
+    }
+  },
   watch: {
     title () {
-      // only used when the title changes after page load
       document.title = this.title
     }
   }
@@ -51,5 +52,6 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/scss/karta-poselka.scss';
+@import '../../node_modules/leaflet/dist/leaflet.css';
 
 </style>
