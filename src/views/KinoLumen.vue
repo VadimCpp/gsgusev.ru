@@ -12,8 +12,10 @@
   <!-- Well -->
   <section class="gs-container gs-container_center">
     <div class="gs-well gs-well_text-center" id="schedule-block">
+      <p> Расписание доступно по ссылке: 
+        <a href="http://lumenfilm.com/gusev/affishe">http://lumenfilm.com/gusev/affishe</a>
+      </p>
       <!-- <p> TODO: враспарсить расписание </p> -->
-      <iframe src="http://lumenfilm.com/gusev/affishe"></iframe>
       <!-- <h4><i class="gs-icon-spinner gs-icon-spin"> </i></h4> -->
     </div>
   </section>
