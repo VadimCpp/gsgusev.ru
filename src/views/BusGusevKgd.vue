@@ -65,197 +65,11 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr class="gs-table_text-center">
-                        <td>580</td>
-                        <td>05:00</td>
-                        <td>07:30</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>05:25</td>
-                        <td>07:30</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>05:50</td>
-                        <td>07:55</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>06:20</td>
-                        <td>08:25</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>06:40</td>
-                        <td>08:45</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>07:00</td>
-                        <td>09:05</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>583</td>
-                        <td>07:30</td>
-                        <td>10:02</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>07:50</td>
-                        <td>09:55</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>08:20</td>
-                        <td>10:25</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>526</td>
-                        <td>08:35</td>
-                        <td>11:33</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>09:10</td>
-                        <td>11:15</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>583</td>
-                        <td>09:35</td>
-                        <td>12:07</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>10:00</td>
-                        <td>12:05</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>10:25</td>
-                        <td>12:30</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>583</td>
-                        <td>10:50</td>
-                        <td>13:22</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>11:15</td>
-                        <td>13:20</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>11:35</td>
-                        <td>13:40</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>12:05</td>
-                        <td>14:10</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>12:30</td>
-                        <td>14:35</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>12:55</td>
-                        <td>15:00</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>13:45</td>
-                        <td>15:50</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>581</td>
-                        <td>14:00</td>
-                        <td>16:30</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>14:25</td>
-                        <td>16:30</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>15:00</td>
-                        <td>17:05</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>15:25</td>
-                        <td>17:30</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>526</td>
-                        <td>15:40</td>
-                        <td>18:38</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>16:15</td>
-                        <td>18:20</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>580</td>
-                        <td>17:10</td>
-                        <td>19:40</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э</td>
-                        <td>17:45</td>
-                        <td>19:50</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э*</td>
-                        <td>18:00</td>
-                        <td>20:05</td>
-                        <td>180</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>583</td>
-                        <td>18:25</td>
-                        <td>20:57</td>
-                        <td>170</td>
-                    </tr>
-                    <tr class="gs-table_text-center">
-                        <td>680э**</td>
-                        <td>19:15</td>
-                        <td>21:20</td>
-                        <td>180</td>
+                    <tr class="gs-table_text-center" v-for="record in schedule">
+                        <td> {{ record.busNo }} </td>
+                        <td> {{ record.departure }} </td>
+                        <td> {{ record.arrival }} </td>
+                        <td> {{ record.price }} </td>
                     </tr>
                 </tbody>
             </table>
@@ -286,6 +100,9 @@
 </template>
 
 <script>
+
+import CallButton from '../components/CallButton'
+
 export default {
   name: 'BusGusevKgd',
   props: ['title'],
@@ -297,6 +114,47 @@ export default {
       // only used when the title changes after page load
       document.title = this.title
     }
+  },
+  data: function () {
+    return {
+      schedule: [
+        { busNo: '580', departure: '05:00', arrival: '07:30', price: '190' },
+        { busNo: '680э', departure: '05:25', arrival: '07:30', price: '200' },
+        { busNo: '680э', departure: '05:50', arrival: '07:55', price: '200' },
+        { busNo: '680э', departure: '06:20', arrival: '08:25', price: '200' },
+        { busNo: '680э', departure: '06:40', arrival: '08:45', price: '200' },
+        { busNo: '680э', departure: '07:00', arrival: '09:05', price: '200' },
+        { busNo: '583', departure: '07:30', arrival: '10:02', price: '190' },
+        { busNo: '680э', departure: '07:50', arrival: '09:55', price: '200' },
+        { busNo: '680э', departure: '08:20', arrival: '10:25', price: '200' },
+        { busNo: '526', departure: '08:35', arrival: '11:33', price: '190' },
+        { busNo: '680э', departure: '09:10', arrival: '11:15', price: '200' },
+        { busNo: '583', departure: '09:35', arrival: '12:07', price: '190' },
+        { busNo: '680э', departure: '10:00', arrival: '12:05', price: '200' },
+        { busNo: '680э', departure: '10:25', arrival: '12:30', price: '200' },
+        { busNo: '583', departure: '10:50', arrival: '13:22', price: '190' },
+        { busNo: '680э', departure: '11:15', arrival: '13:20', price: '200' },
+        { busNo: '680э', departure: '11:35', arrival: '13:40', price: '200' },
+        { busNo: '680э', departure: '12:05', arrival: '14:10', price: '200' },
+        { busNo: '680э', departure: '12:30', arrival: '14:35', price: '200' },
+        { busNo: '680э', departure: '12:55', arrival: '15:00', price: '200' },
+        { busNo: '680э', departure: '13:45', arrival: '15:50', price: '200' },
+        { busNo: '581', departure: '14:00', arrival: '16:30', price: '190' },
+        { busNo: '680э', departure: '14:25', arrival: '16:30', price: '200' },
+        { busNo: '680э', departure: '15:00', arrival: '17:05', price: '200' },
+        { busNo: '680э', departure: '15:25', arrival: '17:30', price: '200' },
+        { busNo: '526', departure: '15:40', arrival: '18:38', price: '190' },
+        { busNo: '680э', departure: '16:15', arrival: '18:20', price: '200' },
+        { busNo: '580', departure: '17:10', arrival: '19:40', price: '190' },
+        { busNo: '680э', departure: '17:45', arrival: '19:50', price: '200' },
+        { busNo: '680э*', departure: '18:00', arrival: '20:05', price: '200' },
+        { busNo: '583', departure: '18:25', arrival: '20:57', price: '190' },
+        { busNo: '680э**', departure: '19:15', arrival: '21:20', price: '200' }
+      ]
+    }
+  },
+  components: {
+    CallButton
   }
 }
 </script>
