@@ -15,45 +15,34 @@
 
     <!-- Thumbnail -->
     <section class="gs-container gs-container_center gs-container_padding-bottom">
-        <h3>Таксомоторные предприятия</h3>
-        <p>
-            В Калининграде с такси попроще.
-            Тут пусть пока повисит пара проверенных номеров.
-        </p>
+      <h3>Таксомоторные предприятия</h3>
+      <p>
+          В Калининграде с такси попроще.
+          Тут пусть пока повисит пара проверенных номеров.
+      </p>
 
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Maxim </h4>
-                <p> 8 (4012) 999-666 </p>
-                <CallButton phone="84012999666"/>
-            </div>
-        </div>
-        <br>
+      <!-- Thumbnail -->
+      <div class="gs-thumbnail">
+          <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+              <h4> Maxim </h4>
+              <p> 8 (4012) 999-666 </p>
+              <CallButton phone="84012999666"/>
+          </div>
+      </div>
+      <br>
 
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Везёт </h4>
-                <p> 8 (4012) 666-111 </p>
-                <CallButton phone="84012666111"/>
-            </div>
-        </div>
-
-        <h3>Частный извоз</h3>
-        <p>
-            Вы верите, что женщины умеют водить авто?
-        </p>
-
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Татьяна </h4>
-                <p> 8 (921) 712-84-20 </p>
-                <CallButton phone="89217128420"/>
-            </div>
-        </div>
-
+      <!-- Thumbnail -->
+      <div class="gs-thumbnail">
+          <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+              <h4> Везёт </h4>
+              <p> 8 (4012) 666-111 </p>
+              <CallButton phone="84012666111"/>
+          </div>
+      </div>
+      <h3>Мобильные приложения</h3>
+      <p>
+        В Калининграде действиет Яндекс такси.       
+      </p>
     </section>
 
   </div>
