@@ -102,7 +102,7 @@
 <script>
 
 import CallButton from '../components/CallButton'
-// import busGusevKgd from './static/data/busGusevKgd.json'
+import busGusevKgd from '../../static/data/busGusevKgd.json'
 
 export default {
   name: 'BusGusevKgd',
@@ -118,7 +118,7 @@ export default {
   },
   data: function () {
     return {
-      schedule: []
+      schedule: busGusevKgd
     }
   },
   components: {
@@ -129,6 +129,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/bus-gusev-kgd.scss';
+@import '../assets/scss/bus-gusev-kgd.scss'
 
 </style>
