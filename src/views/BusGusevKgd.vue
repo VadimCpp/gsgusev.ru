@@ -102,6 +102,7 @@
 <script>
 
 import CallButton from '../components/CallButton'
+// import busGusevKgd from './static/data/busGusevKgd.json'
 
 export default {
   name: 'BusGusevKgd',
@@ -117,40 +118,7 @@ export default {
   },
   data: function () {
     return {
-      schedule: [
-        { busNo: '580', departure: '05:00', arrival: '07:30', price: '190' },
-        { busNo: '680э', departure: '05:25', arrival: '07:30', price: '200' },
-        { busNo: '680э', departure: '05:50', arrival: '07:55', price: '200' },
-        { busNo: '680э', departure: '06:20', arrival: '08:25', price: '200' },
-        { busNo: '680э', departure: '06:40', arrival: '08:45', price: '200' },
-        { busNo: '680э', departure: '07:00', arrival: '09:05', price: '200' },
-        { busNo: '583', departure: '07:30', arrival: '10:02', price: '190' },
-        { busNo: '680э', departure: '07:50', arrival: '09:55', price: '200' },
-        { busNo: '680э', departure: '08:20', arrival: '10:25', price: '200' },
-        { busNo: '526', departure: '08:35', arrival: '11:33', price: '190' },
-        { busNo: '680э', departure: '09:10', arrival: '11:15', price: '200' },
-        { busNo: '583', departure: '09:35', arrival: '12:07', price: '190' },
-        { busNo: '680э', departure: '10:00', arrival: '12:05', price: '200' },
-        { busNo: '680э', departure: '10:25', arrival: '12:30', price: '200' },
-        { busNo: '583', departure: '10:50', arrival: '13:22', price: '190' },
-        { busNo: '680э', departure: '11:15', arrival: '13:20', price: '200' },
-        { busNo: '680э', departure: '11:35', arrival: '13:40', price: '200' },
-        { busNo: '680э', departure: '12:05', arrival: '14:10', price: '200' },
-        { busNo: '680э', departure: '12:30', arrival: '14:35', price: '200' },
-        { busNo: '680э', departure: '12:55', arrival: '15:00', price: '200' },
-        { busNo: '680э', departure: '13:45', arrival: '15:50', price: '200' },
-        { busNo: '581', departure: '14:00', arrival: '16:30', price: '190' },
-        { busNo: '680э', departure: '14:25', arrival: '16:30', price: '200' },
-        { busNo: '680э', departure: '15:00', arrival: '17:05', price: '200' },
-        { busNo: '680э', departure: '15:25', arrival: '17:30', price: '200' },
-        { busNo: '526', departure: '15:40', arrival: '18:38', price: '190' },
-        { busNo: '680э', departure: '16:15', arrival: '18:20', price: '200' },
-        { busNo: '580', departure: '17:10', arrival: '19:40', price: '190' },
-        { busNo: '680э', departure: '17:45', arrival: '19:50', price: '200' },
-        { busNo: '680э*', departure: '18:00', arrival: '20:05', price: '200' },
-        { busNo: '583', departure: '18:25', arrival: '20:57', price: '190' },
-        { busNo: '680э**', departure: '19:15', arrival: '21:20', price: '200' }
-      ]
+      schedule: []
     }
   },
   components: {
