@@ -68,6 +68,10 @@
           Кафе «Фьюжн экспресс»
           <i class="gs-icon-angle-right"> </i> 
         </router-link>
+        <router-link :to="{ name: 'LabirintAnticafe' }" class="gs-main-menu__link" data-city="kaliningrad"> 
+          Антикафе «Лабиринт»
+          <i class="gs-icon-angle-right"> </i> 
+        </router-link>
         <router-link :to="{ name: 'About' }" class="gs-main-menu__link" data-city="gusev kaliningrad"> 
           О нас 
           <i class="gs-icon-angle-right"> </i> 

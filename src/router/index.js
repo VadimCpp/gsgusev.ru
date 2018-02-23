@@ -16,6 +16,7 @@ import PerevozkaDivana from '@/views/PerevozkaDivana'
 import GusevFok from '@/views/GusevFok'
 import Kebab from '@/views/Kebab'
 import FusionExpress from '@/views/FusionExpress'
+import LabirintAnticafe from '@/views/LabirintAnticafe'
 
 Vue.use(Router)
 
@@ -147,6 +148,14 @@ export default new Router({
       component: FusionExpress,
       props: {
         title: 'GS Гусев - Кафе «Фьюжн экспресс»'
+      }
+    },
+    {
+      path: '/labirint_anticafe',
+      name: 'LabirintAnticafe',
+      component: LabirintAnticafe,
+      props: {
+        title: 'GS Гусев - Антикафе «Лабиринт»'
       }
     }
   ]
