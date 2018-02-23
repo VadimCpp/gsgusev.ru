@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Скрипт выкладывает данные на сервак
+# TODO: fix script as it is not working now :()
 
-LOGIN="root"
-HOST="46.101.171.48"
+LOGIN="{put you login here}"
+HOST="{put youh host here}"
 
 scp -r ./dist $LOGIN@$HOST:/var/www/gsgusev.build
 
