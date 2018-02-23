@@ -9,7 +9,7 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "./digitalocean-deploy.sh"
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "vue": "^2.5.2",
