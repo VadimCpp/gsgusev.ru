@@ -1,15 +1,23 @@
 #!/bin/bash
 
 # Скрипт выкладывает данные на сервак
-# TODO: fix script as it is not working now :()
+#
+# https://stackoverflow.com/a/28896613/1775459
 
-LOGIN="{put you login here}"
 HOST="{put youh host here}"
+USER="{put you user name here}"
+PASSWD="{put you password here}"
 
-scp -r ./dist $LOGIN@$HOST:/var/www/gsgusev.build
+FILE_TO_PUT="README.md"
+FILE_TO_DELETE="README.md"
 
-ssh $LOGIN@$HOST 'bash -s' <<'ENDSSH'
-  # эти команды выполнятся на вашем удаленном сервере
-  rm -rf /var/www/html
-  mv /var/www/gsgusev.build /var/www/html
-ENDSSH
+ftp -n $HOST <<END_SCRIPT
+quote USER $USER
+quote PASS $PASSWD
+
+delete $FILE_TO_DELETE
+put $FILE_TO_PUT
+
+quit
+END_SCRIPT
+exit 0
