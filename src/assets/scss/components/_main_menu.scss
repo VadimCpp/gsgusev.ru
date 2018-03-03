@@ -57,6 +57,22 @@ $main-menu-link-default:                        $white !default;
 		cursor: default;
     }
 
+    .gs-main-menu__link_telegram {
+        background-color: #239ED3;
+        color: white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #239ED3;
+            opacity: 0.7;
+        }
+    }
+
+    .gs-main-menu__link_margin-top {
+        margin-top: 10px;
+    }
+
     [data-city] {
         display: none;
     }
