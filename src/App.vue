@@ -123,11 +123,19 @@ export default {
       this.sidebarVisible = false
       this.saveDefaultCity('kaliningrad')
     },
+
     saveDefaultCity: function (city) {
-      // TODO: save currently selected city to IndexedDB
+      localStorage.setItem('city', city)
     },
+
     loadDefaultCity: function () {
-      // TODO: load default city from IndexedDB
+      let city = localStorage.getItem('city')
+
+      if (city === 'kaliningrad') {
+        this.showKaliningradItems()
+      } else if (city === 'gusev') {
+        this.showGusevItems()
+      }
     }
   }
 }
