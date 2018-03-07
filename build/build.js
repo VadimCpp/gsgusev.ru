@@ -33,5 +33,8 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ))
+
+    console.log(chalk.red('  NOTE!\n'))
+    console.log(chalk.yellow('  Do not forget to copy googlef5eec3256b1736b4.html to server.\n'))
   })
 })
