@@ -24,6 +24,9 @@
           </li>
           <li>
             Акимова Дарья - <a href="https://github.com/DaryaAkimova"> GitHub </a>
+          </li> 
+          <li>
+            Кокорин Юрий - <a href="https://github.com/YuryRudny"> GitHub </a>
           </li>
         </ol>
       </div>
