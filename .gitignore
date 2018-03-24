@@ -1,9 +1,15 @@
-
-.gitignore
-web/
-dist/
+.DS_Store
 node_modules/
-.idea/
-.publish/
-vendor/
-src/css/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+deploy.sh
+
