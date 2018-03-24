@@ -1,6 +1,6 @@
 # gsgusev.ru
 
-> Unofficial website of Technopolis GS residential area
+> Неофициальный сайт коттеджного поселка Технополис GS
 
 ## Build Setup
 
@@ -28,6 +28,3 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ## Features
 
 * [vue2-leaflet](https://www.npmjs.com/package/vue2-leaflet)
-* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-
-
