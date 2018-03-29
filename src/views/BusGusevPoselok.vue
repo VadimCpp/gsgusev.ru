@@ -82,17 +82,7 @@
 
 <script>
 export default {
-  name: 'BusGusevPoselok',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
-  }
+  name: 'BusGusevPoselok'
 }
 </script>
 

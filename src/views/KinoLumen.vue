@@ -12,7 +12,7 @@
   <!-- Well -->
   <section class="gs-container gs-container_center">
     <div class="gs-well gs-well_text-center" id="schedule-block">
-      <p> Расписание доступно по ссылке: 
+      <p> Расписание доступно по ссылке:
         <a href="http://lumenfilm.com/gusev/affishe">http://lumenfilm.com/gusev/affishe</a>
       </p>
       <!-- <p> TODO: враспарсить расписание </p> -->
@@ -46,19 +46,11 @@ import CallButton from '../components/CallButton'
 
 export default {
   name: 'KinoLumen',
-  props: ['title'],
   created () {
-    document.title = this.title
     // this.loadSchedule()
   },
   components: {
     CallButton
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
   }
   // loadSchedule () {
   //   //

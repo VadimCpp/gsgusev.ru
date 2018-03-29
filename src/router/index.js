@@ -20,13 +20,13 @@ import LabirintAnticafe from '@/views/LabirintAnticafe'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home,
-      props: {
+      meta: {
         title: 'GS Гусев - Главная'
       }
     },
@@ -34,7 +34,7 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About,
-      props: {
+      meta: {
         title: 'GS Гусев - О нас'
       }
     },
@@ -42,7 +42,7 @@ export default new Router({
       path: '/admin_poselka',
       name: 'AdminPoselka',
       component: AdminPoselka,
-      props: {
+      meta: {
         title: 'GS Гусев - Администратор поселка'
       }
     },
@@ -50,7 +50,7 @@ export default new Router({
       path: '/bus_gusev_kgd',
       name: 'BusGusevKgd',
       component: BusGusevKgd,
-      props: {
+      meta: {
         title: 'GS Гусев - Гусев-Калининград'
       }
     },
@@ -58,7 +58,7 @@ export default new Router({
       path: '/bus_gusev_poselok',
       name: 'BusGusevPoselok',
       component: BusGusevPoselok,
-      props: {
+      meta: {
         title: 'GS Гусев - Гусев-Поселок'
       }
     },
@@ -66,7 +66,7 @@ export default new Router({
       path: '/bus_kgd_gusev',
       name: 'BusKgdGusev',
       component: BusKgdGusev,
-      props: {
+      meta: {
         title: 'GS Гусев - Калининград-Гусев'
       }
     },
@@ -74,7 +74,7 @@ export default new Router({
       path: '/bus_poselok_gusev',
       name: 'BusPoselokGusev',
       component: BusPoselokGusev,
-      props: {
+      meta: {
         title: 'GS Гусев - Поселок-Гусев'
       }
     },
@@ -82,7 +82,7 @@ export default new Router({
       path: '/voda',
       name: 'Voda',
       component: Voda,
-      props: {
+      meta: {
         title: 'GS Гусев - Заказ воды «Айсберг»'
       }
     },
@@ -90,7 +90,7 @@ export default new Router({
       path: '/kino_lumen',
       name: 'KinoLumen',
       component: KinoLumen,
-      props: {
+      meta: {
         title: 'GS Гусев - Кино «Люмен Фильм»'
       }
     },
@@ -98,7 +98,7 @@ export default new Router({
       path: '/karta_poselka',
       name: 'KartaPoselka',
       component: KartaPoselka,
-      props: {
+      meta: {
         title: 'GS Гусев - Карта поселка'
       }
     },
@@ -106,7 +106,7 @@ export default new Router({
       path: '/taxi_v_guseve',
       name: 'TaxiVGuseve',
       component: TaxiVGuseve,
-      props: {
+      meta: {
         title: 'GS Гусев - Такси в Гусеве'
       }
     },
@@ -114,7 +114,7 @@ export default new Router({
       path: '/taxi-v-kaliningrade',
       name: 'TaxiVKaliningrade',
       component: TaxiVKaliningrade,
-      props: {
+      meta: {
         title: 'GS Гусев - Такси в Калининграде'
       }
     },
@@ -122,7 +122,7 @@ export default new Router({
       path: '/perevozka_divana',
       name: 'PerevozkaDivana',
       component: PerevozkaDivana,
-      props: {
+      meta: {
         title: 'GS Гусев - Перевозка ваших вещей'
       }
     },
@@ -130,7 +130,7 @@ export default new Router({
       path: '/gusev_fok',
       name: 'GusevFok',
       component: GusevFok,
-      props: {
+      meta: {
         title: 'GS Гусев - ФОК города Гусева'
       }
     },
@@ -138,7 +138,7 @@ export default new Router({
       path: '/kebab',
       name: 'Kebab',
       component: Kebab,
-      props: {
+      meta: {
         title: 'GS Гусев - Кафе #КЕБАБ'
       }
     },
@@ -146,7 +146,7 @@ export default new Router({
       path: '/fusion_express',
       name: 'FusionExpress',
       component: FusionExpress,
-      props: {
+      meta: {
         title: 'GS Гусев - Кафе «Фьюжн экспресс»'
       }
     },
@@ -154,9 +154,16 @@ export default new Router({
       path: '/labirint_anticafe',
       name: 'LabirintAnticafe',
       component: LabirintAnticafe,
-      props: {
+      meta: {
         title: 'GS Гусев - Антикафе «Лабиринт»'
       }
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+
+export default router

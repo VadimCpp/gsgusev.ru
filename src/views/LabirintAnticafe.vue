@@ -15,7 +15,7 @@
             <img class="gs-thumbnail__image" src="../assets/img/labirint-anticafe.jpg" alt="Антикафе «Лабиринт»">
             <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                 <p>
-                    В лабиринте можно играть не только в прятки. Здесь можно петь, резаться в настольные теннис, футбол, хоккей и приставки. 
+                    В лабиринте можно играть не только в прятки. Здесь можно петь, резаться в настольные теннис, футбол, хоккей и приставки.
                     Веселиться, читать книги, играть с друзьями во множество настольных игр. Работать в комфортных условиях с нескончаемым кофе и печеньками, приглашать прекрасных леди курить кальян, прыгать у бильярдного стола, пока дети развлекаются с аниматором.
                 </p>
                 <p>
@@ -46,18 +46,8 @@ import CallButton from '../components/CallButton'
 
 export default {
   name: 'LabirintAnticafe',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
   components: {
     CallButton
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
   }
 }
 </script>

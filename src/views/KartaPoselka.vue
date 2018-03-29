@@ -21,10 +21,6 @@ import Vue2Leaflet from 'vue2-leaflet'
 
 export default {
   name: 'KartaPoselka',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
   components: {
     'v-map': Vue2Leaflet.Map,
     'v-tilelayer': Vue2Leaflet.TileLayer,
@@ -38,11 +34,6 @@ export default {
       minZoom: 1,
       zoom: 16,
       center: L.latLng(54.6072, 22.2027)
-    }
-  },
-  watch: {
-    title () {
-      document.title = this.title
     }
   }
 }
