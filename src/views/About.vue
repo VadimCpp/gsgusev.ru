@@ -12,7 +12,7 @@
     <section class="gs-container gs-container_center">
       <div class="gs-well">
         Наша команда:
-        <ol> 
+        <ol>
           <li>
             Вадим Канинский - <a href="https://github.com/vadimcpp"> GitHub </a>
           </li>
@@ -24,14 +24,17 @@
           </li>
           <li>
             Акимова Дарья - <a href="https://github.com/DaryaAkimova"> GitHub </a>
-          </li> 
+          </li>
           <li>
             Кокорин Юрий - <a href="https://github.com/YuryRudny"> GitHub </a>
+          </li>
+          <li>
+            Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
           </li>
         </ol>
       </div>
     </section>
-    
+
     <section class="gs-container gs-container_center">
       <div class="gs-well gs-well_text-center">
         <p> Плохо работает сайт? <br> <a href="https://vk.com/vadimcpp"> Напишите программисту </a> </p>
