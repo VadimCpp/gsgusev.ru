@@ -59,18 +59,8 @@ import CallButton from '../components/CallButton'
 
 export default {
   name: 'TaksiVGuseve',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
   components: {
     CallButton
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
   }
 }
 </script>

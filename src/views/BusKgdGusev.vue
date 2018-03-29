@@ -83,16 +83,6 @@ import busKgdGusev from '../../static/data/busGusevKgd.json'
 
 export default {
   name: 'BusKgdGusev',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
-  },
   data: function () {
     return {
       schedule: busKgdGusev

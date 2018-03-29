@@ -14,10 +14,10 @@
         <div class="gs-well">
             <p>
                 Автобусы в Калининград ходят часто, самые популярные маршруты мы привели в таблице ниже.
-                                
+
             </p>
             <p>
-                <b>Внимание!</b> Внезапный приток пассажиров. На кассах очереди. Введены дополнительные рейсы. 
+                <b>Внимание!</b> Внезапный приток пассажиров. На кассах очереди. Введены дополнительные рейсы.
             </p>
             <hr>
             <p class="gs-well_text-center">
@@ -25,7 +25,7 @@
                 <a href="http://avtovokzal39.ru/xml2/search.php">купить билет онлайн</a>* <br>
             </p>
             <small>
-                <ul> 
+                <ul>
                     <li> билет обязательно распечатать </li>
                     <li> печать на автовокзале стоит 10 <i class="gs-icon-rouble"></i></li>
                     <li> на доп. рейсы билеты не продаются</li>
@@ -106,16 +106,6 @@ import busGusevKgd from '../../static/data/busGusevKgd.json'
 
 export default {
   name: 'BusGusevKgd',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
-  },
   data: function () {
     return {
       schedule: busGusevKgd

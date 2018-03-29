@@ -41,7 +41,7 @@
       </div>
       <h3>Мобильные приложения</h3>
       <p>
-        В Калининграде действует Яндекс такси.    
+        В Калининграде действует Яндекс такси.
       </p>
     </section>
 
@@ -54,18 +54,8 @@ import CallButton from '../components/CallButton'
 
 export default {
   name: 'TaksiVKaliningrade',
-  props: ['title'],
-  created () {
-    document.title = this.title
-  },
   components: {
     CallButton
-  },
-  watch: {
-    title () {
-      // only used when the title changes after page load
-      document.title = this.title
-    }
   }
 }
 </script>
