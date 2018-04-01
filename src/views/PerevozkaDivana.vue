@@ -12,19 +12,21 @@
     </section>
 
     <!-- Thumbnail -->
-    <section class="gs-container gs-container_center gs-container_padding-bottom">
-      <div class="gs-thumbnail">
-        <img class="gs-thumbnail__image" src="../assets/img/ford_transit.jpg" alt="Ford Transit">
-        <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-            <p>
-                Вместительный Ford Transit безопасно доставит ваш груз в любую точку области.
-            </p>
-            <h4>Дмитрий</h4>
-            <p>8 (921) 617-60-13</p>
-            <CallButton phone="89216176013"/>
+    <transition name="fade" appear>
+      <section class="gs-container gs-container_center gs-container_padding-bottom">
+        <div class="gs-thumbnail">
+          <img class="gs-thumbnail__image" src="../assets/img/ford_transit.jpg" alt="Ford Transit">
+          <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+              <p>
+                  Вместительный Ford Transit безопасно доставит ваш груз в любую точку области.
+              </p>
+              <h4>Дмитрий</h4>
+              <p>8 (921) 617-60-13</p>
+              <CallButton phone="89216176013"/>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </transition>
 
   </div>
 </template>

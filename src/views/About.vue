@@ -9,31 +9,33 @@
       </ol>
     </section>
 
-    <section class="gs-container gs-container_center">
-      <div class="gs-well">
-        Наша команда:
-        <ol>
-          <li>
-            Вадим Канинский - <a href="https://github.com/vadimcpp"> GitHub </a>
-          </li>
-          <li>
-            Ярослав Карас - <a href="https://github.com/yarkaras"> GitHub </a>
-          </li>
-          <li>
-            Листопад Евгений - <a href="https://github.com/gutal1n"> GitHub </a>
-          </li>
-          <li>
-            Акимова Дарья - <a href="https://github.com/DaryaAkimova"> GitHub </a>
-          </li>
-          <li>
-            Кокорин Юрий - <a href="https://github.com/YuryRudny"> GitHub </a>
-          </li>
-          <li>
-            Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
-          </li>
-        </ol>
-      </div>
-    </section>
+    <transition name="fade" appear>
+      <section class="gs-container gs-container_center">
+        <div class="gs-well">
+          Наша команда:
+          <ol>
+            <li>
+              Вадим Канинский - <a href="https://github.com/vadimcpp"> GitHub </a>
+            </li>
+            <li>
+              Ярослав Карас - <a href="https://github.com/yarkaras"> GitHub </a>
+            </li>
+            <li>
+              Листопад Евгений - <a href="https://github.com/gutal1n"> GitHub </a>
+            </li>
+            <li>
+              Акимова Дарья - <a href="https://github.com/DaryaAkimova"> GitHub </a>
+            </li>
+            <li>
+              Кокорин Юрий - <a href="https://github.com/YuryRudny"> GitHub </a>
+            </li>
+            <li>
+              Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </transition>
 
     <section class="gs-container gs-container_center">
       <div class="gs-well gs-well_text-center">

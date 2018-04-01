@@ -10,32 +10,34 @@
     </section>
 
     <!-- Thumbnail -->
-    <section class="gs-container gs-container_center gs-container_padding-bottom">
-        <div class="gs-thumbnail">
-            <img class="gs-thumbnail__image" src="../assets/img/labirint-anticafe.jpg" alt="Антикафе «Лабиринт»">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <p>
-                    В лабиринте можно играть не только в прятки. Здесь можно петь, резаться в настольные теннис, футбол, хоккей и приставки.
-                    Веселиться, читать книги, играть с друзьями во множество настольных игр. Работать в комфортных условиях с нескончаемым кофе и печеньками, приглашать прекрасных леди курить кальян, прыгать у бильярдного стола, пока дети развлекаются с аниматором.
-                </p>
-                <p>
-                    График работы:
-                    <ul class="gs-container__list">
-                      <li> понедельник-четверг: 16:00 до 02:00; </li>
-                      <li> пятница: 14:00-04:00; </li>
-                      <li> суббота: 13:00-04:00; </li>
-                      <li> воскресенье: 12:00-02:00; </li>
-                    </ul>
-                </p>
-                <p>
-                    Сайт: <a href="https://vk.com/antilabirint" class="gs-link"> https://vk.com/antilabirint </a> <br>
-                </p>
-                <h4>Бронь столов</h4>
-                <p>+7 (4012) 52 22 19</p>
-                <CallButton phone="+74012522219"/>
-            </div>
-        </div>
-    </section>
+    <transition name="fade" appear>
+      <section class="gs-container gs-container_center gs-container_padding-bottom">
+          <div class="gs-thumbnail">
+              <img class="gs-thumbnail__image" src="../assets/img/labirint-anticafe.jpg" alt="Антикафе «Лабиринт»">
+              <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+                  <p>
+                      В лабиринте можно играть не только в прятки. Здесь можно петь, резаться в настольные теннис, футбол, хоккей и приставки.
+                      Веселиться, читать книги, играть с друзьями во множество настольных игр. Работать в комфортных условиях с нескончаемым кофе и печеньками, приглашать прекрасных леди курить кальян, прыгать у бильярдного стола, пока дети развлекаются с аниматором.
+                  </p>
+                  <p>
+                      График работы:
+                      <ul class="gs-container__list">
+                        <li> понедельник-четверг: 16:00 до 02:00; </li>
+                        <li> пятница: 14:00-04:00; </li>
+                        <li> суббота: 13:00-04:00; </li>
+                        <li> воскресенье: 12:00-02:00; </li>
+                      </ul>
+                  </p>
+                  <p>
+                      Сайт: <a href="https://vk.com/antilabirint" class="gs-link"> https://vk.com/antilabirint </a> <br>
+                  </p>
+                  <h4>Бронь столов</h4>
+                  <p>+7 (4012) 52 22 19</p>
+                  <CallButton phone="+74012522219"/>
+              </div>
+          </div>
+      </section>
+    </transition>
 
   </div>
 </template>
