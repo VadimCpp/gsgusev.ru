@@ -12,7 +12,6 @@ import KinoLumen from '@/views/KinoLumen'
 import KartaPoselka from '@/views/KartaPoselka'
 import TaxiVGuseve from '@/views/TaxiVGuseve'
 import TaxiVKaliningrade from '@/views/TaxiVKaliningrade'
-import PerevozkaDivana from '@/views/PerevozkaDivana'
 import GusevFok from '@/views/GusevFok'
 import Kebab from '@/views/Kebab'
 import FusionExpress from '@/views/FusionExpress'
@@ -116,14 +115,6 @@ const router = new Router({
       component: TaxiVKaliningrade,
       meta: {
         title: 'GS Гусев - Такси в Калининграде'
-      }
-    },
-    {
-      path: '/perevozka_divana',
-      name: 'PerevozkaDivana',
-      component: PerevozkaDivana,
-      meta: {
-        title: 'GS Гусев - Перевозка ваших вещей'
       }
     },
     {

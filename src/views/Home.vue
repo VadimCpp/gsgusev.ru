@@ -51,11 +51,7 @@
         <router-link :to="{ name: 'TaxiVKaliningrade' }" class="gs-main-menu__link" data-city="kaliningrad">
           Такси в Калининграде
           <i class="gs-icon-angle-right"> </i>
-        </router-link>
-        <router-link :to="{ name: 'PerevozkaDivana' }" class="gs-main-menu__link" data-city="gusev">
-          Перевозка ваших вещей
-          <i class="gs-icon-angle-right"> </i>
-        </router-link>
+        </router-link>        
         <router-link :to="{ name: 'GusevFok' }" class="gs-main-menu__link" data-city="gusev">
           ФОК города Гусева
           <i class="gs-icon-angle-right"> </i>
