@@ -78,7 +78,7 @@
             <i class="gs-icon-angle-right"> </i>
           </router-link>
         </div>
-        <div>
+        <div class="gs-main-menu">
           <a href="https://t.me/gsgusev" class="gs-main-menu__link gs-main-menu__link_telegram gs-main-menu__link_margin-top">
             <i class="gs-icon-telegram"> </i>
             Наш Telegram чат

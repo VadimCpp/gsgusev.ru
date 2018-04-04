@@ -12,7 +12,25 @@ $main-menu-link-default:                        $white !default;
 @include exports("main-menu") {
 
     .gs-main-menu {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 
+        @media (min-width: 576px) {
+            max-width: 70%;
+        }
+
+        @media (min-width: 768px) {
+            max-width: 65%;
+        }
+
+        @media (min-width: 980px) {
+            max-width: 40%;
+        }
+
+        @media (min-width: 1220px) {
+            max-width: 35%;
+        }
     }
 
     .gs-main-menu__link {
@@ -51,7 +69,7 @@ $main-menu-link-default:                        $white !default;
             @include box-shadow($value: $main-menu-link-shadow);
         }
     }
-    
+
     .gs-main-menu__link_disabled {
 		opacity: 0;
 		cursor: default;
@@ -76,7 +94,7 @@ $main-menu-link-default:                        $white !default;
     [data-city] {
         display: none;
     }
-    
+
     .gusev > [data-city*="gusev"],
     .kaliningrad > [data-city*="kaliningrad"] {
         display: block;
