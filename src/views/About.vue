@@ -31,6 +31,9 @@
           <li>
             Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
           </li>
+          <li>
+            Андреев Александр - <a href="https://github.com/cahekec"> GitHub </a>
+          </li>
         </ol>
       </div>
     </section>
