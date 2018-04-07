@@ -4,12 +4,12 @@
   <!-- Header -->
   <header class="gs-header">
     <div class="gs-header__veil" v-bind:class="{ 'gs-header__veil_default-map-color' : !isFooterVisible() }"></div>
-    <div class="gs-header__image"></div>   
+    <div class="gs-header__image"></div>
     <div class="gs-header__off-canvas-btn" id="off-canvas-btn" v-on:click="toggleSidebar()" v-show="isNavButtonVisible()">
       <i class="gs-icon-menu"> </i>
     </div>
   </header>
-  
+
   <SideBar
     v-on:showGusevItems="showGusevItems"
     v-on:showKaliningradItems="showKaliningradItems"
@@ -108,8 +108,12 @@ export default {
     showGusevItems: function () {
       document.getElementById('gusev-btn').classList.add('active')
       document.getElementById('kgd-btn').classList.remove('active')
-      document.getElementById('main-menu').classList.remove('kaliningrad')
-      document.getElementById('main-menu').classList.add('gusev')
+
+      if (document.getElementById('main-menu') !== null) {
+        document.getElementById('main-menu').classList.remove('kaliningrad')
+        document.getElementById('main-menu').classList.add('gusev')
+      }
+
       this.hideSidebar()
       this.sidebarVisible = false
       this.saveDefaultCity('gusev')
@@ -117,8 +121,12 @@ export default {
     showKaliningradItems: function () {
       document.getElementById('kgd-btn').classList.add('active')
       document.getElementById('gusev-btn').classList.remove('active')
-      document.getElementById('main-menu').classList.remove('gusev')
-      document.getElementById('main-menu').classList.add('kaliningrad')
+
+      if (document.getElementById('main-menu') !== null) {
+        document.getElementById('main-menu').classList.remove('gusev')
+        document.getElementById('main-menu').classList.add('kaliningrad')
+      }
+
       this.hideSidebar()
       this.sidebarVisible = false
       this.saveDefaultCity('kaliningrad')
@@ -130,11 +138,15 @@ export default {
 
     loadDefaultCity: function () {
       let city = localStorage.getItem('city')
+      // (!) Main menu element is present only at Home page
 
-      if (city === 'kaliningrad') {
-        this.showKaliningradItems()
-      } else if (city === 'gusev') {
-        this.showGusevItems()
+      switch (city) {
+        case 'kaliningrad':
+          this.showKaliningradItems()
+          break
+        case 'gusev':
+          this.showGusevItems()
+          break
       }
     }
   }
