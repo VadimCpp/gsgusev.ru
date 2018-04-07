@@ -9,46 +9,48 @@
       </ol>
     </section>
 
-    <section class="gs-container gs-container_center gs-container_padding-bottom">
+    <transition name="fade" appear>
+        <section class="gs-container gs-container_center gs-container_padding-bottom">
 
-        <h3>Таксомоторные предприятия</h3>
-        <p>
-            В таксопарках Гусева нет оповещения клиента о том, что машина подъехала. Поэтому водители ожидают ровно 5 минут и уезжают. Будьте бдительны.
-        </p>
+            <h3>Таксомоторные предприятия</h3>
+            <p>
+                В таксопарках Гусева нет оповещения клиента о том, что машина подъехала. Поэтому водители ожидают ровно 5 минут и уезжают. Будьте бдительны.
+            </p>
 
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Омега </h4>
-                <p> 8 (40143) 3-43-30 </p>
-                <CallButton phone="84014334330"/>
+            <!-- Thumbnail -->
+            <div class="gs-thumbnail">
+                <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+                    <h4> Омега </h4>
+                    <p> 8 (40143) 3-43-30 </p>
+                    <CallButton phone="84014334330"/>
+                </div>
             </div>
-        </div>
-        <br>
+            <br>
 
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Спартак </h4>
-                <p> 8 (40143) 3-46-30 </p>
-                <CallButton phone="84014334630"/>
+            <!-- Thumbnail -->
+            <div class="gs-thumbnail">
+                <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+                    <h4> Спартак </h4>
+                    <p> 8 (40143) 3-46-30 </p>
+                    <CallButton phone="84014334630"/>
+                </div>
             </div>
-        </div>
 
-        <h3>Частный извоз</h3>
-        <p>
-            В этом разделе добавлены водители, с которыми хочется ездить.
-        </p>
+            <h3>Частный извоз</h3>
+            <p>
+                В этом разделе добавлены водители, с которыми хочется ездить.
+            </p>
 
-        <!-- Thumbnail -->
-        <div class="gs-thumbnail">
-            <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                <h4> Андрей </h4>
-                <p> 8 (921) 005-77-99 </p>
-                <CallButton phone="89210057799"/>
+            <!-- Thumbnail -->
+            <div class="gs-thumbnail">
+                <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+                    <h4> Андрей </h4>
+                    <p> 8 (921) 005-77-99 </p>
+                    <CallButton phone="89210057799"/>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </transition>
 
   </div>
 </template>

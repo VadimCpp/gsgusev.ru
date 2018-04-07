@@ -17,85 +17,94 @@
     </section>
 
     <!-- Table -->
-    <section class="gs-container gs-container_center gs-container_padding-bottom">
-        <div class="gs-well">
-            <table class="gs-table">
-                <thead>
-                    <tr>
-                        <th class="gs-table_text-center" colspan="2">
-                            <span class="gs-table__thead_hidden-small-text">Расписание автобуса 2,5 (п.Северный - ул.Луговая)</span>
-                            <span class="gs-table__thead_visible-small-text">Расписание автобуса 2,5</span>
-                        </th>
+    <transition name="fade" appear>
+        <section class="gs-container gs-container_center gs-container_padding-bottom">
+            <div class="gs-well">
+                <table class="gs-table gs-table-fixed-header" id="gs-table-fixed">
+                    <thead>
+                        <tr>
+                            <th class="gs-table_text-center" colspan="2">
+                                <span class="gs-table__thead_hidden-small-text">Расписание автобуса 2,5 (п.Северный - ул.Луговая)</span>
+                                <span class="gs-table__thead_visible-small-text">Расписание автобуса 2,5</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    <tr> <td colspan="2"> * - до школы </td>
                     </tr>
-                </thead>
-                <tfoot>
-                <tr> <td colspan="2"> * - до школы </td>
-                </tr>
-                <tr> <td colspan="2"> ** - до "Кулинарии" </td>
-                </tr>
-                <tr> <td colspan="2"> *** - до "Площади" </td>
-                </tr>
-                </tfoot>
-                <tbody>
-                    <tr class="gs-table_text-left">
-                        <td width="50%">Будние дни</td>
-                        <td width="50%">
-                            <span class="gs-table__thead_hidden-small-text">Выходные, каникулы, праздничные дни</span>
-                            <span class="gs-table__thead_visible-small-text">Выходные дни</span>
-                        </td>
+                    <tr> <td colspan="2"> ** - до "Кулинарии" </td>
                     </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">7:14</td>
-                         <td width="50%">7:14</td>
+                    <tr> <td colspan="2"> *** - до "Площади" </td>
                     </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">08:04*</td>
-                         <td width="50%">08:04</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">09:49**</td>
-                         <td width="50%">09:39**</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">12:42</td>
-                         <td width="50%">12:42</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">14:28</td>
-                         <td width="50%">14:28</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">15:30</td>
-                         <td width="50%">-</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">16:29***</td>
-                         <td width="50%">-</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">18:31</td>
-                         <td width="50%">18:31</td>
-                    </tr>
-                    <tr class="gs-table_text-left">
-                         <td width="50%">19:23</td>
-                         <td width="50%">19:23</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+                    </tfoot>
+                    <tbody>
+                        <tr class="gs-table_text-left">
+                            <td width="50%">Будние дни</td>
+                            <td width="50%">
+                                <span class="gs-table__thead_hidden-small-text">Выходные, каникулы, праздничные дни</span>
+                                <span class="gs-table__thead_visible-small-text">Выходные дни</span>
+                            </td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">7:14</td>
+                             <td width="50%">7:14</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">08:04*</td>
+                             <td width="50%">08:04</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">09:49**</td>
+                             <td width="50%">09:39**</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">12:42</td>
+                             <td width="50%">12:42</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">14:28</td>
+                             <td width="50%">14:28</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">15:30</td>
+                             <td width="50%">-</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">16:29***</td>
+                             <td width="50%">-</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">18:31</td>
+                             <td width="50%">18:31</td>
+                        </tr>
+                        <tr class="gs-table_text-left">
+                             <td width="50%">19:23</td>
+                             <td width="50%">19:23</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <TableFixedTHead/>
+            </div>
+        </section>
+    </transition>
 
   </div>
 </template>
 
 <script>
+
+import TableFixedTHead from '../components/TableFixedTHead'
+
 export default {
-  name: 'BusPoselokGusev'
+  name: 'BusPoselokGusev',
+  components: {
+    TableFixedTHead
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/bus-poselok-gusev.scss';
+@import '../assets/scss/bus-poselok-gusev.scss'
 
 </style>

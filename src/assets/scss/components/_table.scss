@@ -11,6 +11,10 @@ $table-max-width:                      $medium-start - 1;
         border-spacing: 0;
         width: 100%;
         margin-bottom: 15px;
+
+        &-fixed-header {
+            position: relative;
+        }
     }
 
     /*

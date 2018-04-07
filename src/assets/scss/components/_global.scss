@@ -185,23 +185,23 @@ $common-width:                260px;
 // Spin animation
 // ref: https://stackoverflow.com/a/16771693/4222953
 //------------------------------------------------------
-@-moz-keyframes spin { 
-    100% { 
-        -moz-transform: rotate(360deg); 
-    } 
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
 
-@-webkit-keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-    } 
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform: rotate(360deg); 
-    }   
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .gs-icon-spin::before {
@@ -213,4 +213,22 @@ $common-width:                260px;
 body {
     padding: 0;
     margin: 0;
+}
+
+.gs-table {
+    &-fixed-head {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding-top: 20px;
+        margin-top: -20px;
+
+        transition: top 0.25s;
+
+        > tr {
+            display: table;
+            width: inherit;
+        }
+    }
 }
