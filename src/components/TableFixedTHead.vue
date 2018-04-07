@@ -93,3 +93,9 @@
     }
   }
 </script>
+
+<style type="text/css">
+  .gs-table-fixed-head {
+    transition: none;
+  }
+</style>
