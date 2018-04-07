@@ -55,36 +55,4 @@ export default {
 
 @import '../assets/scss/about.scss';
 
-@keyframes slideOutRight {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slide-enter {
-  opacity: 0;
-}
-
-.slide-enter-active {
-  animation-name: slideInRight;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
 </style>
