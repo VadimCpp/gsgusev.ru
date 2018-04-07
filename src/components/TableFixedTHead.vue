@@ -1,3 +1,35 @@
+<!--
+  Компонент TableFixedTHead
+  Заголовок таблицы дублируется при скролле и всегда находится
+  наверху таблицы.
+
+  Подключается к шаблону как обычно:
+
+  import TableFixedTHead from '../components/TableFixedTHead'
+
+  export default {
+    components: {
+      TableFixedTHead
+    }
+  }
+
+  Таблице, в которой используется функционал,
+  присваивается класс .gs-table-fixed-header и идентификатор
+  #gs-table-fixed и добавляется элемент компонента <TableFixedTHead/>:
+
+  <table class="gs-table-fixed-header" id="gs-table-fixed">
+    ...
+  </table>
+  <TableFixedTHead/>
+
+  Note: Для использования с несколькими таблицами на одной странице
+  компонент будет необходимо немного изменить - передавать идентификатор
+  таблицы прямо в компонент, чтобы можно было использовать методы
+  компонента для нескольких элементов сразу
+
+  github: https://github.com/VadimCpp/gsgusev.ru/issues/39
+ -->
+
 <template>
 </template>
 
