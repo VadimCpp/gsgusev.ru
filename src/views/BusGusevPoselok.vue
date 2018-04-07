@@ -20,7 +20,7 @@
     <transition name="fade" appear>
         <section class="gs-container gs-container_center gs-container_padding-bottom">
             <div class="gs-well">
-                <table class="gs-table">
+                <table class="gs-table gs-table-fixed-header" id="gs-table-fixed">
                     <thead>
                     <tr>
                         <th class="gs-table_text-center" colspan="2">
@@ -75,6 +75,7 @@
                     </tr>
                     </tbody>
                 </table>
+                <TableFixedTHead/>
             </div>
         </section>
     </transition>
@@ -83,13 +84,19 @@
 </template>
 
 <script>
+
+import TableFixedTHead from '../components/TableFixedTHead'
+
 export default {
-  name: 'BusGusevPoselok'
+  name: 'BusGusevPoselok',
+  components: {
+    TableFixedTHead
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/bus-gusev-poselok.scss';
+@import '../assets/scss/bus-gusev-poselok.scss'
 
 </style>

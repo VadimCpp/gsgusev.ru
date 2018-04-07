@@ -39,7 +39,7 @@
     <transition name="fade" appear>
         <section class="gs-container gs-container_center gs-container_padding-bottom">
             <div class="gs-well">
-                <table class="gs-table">
+                <table class="gs-table gs-table-fixed-header" id="gs-table-fixed">
                     <thead>
                         <tr>
                             <th class="gs-table_text-center">
@@ -74,6 +74,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <TableFixedTHead/>
             </div>
         </section>
     </transition>
@@ -84,6 +85,7 @@
 <script>
 
 import busKgdGusev from '../../static/data/busGusevKgd.json'
+import TableFixedTHead from '../components/TableFixedTHead'
 
 export default {
   name: 'BusKgdGusev',
@@ -91,12 +93,15 @@ export default {
     return {
       schedule: busKgdGusev
     }
+  },
+  components: {
+    TableFixedTHead
   }
 }
 </script>
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/bus-kgd-gusev.scss';
+@import '../assets/scss/bus-kgd-gusev.scss'
 
 </style>

@@ -40,7 +40,7 @@
     <transition name="fade" appear>
         <section class="gs-container gs-container_center">
             <div class="gs-well">
-                <table class="gs-table">
+                <table class="gs-table gs-table-fixed-header" id="gs-table-fixed">
                     <thead>
                         <tr>
                             <th class="gs-table_text-center">
@@ -76,6 +76,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <TableFixedTHead/>
             </div>
         </section>
     </transition>
@@ -107,6 +108,7 @@
 
 import CallButton from '../components/CallButton'
 import busGusevKgd from '../../static/data/busGusevKgd.json'
+import TableFixedTHead from '../components/TableFixedTHead'
 
 export default {
   name: 'BusGusevKgd',
@@ -116,7 +118,8 @@ export default {
     }
   },
   components: {
-    CallButton
+    CallButton,
+    TableFixedTHead
   }
 }
 </script>
