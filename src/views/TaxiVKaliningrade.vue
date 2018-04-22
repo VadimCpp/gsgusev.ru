@@ -39,10 +39,26 @@
               <CallButton phone="84012666111"/>
           </div>
       </div>
+
       <h3>Мобильные приложения</h3>
       <p>
         В Калининграде действует Яндекс такси.
       </p>
+
+      <h3>Частный водитель</h3>
+      <p>
+        Поездки в Балтийск, в Зеленоградск, а возможно и в Гусев.
+      </p>      
+
+      <!-- Thumbnail -->
+      <div class="gs-thumbnail">
+          <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
+              <h4> Татьяна </h4>              
+              <p> 8 (981) 450-82-15 </p>
+              <p><CallButton phone="89814508215"/></p>
+              <p><SocialButton vk="https://vk.com/tan_chik"/></p>
+          </div>
+      </div>
     </section>
 
   </div>
@@ -51,11 +67,13 @@
 <script>
 
 import CallButton from '../components/CallButton'
+import SocialButton from '../components/SocialButton'
 
 export default {
   name: 'TaksiVKaliningrade',
   components: {
-    CallButton
+    CallButton,
+    SocialButton
   }
 }
 </script>

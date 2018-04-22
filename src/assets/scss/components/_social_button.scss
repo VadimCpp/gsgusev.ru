@@ -1,0 +1,56 @@
+$social_button-info:                      #4F83B0 !default;
+$social_button-info-hover:                saturate($social_button-info, 30%) !default;
+$social_button-font-color-light:          $white !default;
+
+$social_button-shadow:                    inset 0 1px 2px rgba(0, 0, 0, .125) !default;
+$social_button-radius:                    50px;
+
+// Exports
+//------------------------------------------------------
+
+@include exports("social-button") {
+
+    .gs-social-button {
+
+        @include radius($type: border-radius, $value: $social_button-radius);
+
+        background-image: none;
+        border: 1px solid transparent;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        user-select: none;
+
+        &,
+        &:active,
+        &.active,
+        &.disabled,
+        &[disabled] {
+            color: $social_button-font-color-light;
+            border-color: $social_button-info;
+            background-color: $social_button-info;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: $social_button-font-color-light;
+            border-color: $social_button-info-hover;
+            background-color: $social_button-info-hover;
+            outline: 0 !important;
+            text-decoration: none;
+        }
+
+        &:active,
+        &.active {
+            @include box-shadow($value: $social_button-shadow);
+        }
+    }
+}
