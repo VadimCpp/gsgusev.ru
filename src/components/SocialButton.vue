@@ -1,6 +1,6 @@
 <template>
   <a :href="url" class="gs-social-button">      
-      ВКонтакте
+      <i class="gs-icon-vkontakte"> </i> ВКонтакте
   </a>
 </template>
 

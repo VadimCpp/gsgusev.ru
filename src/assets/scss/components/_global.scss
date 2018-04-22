@@ -126,6 +126,10 @@ $common-width:                260px;
 }
 
 
+//
+// Made with http://fontello.com/ -> Customize codes
+//
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -173,14 +177,14 @@ $common-width:                260px;
 }
 
 .gs-icon-ok:before { content: '\e800'; } /* '' */
-.gs-icon-phone:before { content: '\e808'; } /* '' */
+.gs-icon-phone:before { content: '\e801'; } /* '' */
 .gs-icon-menu:before { content: '\f0c9'; } /* '' */
 .gs-icon-angle-right:before { content: '\f105'; } /* '' */
 .gs-icon-spinner:before { content: '\f110'; } /* '' */
 .gs-icon-frown:before { content: '\f119'; } /* '' */
 .gs-icon-rouble:before { content: '\f158'; } /* '' */
-// TODO:
-// .gs-icon-telegram:before { content: '\f158'; } /* '' */
+.gs-icon-vkontakte:before { content: '\f189'; } /* '' */
+.gs-icon-telegram:before { content: '\f2c6'; } /* '' */
 
 // Spin animation
 // ref: https://stackoverflow.com/a/16771693/4222953
