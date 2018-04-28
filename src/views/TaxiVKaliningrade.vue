@@ -4,7 +4,7 @@
     <!-- Breadcrumb -->
     <section class="gs-container gs-container_center">
       <ol class="gs-breadcrumb">
-        <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home' }"> GS Гусев </router-link> </li>
+        <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home', params: { city: $route.params.city } }"> GS Гусев </router-link> </li>
         <li class="gs-breadcrumb__list-item gs-breadcrumb__list-item_active">
             Такси в
             <span class="gs-breadcrumb__visible-small-text"> Кгд </span>
@@ -48,12 +48,12 @@
       <h3>Частный водитель</h3>
       <p>
         Поездки в Балтийск, в Зеленоградск, а возможно и в Гусев.
-      </p>      
+      </p>
 
       <!-- Thumbnail -->
       <div class="gs-thumbnail">
           <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-              <h4> Татьяна </h4>              
+              <h4> Татьяна </h4>
               <p> 8 (981) 450-82-15 </p>
               <p><CallButton phone="89814508215"/></p>
               <p><SocialButton vk="https://vk.com/tan_chik"/></p>
