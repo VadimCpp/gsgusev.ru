@@ -12,7 +12,7 @@
     <!-- Main menu -->
     <transition name="fade" appear>
       <section class="gs-container gs-container_center gs-container_padding-bottom">
-        <div class="gs-main-menu gusev" id="main-menu">
+        <div class="gs-main-menu" :class="$route.params.cityName" id="main-menu">
           <router-link :to="{ name: 'BusGusevKgd' }" class="gs-main-menu__link" data-city="gusev kaliningrad">
             Автобус Гусев-Калининград
             <i class="gs-icon-angle-right"> </i>

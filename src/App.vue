@@ -119,8 +119,9 @@ export default {
 
       this.hideSidebar()
       this.sidebarVisible = false
-      this.saveDefaultCity('gusev')
       this.$route.params.city = 'gsv'
+      this.$route.params.cityName = 'gusev'
+      this.saveDefaultCity('gusev')
     },
     showKaliningradItems: function () {
       document.getElementById('kgd-btn').classList.add('active')
@@ -135,8 +136,9 @@ export default {
 
       this.hideSidebar()
       this.sidebarVisible = false
-      this.saveDefaultCity('kaliningrad')
       this.$route.params.city = 'kgd'
+      this.$route.params.cityName = 'kaliningrad'
+      this.saveDefaultCity('kaliningrad')
     },
 
     saveDefaultCity: function (city) {

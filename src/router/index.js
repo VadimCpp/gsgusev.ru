@@ -165,14 +165,17 @@ router.beforeEach((to, from, next) => {
     switch (city) {
       case 'kaliningrad':
         to.params.city = 'kgd'
+        to.params.cityName = 'kaliningrad'
         break
       case 'gusev':
         to.params.city = 'gsv'
+        to.params.cityName = 'gusev'
         break
     }
   } else {
-    if (to.params.city === null || to.params.city.length < 1) {
+    if (!to.params.hasOwnProperty('city') || to.params.city.length < 1) {
       to.params.city = 'gsv'
+      to.params.cityName = 'gusev'
     }
   }
 
