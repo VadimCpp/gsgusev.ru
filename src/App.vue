@@ -57,13 +57,14 @@ export default {
   },
   watch: {
     '$route': function (to, from) {
-      if (to.path === '/') {
+      if (['/', '/gsv', '/kgd'].indexOf(to.path) !== -1) {
         this.navbtnVisible = true
+        this.loadDefaultCity()
       } else {
         this.navbtnVisible = false
       }
 
-      if (to.path === '/karta_poselka') {
+      if (to.path.indexOf('/karta_poselka') !== -1) {
         this.footerVisible = false
       } else {
         this.footerVisible = true
@@ -112,10 +113,14 @@ export default {
       if (document.getElementById('main-menu') !== null) {
         document.getElementById('main-menu').classList.remove('kaliningrad')
         document.getElementById('main-menu').classList.add('gusev')
+      } else {
+        console.error('[E][showGusevItems] main-menu element is not found. City: Gusev.')
       }
 
       this.hideSidebar()
       this.sidebarVisible = false
+      this.$route.params.city = 'gsv'
+      this.$route.params.cityName = 'gusev'
       this.saveDefaultCity('gusev')
     },
     showKaliningradItems: function () {
@@ -125,10 +130,14 @@ export default {
       if (document.getElementById('main-menu') !== null) {
         document.getElementById('main-menu').classList.remove('gusev')
         document.getElementById('main-menu').classList.add('kaliningrad')
+      } else {
+        console.error('[E][showKaliningradItems] main-menu element is not found. City: Kaliningrad.')
       }
 
       this.hideSidebar()
       this.sidebarVisible = false
+      this.$route.params.city = 'kgd'
+      this.$route.params.cityName = 'kaliningrad'
       this.saveDefaultCity('kaliningrad')
     },
 
@@ -139,7 +148,6 @@ export default {
     loadDefaultCity: function () {
       let city = localStorage.getItem('city')
       // (!) Main menu element is present only at Home page
-
       switch (city) {
         case 'kaliningrad':
           this.showKaliningradItems()
@@ -155,6 +163,6 @@ export default {
 
 <style lang="scss">
 
-@import './assets/scss/app.scss';
+@import './assets/scss/app.scss'
 
 </style>

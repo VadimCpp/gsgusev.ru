@@ -3,7 +3,7 @@
 
     <!-- Breadcrumb -->
     <ul class="gs-breadcrumb gs-breadcrumb_margin-right-left gs-breadcrumb_bg-color-transparency">
-      <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home' }"> GS Гусев </router-link> </li>
+      <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home', params: { city: $route.params.city } }"> GS Гусев </router-link> </li>
       <li class="gs-breadcrumb__list-item gs-breadcrumb__list-item_active"> Карта поселка </li>
     </ul>
 

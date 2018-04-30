@@ -4,7 +4,7 @@
     <!-- Breadcrumb -->
     <section class="gs-container gs-container_center">
         <ol class="gs-breadcrumb">
-            <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home' }"> GS Гусев </router-link> </li>
+            <li class="gs-breadcrumb__list-item"> <router-link class="gs-breadcrumb__link" :to="{ name: 'Home', params: { city: $route.params.city } }"> GS Гусев </router-link> </li>
             <li class="gs-breadcrumb__list-item gs-breadcrumb__list-item_active"> Калининград-Гусев </li>
         </ol>
     </section>

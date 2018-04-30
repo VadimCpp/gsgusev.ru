@@ -23,6 +23,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      alias: ['/gsv', '/kgd'],
       name: 'Home',
       component: Home,
       meta: {
@@ -30,15 +31,15 @@ const router = new Router({
       }
     },
     {
-      path: '/about',
+      path: '/:city/about',
       name: 'About',
       component: About,
       meta: {
-        title: 'GS Гусев - О нас'
+        title: 'About'
       }
     },
     {
-      path: '/admin_poselka',
+      path: '/:city/admin_poselka',
       name: 'AdminPoselka',
       component: AdminPoselka,
       meta: {
@@ -46,7 +47,7 @@ const router = new Router({
       }
     },
     {
-      path: '/bus_gusev_kgd',
+      path: '/:city/bus_gusev_kgd',
       name: 'BusGusevKgd',
       component: BusGusevKgd,
       meta: {
@@ -54,7 +55,7 @@ const router = new Router({
       }
     },
     {
-      path: '/bus_gusev_poselok',
+      path: '/:city/bus_gusev_poselok',
       name: 'BusGusevPoselok',
       component: BusGusevPoselok,
       meta: {
@@ -62,7 +63,7 @@ const router = new Router({
       }
     },
     {
-      path: '/bus_kgd_gusev',
+      path: '/:city/bus_kgd_gusev',
       name: 'BusKgdGusev',
       component: BusKgdGusev,
       meta: {
@@ -70,7 +71,7 @@ const router = new Router({
       }
     },
     {
-      path: '/bus_poselok_gusev',
+      path: '/:city/bus_poselok_gusev',
       name: 'BusPoselokGusev',
       component: BusPoselokGusev,
       meta: {
@@ -78,7 +79,7 @@ const router = new Router({
       }
     },
     {
-      path: '/voda',
+      path: '/:city/voda',
       name: 'Voda',
       component: Voda,
       meta: {
@@ -86,7 +87,7 @@ const router = new Router({
       }
     },
     {
-      path: '/kino_lumen',
+      path: '/:city/kino_lumen',
       name: 'KinoLumen',
       component: KinoLumen,
       meta: {
@@ -94,7 +95,7 @@ const router = new Router({
       }
     },
     {
-      path: '/karta_poselka',
+      path: '/:city/karta_poselka',
       name: 'KartaPoselka',
       component: KartaPoselka,
       meta: {
@@ -102,7 +103,7 @@ const router = new Router({
       }
     },
     {
-      path: '/taxi_v_guseve',
+      path: '/:city/taxi_v_guseve',
       name: 'TaxiVGuseve',
       component: TaxiVGuseve,
       meta: {
@@ -110,7 +111,7 @@ const router = new Router({
       }
     },
     {
-      path: '/taxi-v-kaliningrade',
+      path: '/:city/taxi-v-kaliningrade',
       name: 'TaxiVKaliningrade',
       component: TaxiVKaliningrade,
       meta: {
@@ -118,7 +119,7 @@ const router = new Router({
       }
     },
     {
-      path: '/gusev_fok',
+      path: '/:city/gusev_fok',
       name: 'GusevFok',
       component: GusevFok,
       meta: {
@@ -126,7 +127,7 @@ const router = new Router({
       }
     },
     {
-      path: '/kebab',
+      path: '/:city/kebab',
       name: 'Kebab',
       component: Kebab,
       meta: {
@@ -134,7 +135,7 @@ const router = new Router({
       }
     },
     {
-      path: '/fusion_express',
+      path: '/:city/fusion_express',
       name: 'FusionExpress',
       component: FusionExpress,
       meta: {
@@ -142,17 +143,43 @@ const router = new Router({
       }
     },
     {
-      path: '/labirint_anticafe',
+      path: '/:city/labirint_anticafe',
       name: 'LabirintAnticafe',
       component: LabirintAnticafe,
       meta: {
         title: 'GS Гусев - Антикафе «Лабиринт»'
       }
+    },
+    {
+      path: '*',
+      redirect: { name: 'Home' }
     }
   ]
 })
 
 router.beforeEach((to, from, next) => {
+  // Switch router city parameter
+  var city = localStorage.getItem('city')
+
+  if (city !== null && city.length > 0) {
+    switch (city) {
+      case 'kaliningrad':
+        to.params.city = 'kgd'
+        to.params.cityName = 'kaliningrad'
+        break
+      case 'gusev':
+        to.params.city = 'gsv'
+        to.params.cityName = 'gusev'
+        break
+    }
+  } else {
+    if (!to.params.hasOwnProperty('city') || to.params.city.length < 1) {
+      to.params.city = 'gsv'
+      to.params.cityName = 'gusev'
+    }
+  }
+
+  // Set page title
   document.title = to.meta.title
   next()
 })
