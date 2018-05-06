@@ -52,12 +52,12 @@ export default {
   },
   mounted () {
     this.loadDefaultCity()
-    this.navbtnVisible = this.$route.path === '/'
+    this.navbtnVisible = ['/', '/gsv/', '/kgd/'].indexOf(this.$route.path) !== -1
     this.footerVisible = this.$route.path !== '/karta_poselka'
   },
   watch: {
     '$route': function (to, from) {
-      if (['/', '/gsv', '/kgd'].indexOf(to.path) !== -1) {
+      if (['/', '/gsv/', '/kgd/'].indexOf(to.path) !== -1) {
         this.navbtnVisible = true
         this.loadDefaultCity()
       } else {
@@ -147,6 +147,19 @@ export default {
 
     loadDefaultCity: function () {
       let city = localStorage.getItem('city')
+      let pathCity = this.$route.path.replace(new RegExp('/', 'g'), '')
+
+      if (pathCity.length > 0 && pathCity !== city) {
+        switch (pathCity) {
+          case 'gsv':
+            city = 'gusev'
+            break
+          case 'kgd':
+            city = 'kaliningrad'
+            break
+        }
+      }
+
       // (!) Main menu element is present only at Home page
       switch (city) {
         case 'kaliningrad':
