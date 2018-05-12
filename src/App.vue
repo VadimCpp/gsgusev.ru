@@ -52,12 +52,12 @@ export default {
   },
   mounted () {
     this.loadDefaultCity()
-    this.navbtnVisible = ['/', '/gsv/', '/kgd/'].indexOf(this.$route.path) !== -1
+    this.navbtnVisible = ['/', '/gsv', '/kgd'].indexOf(this.$route.path) !== -1
     this.footerVisible = this.$route.path !== '/karta_poselka'
   },
   watch: {
     '$route': function (to, from) {
-      if (['/', '/gsv/', '/kgd/'].indexOf(to.path) !== -1) {
+      if (['/', '/gsv', '/kgd'].indexOf(to.path) !== -1) {
         this.navbtnVisible = true
         this.loadDefaultCity()
       } else {
