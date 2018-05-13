@@ -5,8 +5,8 @@
       <div class="gs-off-canvas__bar" id="off-canvas-bar" v-on:click="preventClosingSidebar()">
         <p class="gs-off-canvas__label" id="label-city"> Город </p>
         <hr>
-        <button class="gs-off-canvas__btn active" id="gusev-btn" v-on:click="showGusevItems()"> <i class="gs-icon-ok"> </i> Гусев</button>
-        <button class="gs-off-canvas__btn" id="kgd-btn" v-on:click="showKaliningradItems()"> <i class="gs-icon-ok"> </i> Калининград</button>
+        <button class="gs-off-canvas__btn gs-nav-btn active" id="gsv-btn" v-on:click="switchCity('gsv')"> <i class="gs-icon-ok"> </i> Гусев</button>
+        <button class="gs-off-canvas__btn gs-nav-btn" id="kgd-btn" v-on:click="switchCity('kgd')"> <i class="gs-icon-ok"> </i> Калининград</button>
       </div>
     </div>
 
@@ -21,6 +21,9 @@ export default {
     }
   },
   methods: {
+    switchCity: function (city) {
+      this.$emit('switchCity', city)
+    },
     showGusevItems: function () {
       this.$emit('showGusevItems')
     },

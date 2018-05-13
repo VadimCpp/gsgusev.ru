@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/views/Home'
+import HomeGSV from '@/views/HomeGSV'
+import HomeKGD from '@/views/HomeKGD'
 import About from '@/views/About'
 import AdminPoselka from '@/views/AdminPoselka'
 import BusGusevKgd from '@/views/BusGusevKgd'
@@ -22,10 +23,18 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
-      path: '/',
-      alias: ['/gsv', '/kgd'],
-      name: 'Home',
-      component: Home,
+      path: '/gsv',
+      alias: ['/'],
+      name: 'HomeGSV',
+      component: HomeGSV,
+      meta: {
+        title: 'GS Гусев - Главная'
+      }
+    },
+    {
+      path: '/kgd',
+      name: 'HomeKGD',
+      component: HomeKGD,
       meta: {
         title: 'GS Гусев - Главная'
       }
