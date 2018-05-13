@@ -11,9 +11,8 @@
   </header>
 
   <SideBar
-    v-on:showGusevItems="showGusevItems"
-    v-on:showKaliningradItems="showKaliningradItems"
     v-on:closeSidebar="hideSidebar"
+    v-on:switchCity = "switchCity"
   >
   </SideBar>
 
@@ -82,16 +81,22 @@ export default {
       return this.footerVisible
     },
     showSidebar: function () {
+      var navButtons = document.getElementsByClassName('gs-nav-btn')
+      for (var i = navButtons.length - 1; i >= 0; i--) {
+        navButtons[i].style.opacity = '1'
+      }
+
       document.getElementById('off-canvas').style.width = '100%'
       document.getElementById('off-canvas-bar').style.width = '250px'
-      document.getElementById('gusev-btn').style.opacity = '1'
-      document.getElementById('kgd-btn').style.opacity = '1'
       document.getElementById('label-city').style.opacity = '1'
       document.getElementsByTagName('hr')[0].style.opacity = '1'
     },
     hideSidebar: function () {
-      document.getElementById('kgd-btn').style.opacity = '0'
-      document.getElementById('gusev-btn').style.opacity = '0'
+      var navButtons = document.getElementsByClassName('gs-nav-btn')
+      for (var i = navButtons.length - 1; i >= 0; i--) {
+        navButtons[i].style.opacity = '0'
+      }
+
       document.getElementById('label-city').style.opacity = '0'
       document.getElementById('off-canvas').style.width = '0'
       document.getElementById('off-canvas-bar').style.width = '0'
@@ -106,39 +111,42 @@ export default {
         this.showSidebar()
       }
     },
-    showGusevItems: function () {
-      document.getElementById('gusev-btn').classList.add('active')
-      document.getElementById('kgd-btn').classList.remove('active')
+    switchCity: function (city) {
+      if (this.$route.params.city !== city) {
+        var navButtons = document.getElementsByClassName('gs-nav-btn')
+        for (var i = navButtons.length - 1; i >= 0; i--) {
+          if (navButtons[i] !== null) {
+            navButtons[i].classList.remove('active')
+          } else {
+            console.error('[e] .gs-nav-btn not found')
+          }
+        }
 
-      if (document.getElementById('main-menu') !== null) {
-        document.getElementById('main-menu').classList.remove('kaliningrad')
-        document.getElementById('main-menu').classList.add('gusev')
-      } else {
-        console.error('[E][showGusevItems] main-menu element is not found. City: Gusev.')
+        if (document.getElementById(city + '-btn') !== null) {
+          document.getElementById(city + '-btn').classList.add('active')
+        } else {
+          console.error('[e] active city button not found')
+        }
+
+        var cityName = 'gusev'
+
+        switch (city) {
+          case 'gsv':
+            cityName = 'gusev'
+            break
+          case 'kgd':
+            cityName = 'kaliningrad'
+            break
+        }
+
+        this.hideSidebar()
+        this.sidebarVisible = false
+        this.$route.params.city = city
+        this.$route.params.cityName = cityName
+        this.saveDefaultCity(cityName)
+
+        this.$router.push({path: '/' + city, params: { city: city }})
       }
-
-      this.hideSidebar()
-      this.sidebarVisible = false
-      this.$route.params.city = 'gsv'
-      this.$route.params.cityName = 'gusev'
-      this.saveDefaultCity('gusev')
-    },
-    showKaliningradItems: function () {
-      document.getElementById('kgd-btn').classList.add('active')
-      document.getElementById('gusev-btn').classList.remove('active')
-
-      if (document.getElementById('main-menu') !== null) {
-        document.getElementById('main-menu').classList.remove('gusev')
-        document.getElementById('main-menu').classList.add('kaliningrad')
-      } else {
-        console.error('[E][showKaliningradItems] main-menu element is not found. City: Kaliningrad.')
-      }
-
-      this.hideSidebar()
-      this.sidebarVisible = false
-      this.$route.params.city = 'kgd'
-      this.$route.params.cityName = 'kaliningrad'
-      this.saveDefaultCity('kaliningrad')
     },
 
     saveDefaultCity: function (city) {
@@ -158,17 +166,11 @@ export default {
             city = 'kaliningrad'
             break
         }
+      } else {
+        pathCity = 'gsv'
       }
 
-      // (!) Main menu element is present only at Home page
-      switch (city) {
-        case 'kaliningrad':
-          this.showKaliningradItems()
-          break
-        case 'gusev':
-          this.showGusevItems()
-          break
-      }
+      this.switchCity(pathCity)
     }
   }
 }
