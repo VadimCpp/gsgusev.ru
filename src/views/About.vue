@@ -32,6 +32,9 @@
             <li>
               Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
             </li>
+			<li>
+              Кузьмин Сергей - <a href="https://github.com/cvalya"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
