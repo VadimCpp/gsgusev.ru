@@ -17,6 +17,7 @@ import Kebab from '@/views/Kebab'
 import FusionExpress from '@/views/FusionExpress'
 import LabirintAnticafe from '@/views/LabirintAnticafe'
 import Velomaster from '@/views/Velomaster'
+import Avtoprokat39 from '@/views/Avtoprokat39'
 
 Vue.use(Router)
 
@@ -157,6 +158,14 @@ const router = new Router({
       component: Velomaster,
       meta: {
         title: 'GS Гусев - Веломастер'
+      }
+    },
+    {
+      path: '/:city/avtoprokat39',
+      name: 'Avtoprokat39',
+      component: Avtoprokat39,
+      meta: {
+        title: 'GS Гусев - Автопрокат'
       }
     },
     {
