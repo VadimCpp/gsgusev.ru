@@ -13,13 +13,13 @@
     <transition name="fade" appear>
       <section class="gs-container gs-container_center gs-container_padding-bottom">
           <div class="gs-thumbnail">
-              <!-- <img class="gs-thumbnail__image" src="../assets/img/fusion-logo.png" alt="Кафе «Фьюжн экспресс»"> -->
+              <img class="gs-thumbnail__image" src="../assets/img/prokatavto.jpg" alt="Прокат авто">
               <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                   <p>
                       Отличный автопрокат, который доставит вам автомобиль прямо к дому и всегда на связи.
                   </p>
                   <p>
-                      Сайт: <a href="http://avtoprokat39.ru/" class="gs-link"> http://avtoprokat39.ru/ </a> <br>
+                      Сайт: <a href="http://prokatavto39.ru/" class="gs-link">http://prokatavto39.ru/</a><br />
                   </p>
                   <h4>Дмитрий</h4>
                   <p>+7 (911) 454-01-90</p>
