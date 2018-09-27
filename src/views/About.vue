@@ -35,6 +35,9 @@
 			<li>
               Кузьмин Сергей - <a href="https://github.com/cvalya"> GitHub </a>
             </li>
+            <li>
+              Углин Александр - <a href="https://github.com/AbsoluteBender"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
