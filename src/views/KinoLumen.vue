@@ -13,7 +13,7 @@
   <section class="gs-container gs-container_center">
     <div class="gs-well gs-well_text-center" id="schedule-block">
       <p> Расписание доступно по ссылке:
-        <a href="http://lumenfilm.com/gusev/affishe">http://lumenfilm.com/gusev/affishe</a>
+        <a href="http://lumenfilm.com/gusev/site">http://lumenfilm.com/gusev/site</a>
       </p>
       <!-- <p> TODO: враспарсить расписание </p> -->
       <!-- <h4><i class="gs-icon-spinner gs-icon-spin"> </i></h4> -->
