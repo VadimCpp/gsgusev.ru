@@ -38,6 +38,9 @@
             <li>
               Углин Александр - <a href="https://github.com/AbsoluteBender"> GitHub </a>
             </li>
+            <li>
+              Дмитрий Ревякин - <a href="https://github.com/holdencaulf1eld"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
