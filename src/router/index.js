@@ -166,7 +166,7 @@ const router = new Router({
       name: 'Velomaster',
       component: Velomaster,
       meta: {
-        title: 'GS Гусев - Веломастер'
+        title: 'GS Гусев - Веломастерская'
       }
     },
     {

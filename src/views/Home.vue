@@ -78,7 +78,7 @@
             <i class="gs-icon-angle-right"> </i>
           </router-link>
           <router-link :to="{ name: 'Velomaster', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="kaliningrad">
-            Веломастер 🚲
+            Веломастерская 🚲
             <i class="gs-icon-angle-right"> </i>
           </router-link>
           <router-link :to="{ name: 'About', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="gusev kaliningrad">
