@@ -41,8 +41,11 @@
             <li>
               Дмитрий Ревякин - <a href="https://github.com/holdencaulf1eld"> GitHub </a>
             </li>
-			<li>
+		      	<li>
               Савченко Александр - <a href="https://github.com/Nebula223"> GitHub </a>
+            </li>
+		      	<li>
+              Полищук Антон - <a href="https://github.com/Sunantby"> GitHub </a>
             </li>
           </ol>
         </div>
