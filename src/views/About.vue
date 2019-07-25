@@ -32,7 +32,7 @@
             <li>
               Уфрутов Сергей - <a href="https://github.com/Ufrutov"> GitHub </a>
             </li>
-			<li>
+            <li>
               Кузьмин Сергей - <a href="https://github.com/cvalya"> GitHub </a>
             </li>
             <li>
@@ -41,11 +41,14 @@
             <li>
               Дмитрий Ревякин - <a href="https://github.com/holdencaulf1eld"> GitHub </a>
             </li>
-		      	<li>
+            <li>
               Савченко Александр - <a href="https://github.com/Nebula223"> GitHub </a>
             </li>
-		      	<li>
+            <li>
               Полищук Антон - <a href="https://github.com/Sunantby"> GitHub </a>
+            </li>
+            <li>
+              Гончарук Роман - <a href="https://github.com/RUBYsimpleMAN"> GitHub </a>
             </li>
           </ol>
         </div>
