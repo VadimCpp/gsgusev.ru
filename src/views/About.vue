@@ -50,6 +50,9 @@
             <li>
               Гончарук Роман - <a href="https://github.com/RUBYsimpleMAN"> GitHub </a>
             </li>
+            <li>
+              Осипов Алексей - <a href="https://github.com/RuBrain"> GitHub </a>
+            </li>            
           </ol>
         </div>
       </section>
