@@ -33,12 +33,6 @@
             Администратор поселка
             <i class="gs-icon-angle-right"> </i>
           </router-link>
-          <!--
-          <router-link :to="{ name: 'Artika', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="gusev">
-            🎄 Арт-пространство АРТика
-            <i class="gs-icon-angle-right"> </i>
-          </router-link>
-          -->
           <router-link :to="{ name: 'Voda', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="gusev">
             Заказ воды «Айсберг»
             <i class="gs-icon-angle-right"> </i>
