@@ -19,7 +19,7 @@
 
   <!-- Main -->
   <main>
-    <router-view></router-view>
+    <router-view></router-view> 
   </main>
 
   <!-- Footer -->
