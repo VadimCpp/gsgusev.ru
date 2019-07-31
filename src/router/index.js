@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import About from '@/views/About'
 import AdminPoselka from '@/views/AdminPoselka'
-// import Artika from '@/views/Artika'
 import BusGusevKgd from '@/views/BusGusevKgd'
 import BusGusevPoselok from '@/views/BusGusevPoselok'
 import BusKgdGusev from '@/views/BusKgdGusev'
@@ -49,16 +48,6 @@ const router = new Router({
         title: 'GS Гусев - Администратор поселка'
       }
     },
-    /*
-    {
-      path: '/:city/artika',
-      name: 'Artika',
-      component: Artika,
-      meta: {
-        title: 'GS Гусев - Арт-пространство АРТика'
-      }
-    },
-    */
     {
       path: '/:city/bus_gusev_kgd',
       name: 'BusGusevKgd',
