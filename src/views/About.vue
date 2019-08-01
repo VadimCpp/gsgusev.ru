@@ -52,7 +52,10 @@
             </li>
             <li>
               Осипов Алексей - <a href="https://github.com/RuBrain"> GitHub </a>
-            </li>            
+            </li>
+            <li>
+              Самуйлов Виталий - <a href="https://github.com/aerovir"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
