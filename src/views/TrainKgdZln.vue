@@ -43,7 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../assets/scss/velomasterskaya.scss';
+@import '../assets/scss/train.scss';
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
