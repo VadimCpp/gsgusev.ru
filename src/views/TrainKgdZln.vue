@@ -1,5 +1,5 @@
 <template>
-  <div class="velomasterskaya">
+  <div class="TrainKgdZln">
 
     <!-- Breadcrumb -->
     <section class="gs-container gs-container_center">
@@ -13,7 +13,7 @@
     <transition name="fade" appear>
       <section class="gs-container gs-container_center gs-container_padding-bottom">
           <div class="gs-thumbnail">
-              <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Веломастер">
+              <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка">
               <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                   <p>
                       Скоро тут будет расписание электричек.
@@ -34,7 +34,7 @@
 import CallButton from '../components/CallButton'
 
 export default {
-  name: 'velomasterskaya',
+  name: 'TrainKgdZln',
   components: {
     CallButton
   }
