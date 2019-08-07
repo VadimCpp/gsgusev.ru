@@ -18,6 +18,7 @@ import FusionExpress from '@/views/FusionExpress'
 import LabirintAnticafe from '@/views/LabirintAnticafe'
 import Velomaster from '@/views/Velomaster'
 import Avtoprokat39 from '@/views/Avtoprokat39'
+import TrainKgdZln from '@/views/TrainKgdZln'
 
 Vue.use(Router)
 
@@ -30,6 +31,14 @@ const router = new Router({
       component: Home,
       meta: {
         title: 'GS Гусев - Главная'
+      }
+    },
+    {
+      path: '/:city/train',
+      name: 'TrainKgdZln',
+      component: TrainKgdZln,
+      meta: {
+        title: 'Электричка Калининград-Зеленоградск'
       }
     },
     {
