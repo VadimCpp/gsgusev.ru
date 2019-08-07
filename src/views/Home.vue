@@ -21,6 +21,10 @@
             Автобус Калининград-Гусев
             <i class="gs-icon-angle-right"> </i>
           </router-link>
+          <router-link :to="{ name: 'TrainKgdZln', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="kaliningrad">
+            Электричка Калининград-Зеленоградск
+            <i class="gs-icon-angle-right"> </i>
+          </router-link>          
           <router-link :to="{ name: 'BusGusevPoselok', params: { city: $route.params.city } }" class="gs-main-menu__link" data-city="gusev">
             Автобус Гусев-Поселок
             <i class="gs-icon-angle-right"> </i>
