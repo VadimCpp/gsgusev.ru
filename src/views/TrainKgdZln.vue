@@ -13,7 +13,7 @@
     <transition name="fade" appear>
       <section class="gs-container gs-container_center gs-container_padding-bottom">
           <div class="gs-thumbnail">
-              <!-- <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка"> -->
+              <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка">
               <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
                   <div>
                       <iframe frameborder="0" style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
