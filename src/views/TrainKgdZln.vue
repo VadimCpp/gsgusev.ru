@@ -13,11 +13,16 @@
     <transition name="fade" appear>
       <section class="gs-container gs-container_center gs-container_padding-bottom">
           <div class="gs-thumbnail">
-              <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка">
+              <!-- <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка"> -->
               <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                  <p>
-                      Скоро тут будет расписание электричек.
-                  </p>
+                  <div>
+                      <iframe frameborder="0" style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                       -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                       overflow: hidden; border: 0; width: 700px; height: 350px;" 
+                       src="https://rasp.yandex.ru/informers/search/?fromId=s9623138&amp;toId=c20139&amp;size=5&amp;color=1">
+                       </iframe>
+                  </div>
+                  <br>
                   <h4>Справка ж/д вокзала</h4>
                   <p>+7 (4012) 600-888</p>
                   <CallButton phone="+74012600888"/>
