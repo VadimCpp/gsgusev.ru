@@ -15,7 +15,7 @@
           <div class="gs-thumbnail">
               <img class="gs-thumbnail__image" src="../assets/img/train.jpg" alt="Электричка">
               <div class="gs-thumbnail__caption gs-thumbnail__caption_text-center">
-                  <div>
+                  <div style="overflow: scroll">
                       <iframe frameborder="0" style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
                        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
                        overflow: hidden; border: 0; width: 700px; height: 350px;" 
