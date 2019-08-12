@@ -38,6 +38,39 @@
 import CallButton from '../components/CallButton'
 
 export default {
+  beforeCreate () {
+    /**
+     * API Расписание рейсов между станциями, параметры запроса
+     * https://yandex.ru/dev/rasp/doc/reference/schedule-point-point-docpage/
+     */
+    const baseurl = 'https://api.rasp.yandex.net/v3.0/search/'
+    const apikey = '9e27ac30-1e85-4024-a954-0eb5a8eb7816'
+    const from = 's9612014' // https://rasp.yandex.ru/station/9612014/?type=suburban // Кутузово-Новое
+    const to = 's9611997' // https://rasp.yandex.ru/station/9611997/?type=suburban // Зеленоградск-новый
+    const lang = 'ru'
+    const url = `${baseurl}?apikey=${apikey}&from=${from}&to=${to}&lang=${lang}`
+
+    console.log('fetch data from url: ', url)
+
+    fetch(url)
+      .then(
+        function (response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' +
+              response.status)
+            return
+          }
+
+          // Examine the text in the response
+          response.json().then(function (data) {
+            console.log(data)
+          })
+        }
+      )
+      .catch(function (err) {
+        console.log('Fetch Error :-S', err)
+      })
+  },
   name: 'TrainKgdZln',
   components: {
     CallButton
