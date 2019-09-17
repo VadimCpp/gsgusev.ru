@@ -56,6 +56,9 @@
             <li>
               Самуйлов Виталий - <a href="https://github.com/aerovir"> GitHub </a>
             </li>
+            <li>
+              Волков Илья - <a href="https://github.com/ilvolkov"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
