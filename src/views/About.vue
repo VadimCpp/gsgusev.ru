@@ -59,6 +59,9 @@
             <li>
               Волков Илья - <a href="https://github.com/ilvolkov"> GitHub </a>
             </li>
+            <li>
+              Горкольцев Глеб - <a href="https://github.com/Fedya-Mercuriev"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
