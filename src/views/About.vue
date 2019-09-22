@@ -62,6 +62,9 @@
             <li>
               Горкольцев Глеб - <a href="https://github.com/Fedya-Mercuriev"> GitHub </a>
             </li>
+            <li>
+              Ричард Кем - <a href="https://github.com/s0ull3ss"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
