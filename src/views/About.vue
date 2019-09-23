@@ -62,8 +62,11 @@
             <li>
               Горкольцев Глеб - <a href="https://github.com/Fedya-Mercuriev"> GitHub </a>
             </li>
-             <li>
+            <li>
               Тишаков Никита - <a href="https://github.com/starscreamnik"> GitHub </a>
+            </li>
+            <li>
+              Романов Игорь - <a href="https://github.com/Nazeebo"> GitHub </a>
             </li>
           </ol>
         </div>
