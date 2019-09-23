@@ -62,6 +62,9 @@
             <li>
               Горкольцев Глеб - <a href="https://github.com/Fedya-Mercuriev"> GitHub </a>
             </li>
+             <li>
+              Тишаков Никита - <a href="https://github.com/starscreamnik"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
