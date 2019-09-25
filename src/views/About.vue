@@ -63,6 +63,9 @@
               Горкольцев Глеб - <a href="https://github.com/Fedya-Mercuriev"> GitHub </a>
             </li>
             <li>
+              Ричард Кем - <a href="https://github.com/s0ull3ss"> GitHub </a>
+            </li>
+            <li>
               Тишаков Никита - <a href="https://github.com/starscreamnik"> GitHub </a>
             </li>
             <li>
