@@ -70,7 +70,10 @@
             </li>
             <li>
               Романов Игорь - <a href="https://github.com/Nazeebo"> GitHub </a>
-            </li>
+           </li>
+			<li> 
+			Евгений Педан - <a href="https://github.com/edan23"> GitHub </a>
+			</il>
           </ol>
         </div>
       </section>
