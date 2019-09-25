@@ -65,6 +65,12 @@
             <li>
               Ричард Кем - <a href="https://github.com/s0ull3ss"> GitHub </a>
             </li>
+            <li>
+              Тишаков Никита - <a href="https://github.com/starscreamnik"> GitHub </a>
+            </li>
+            <li>
+              Романов Игорь - <a href="https://github.com/Nazeebo"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
