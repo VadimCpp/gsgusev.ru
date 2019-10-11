@@ -74,6 +74,9 @@
             <li>
               Романов Игорь - <a href="https://github.com/Nazeebo"> GitHub </a>
             </li>
+            <li>
+              Лукьянов Станислав - <a href="https://github.com/Waaaaaaaake"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
