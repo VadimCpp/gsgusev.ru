@@ -77,6 +77,9 @@
             <li>
               Лукьянов Станислав - <a href="https://github.com/Waaaaaaaake"> GitHub </a>
             </li>
+            <li>
+              Геннадий Агашков - <a href="https://github.com/GennadyAgashkov"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
