@@ -80,6 +80,9 @@
             <li>
               Геннадий Агашков - <a href="https://github.com/GennadyAgashkov"> GitHub </a>
             </li>
+            <li>
+              Терехин Александр - <a href="https://github.com/Abded"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
