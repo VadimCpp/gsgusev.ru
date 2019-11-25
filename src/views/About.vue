@@ -83,6 +83,9 @@
             <li>
               Терехин Александр - <a href="https://github.com/Abded"> GitHub </a>
             </li>
+            <li>
+              Сивидов Антон - <a href="https://github.com/Tofan93"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
