@@ -83,6 +83,9 @@
             <li>
               Терехин Александр - <a href="https://github.com/Abded"> GitHub </a>
             </li>
+            <li>
+              Брагин Борис - <a href="https://github.com/thinkjazz"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
