@@ -84,7 +84,10 @@
               Терехин Александр - <a href="https://github.com/Abded"> GitHub </a>
             </li>
             <li>
-              Сивидов Антон - <a href="https://github.com/Tofan93"> GitHub </a>
+              Брагин Борис - <a href="https://github.com/thinkjazz"> GitHub </a>
+            </li>
+            <li>
+             Сивидов Антон - <a href="https://github.com/Tofan93"> GitHub </a>
             </li>
           </ol>
         </div>
@@ -106,15 +109,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import '../assets/scss/about.scss';
-
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }
-
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-
 </style>
