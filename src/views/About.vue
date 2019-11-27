@@ -86,6 +86,9 @@
             <li>
               Брагин Борис - <a href="https://github.com/thinkjazz"> GitHub </a>
             </li>
+            <li>
+              Сивидов Антон - <a href="https://github.com/Tofan93"> GitHub </a>
+            </li>
           </ol>
         </div>
       </section>
