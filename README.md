@@ -4,6 +4,19 @@
 
 Данный проект закрыт
 
+## Темы
+
+Иллюстрации для сайта были оформлены Ольгой Рыбиной - художником-иллюстратором, чьи работы радуют глаз. Добро пожаловать в ее Инстаграм:
+https://www.instagram.com/zhelga_art/
+
+Летняя тема
+
+<img src="https://github.com/VadimCpp/gsgusev.ru/blob/master/static/img/summer_theme.png" width="400"/>
+
+Зимняя тема
+
+<img src="https://github.com/VadimCpp/gsgusev.ru/blob/master/static/img/winter_theme.png" width="400"/>
+
 ## Build Setup
 
 ``` bash
